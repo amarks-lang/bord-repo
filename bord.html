@@ -597,6 +597,9 @@ function maakSnap(){
 function snapTerug(){
   if(!snapOk) return hertekenen();
   ctx.save(); ctx.setTransform(1,0,0,1,0,0);
+  /* na een gumstreek staat de tekenmodus nog op wegvegen ('destination-out');
+     dan zou het terugzetten van de momentopname alles uitvegen */
+  ctx.globalCompositeOperation = 'source-over';
   ctx.clearRect(0,0,verf.width,verf.height);
   ctx.drawImage(snap, 0, 0);
   ctx.restore();
