@@ -125,7 +125,14 @@ var BLOK = {
           (st.klein ? '<small>' + opmaak(st.klein) + '</small>' : '') + '</span>';
       return '<div class="lstap"><b>' + (i + 1) + '</b>' + inh + '</div>';
     }).join('');
-    return '<div class="lstappen"' + maat(b) + '>' + (b.titel ? '<h3>' + opmaak(b.titel) + '</h3>' : '') + items + '</div>';
+    /* bij samen oefenen en de check begint het stappenplan dicht (tik om te tonen),
+       zodat leerlingen eerst zelf nadenken; "verborgen" in les.json gaat voor */
+    var dicht = typeof b.verborgen === 'boolean' ? b.verborgen : (context.fase === 'samen' || context.fase === 'check');
+    if(!dicht) return '<div class="lstappen"' + maat(b) + '>' + (b.titel ? '<h3>' + opmaak(b.titel) + '</h3>' : '') + items + '</div>';
+    context.stappen = true;
+    return '<div class="lstappen kan-dicht dicht"' + maat(b) + '>' +
+      '<h3 class="lstapkop">' + opmaak(b.titel || 'Stappenplan') + '</h3>' + items +
+      '<div class="lstapknop"><span>' + opmaak(b.titel || 'Stappenplan') + '</span><small>tik om te tonen</small></div></div>';
   },
   stippen: function(b){
     var r = getal(b.rijen, 4), k = getal(b.kolommen, 5), uit = '', i, j;
@@ -227,7 +234,7 @@ function faseLabel(les, i){
 /* geeft {html, antwoord, notitie} voor pagina i */
 function pagina(les, i){
   var p = les.paginas[i];
-  context = {les: les, antwoord: false};
+  context = {les: les, antwoord: false, stappen: false, fase: p.fase};
   var kop = '';
   var label = faseLabel(les, i);
   if(label) kop += '<span class="fase f-' + esc(p.fase) + '">' + esc(label) + '</span>';
@@ -236,7 +243,7 @@ function pagina(les, i){
   var hoek = les.lesdoelInHoek && p.fase !== 'lesdoel' && les.lesdoel
     ? '<div class="lhoekdoel">' + opmaak(les.lesdoel) + '</div>' : '';
   var html = '<div class="lb">' + hoek + (kop ? '<div class="lkop">' + kop + '</div>' : '') + blokken(p.blokken) + '</div>';
-  var uit = {html: html, antwoord: context.antwoord, notitie: p.notitie ? String(p.notitie) : ''};
+  var uit = {html: html, antwoord: context.antwoord, stappen: context.stappen, notitie: p.notitie ? String(p.notitie) : ''};
   context = null;
   return uit;
 }
@@ -264,5 +271,24 @@ function schaal(laag, vak, maten){
   return over;
 }
 
-return {pagina: pagina, schaal: schaal, FASES: FASES, opmaak: opmaak};
+/* tik op het bord: raakt die een dicht stappenplan (of de kop van een open)? dan open/dicht en true */
+function tik(laag, x, y){
+  var kaarten = laag.querySelectorAll('.lstappen.kan-dicht'), i;
+  for(i = 0; i < kaarten.length; i++){
+    var k = kaarten[i];
+    var doel = k.classList.contains('dicht') ? k : k.querySelector('.lstapkop');
+    var r = doel.getBoundingClientRect();
+    if(x >= r.left && x <= r.right && y >= r.top && y <= r.bottom){ k.classList.toggle('dicht'); return true; }
+  }
+  return false;
+}
+/* alle stappenplannen op deze pagina open of dicht (toets S) */
+function wisselStappen(laag){
+  var kaarten = laag.querySelectorAll('.lstappen.kan-dicht');
+  if(!kaarten.length) return;
+  var open = laag.querySelector('.lstappen.kan-dicht.dicht') !== null;
+  for(var i = 0; i < kaarten.length; i++) kaarten[i].classList.toggle('dicht', !open);
+}
+
+return {pagina: pagina, schaal: schaal, tik: tik, wisselStappen: wisselStappen, FASES: FASES, opmaak: opmaak};
 })();

@@ -4,7 +4,7 @@
 Gebruik (vanuit de map van de repository, Playwright nodig: pip install playwright):
     python3 tools/schermafdruk.py <les-id> [uitmap]
 
-Schrijft per pagina pNN.png (en pNN-antwoord.png als er een antwoord is) naar de uitmap
+Schrijft per pagina pNN.png (en pNN-antwoord.png met antwoord en stappenplannen open) naar de uitmap
 (standaard: /tmp/lesbord/<les-id>). Meldt pagina's waar de inhoud niet op het vel past.
 Zet LESBORD_CHROMIUM als Playwright geen eigen browser heeft.
 """
@@ -51,7 +51,7 @@ def main():
                     page.goto(url)
                     page.wait_for_selector("body[data-klaar='1']", timeout=10000)
                     page.wait_for_timeout(250)
-                    heeft = page.evaluate("!document.getElementById('antwoordknop').hidden")
+                    heeft = page.evaluate("!document.getElementById('antwoordknop').hidden || !!document.querySelector('#les .kan-dicht')")
                     if antwoord and not heeft:
                         continue
                     naam = f"p{i:02d}" + ("-antwoord" if antwoord else "") + ".png"

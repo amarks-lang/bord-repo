@@ -645,6 +645,7 @@ function annuleerStreek(){
 verf.addEventListener('pointerdown', function(e){
   if(actief !== null) return;                 /* tweede vinger negeren */
   if(e.pointerType === 'mouse' && e.button !== 0) return;   /* rechtermuisklik schrijft niet */
+  if(lesInfo.stappen && Les.tik($('les'), e.clientX, e.clientY)){ e.preventDefault(); return; }   /* stappenplan open/dicht */
   actief = e.pointerId;
   pipetGedaan = false;
   try{ verf.setPointerCapture(e.pointerId); }catch(err){}
@@ -730,6 +731,7 @@ document.addEventListener('keydown', function(e){
   else if(!mod && (e.key === ' ' || e.key === 'Enter') && e.target === document.body){ e.preventDefault(); naar(pag+1); }
   else if(!mod && e.key.toLowerCase() === 'a'){ wisselAntwoord(); }
   else if(!mod && e.key.toLowerCase() === 'n'){ wisselNotitie(); }
+  else if(!mod && e.key.toLowerCase() === 's'){ Les.wisselStappen($('les')); }
 });
 
 /* ===================== pipet ===================== */
@@ -927,11 +929,11 @@ $('schil').addEventListener('pointerdown', sluitPop);
 /* ===================== pagina's ===================== */
 
 /* ---------- leslaag ---------- */
-var lesInfo = {antwoord:false, notitie:''};
+var lesInfo = {antwoord:false, stappen:false, notitie:''};
 function toonLes(){
   var p = huidig(), laag = $('les');
   laag.classList.remove('toon');
-  lesInfo = {antwoord:false, notitie:''};
+  lesInfo = {antwoord:false, stappen:false, notitie:''};
   if(LES && p.les >= 0){
     lesInfo = Les.pagina(LES, p.les);
     laag.innerHTML = lesInfo.html;
@@ -1192,7 +1194,7 @@ function start(){
   werkBijPen();
   $('dikte').value = bord.pen.dikte;
   toonPagina();
-  if(ZOEK.get('antwoord') === '1') wisselAntwoord();
+  if(ZOEK.get('antwoord') === '1'){ wisselAntwoord(); Les.wisselStappen($('les')); }   /* controlebeeld: alles open */
   document.body.setAttribute('data-klaar', '1');
 }
 

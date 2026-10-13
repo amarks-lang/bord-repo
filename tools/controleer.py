@@ -34,7 +34,7 @@ BLOKKEN = {
     "tekst":      ({"tekst"}, {"grootte", "midden"}),
     "som":        ({"tekst"}, {"grootte"}),
     "label":      ({"tekst"}, {"soort"}),
-    "stappen":    ({"stappen"}, {"titel", "breedte", "hoogte"}),
+    "stappen":    ({"stappen"}, {"titel", "breedte", "hoogte", "verborgen"}),
     "stippen":    ({}, {"rijen", "kolommen", "afwisselen"}),
     "familie":    ({"totaal", "delen"}, set()),
     "breukdelen": ({"teller", "noemer"}, {"tellerTekst", "noemerTekst"}),

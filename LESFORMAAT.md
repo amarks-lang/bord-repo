@@ -103,7 +103,7 @@ Blokken staan onder elkaar. Schrijfvakken zonder vaste hoogte vullen de ruimte d
 | `tekst` | `tekst`, `grootte`?, `midden`? | `grootte`: `klein` (grijs), `groot`, `kop`; standaard normaal |
 | `som` | `tekst`, `grootte`? | grote som, één regel. `grootte`: `klein`, `groot` |
 | `label` | `tekst`, `soort`? | pil over de hele breedte; `soort`: `goed` (✓ groen), `fout` (✗ rood), `neutraal` |
-| `stappen` | `stappen`, `titel`? | genummerd stappenplan. Een stap is tekst, of `{"kop", "tekst", "klein"}` |
+| `stappen` | `stappen`, `titel`?, `verborgen`? | genummerd stappenplan. Een stap is tekst, of `{"kop", "tekst", "klein"}`. Op `samen`- en `check`-pagina's begint het **dicht**: een kaart "Stappenplan · tik om te tonen" (de ruimte blijft gereserveerd). `verborgen: true/false` om dat zelf te kiezen. |
 
 ### Plaatjes
 
@@ -150,6 +150,7 @@ Het antwoord is verborgen tot je op **Antwoord** drukt (of toets A).
 - **Ruimte om te schrijven**: bij `voordoen`, `samen` en `check` hoort minstens één schrijfvak. Je modelleert zelf, dus het bord geeft geen uitwerking.
 - **Groot**: de achterste rij moet het kunnen lezen. Gebruik `som` voor sommen, niet `tekst`.
 - **Samen oefenen** met antwoord, **check** met antwoord en leerlingen alleen ("Iedereen werkt alleen").
+- **Stappenplan bij samen oefenen**: zet hetzelfde stappenplan als bij voordoen erbij. Het staat dicht tot je erop tikt, zodat leerlingen eerst zelf nadenken en niet overladen worden.
 - **Past het niet?** Het bord zet een rode rand om het vel en `schermafdruk.py` meldt het. Haal dan iets weg of splits de pagina.
 
 ## Mini-voorbeeld
@@ -175,6 +176,6 @@ Het antwoord is verborgen tot je op **Antwoord** drukt (of toets A).
 
 - `bord.html?les=<id>` opent de les, `&pagina=3` op pagina 3.
 - Pijltjes, PageUp/PageDown (presenter) of spatie: volgende pagina. **+** voegt een lege kladpagina in.
-- **A**: antwoord tonen/verbergen. **N**: notitie voor de leerkracht.
+- **A**: antwoord tonen/verbergen. **N**: notitie voor de leerkracht. **S**: stappenplan open/dicht (of tik op de kaart; tik op de kop om weer te sluiten).
 - Inkt wordt per les in de browser bewaard. Verandert de les zelf, dan begint het bord met een schone versie van de les.
 - **⚙ → Les opnieuw beginnen** wist alle inkt van de les.
