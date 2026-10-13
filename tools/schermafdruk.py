@@ -51,7 +51,7 @@ def main():
                     page.goto(url)
                     page.wait_for_selector("body[data-klaar='1']", timeout=10000)
                     page.wait_for_timeout(250)
-                    heeft = page.evaluate("!document.getElementById('antwoordknop').hidden || !!document.querySelector('#les .kan-dicht')")
+                    heeft = page.evaluate("!document.getElementById('antwoordknop').hidden || !!document.querySelector('#les .kan-dicht, #les .stapsgewijs')")
                     if antwoord and not heeft:
                         continue
                     naam = f"p{i:02d}" + ("-antwoord" if antwoord else "") + ".png"

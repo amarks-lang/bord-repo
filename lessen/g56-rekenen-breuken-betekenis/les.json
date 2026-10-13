@@ -376,17 +376,6 @@
       "opdracht": "Schrijf de breuk op je wisbordje.",
       "blokken": [
         {
-          "type": "rechthoek",
-          "rijen": 2,
-          "kolommen": 4,
-          "gekleurd": [
-            2,
-            5,
-            7
-          ],
-          "vak": 110
-        },
-        {
           "type": "kolommen",
           "breedtes": [
             2,
@@ -395,33 +384,51 @@
           "kolommen": [
             [
               {
+                "type": "rechthoek",
+                "rijen": 2,
+                "kolommen": 4,
+                "gekleurd": [
+                  2,
+                  5,
+                  7
+                ],
+                "vak": 100
+              },
+              {
                 "type": "naast",
                 "blokken": [
                   {
-                    "type": "breukvak",
-                    "namen": false
+                    "type": "breukvak"
                   },
                   {
                     "type": "schrijfvak",
                     "label": "zo zeg je het",
-                    "breedte": 500,
+                    "breedte": 360,
                     "hoogte": 170
+                  },
+                  {
+                    "type": "antwoord",
+                    "blokken": [
+                      {
+                        "type": "som",
+                        "tekst": "[[3/8]]"
+                      },
+                      {
+                        "type": "tekst",
+                        "tekst": "3 van de 8\ngelijke stukjes"
+                      }
+                    ]
                   }
                 ]
               }
             ],
             [
               {
-                "type": "antwoord",
-                "blokken": [
-                  {
-                    "type": "som",
-                    "tekst": "[[3/8]]"
-                  },
-                  {
-                    "type": "tekst",
-                    "tekst": "3 van de 8 gelijke stukjes"
-                  }
+                "type": "stappen",
+                "stappen": [
+                  "**Noemer**: in hoeveel gelijke stukjes?",
+                  "**Teller**: hoeveel stukjes neem je?",
+                  "**Zeg het**: … van de … gelijke stukjes"
                 ]
               }
             ]
@@ -431,8 +438,8 @@
     },
     {
       "fase": "samen",
-      "titel": "Teken een strook met 5 gelijke stukjes. Kleur ==[[2/5]]== van de strook.",
-      "opdracht": "Op je wisbordje.",
+      "titel": "Teken een strook met 5 gelijke stukjes.",
+      "opdracht": "Kleur ==[[2/5]]== van de strook. Op je wisbordje.",
       "blokken": [
         {
           "type": "kolommen",
@@ -447,29 +454,43 @@
                 "label": "teken hier"
               },
               {
-                "type": "schrijfvak",
-                "label": "zo zeg je het",
-                "hoogte": 150
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "schrijfvak",
+                    "label": "zo zeg je het",
+                    "breedte": 470,
+                    "hoogte": 160
+                  },
+                  {
+                    "type": "antwoord",
+                    "blokken": [
+                      {
+                        "type": "strook",
+                        "delen": 5,
+                        "gekleurd": [
+                          1,
+                          2
+                        ],
+                        "breedte": 300,
+                        "hoogte": 64
+                      },
+                      {
+                        "type": "tekst",
+                        "tekst": "2 van de 5 gelijke stukjes"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             [
               {
-                "type": "antwoord",
-                "blokken": [
-                  {
-                    "type": "strook",
-                    "delen": 5,
-                    "gekleurd": [
-                      1,
-                      2
-                    ],
-                    "breedte": 330,
-                    "hoogte": 70
-                  },
-                  {
-                    "type": "tekst",
-                    "tekst": "2 van de 5 gelijke stukjes"
-                  }
+                "type": "stappen",
+                "stappen": [
+                  "**Noemer**: in hoeveel gelijke stukjes?",
+                  "**Teller**: hoeveel stukjes neem je?",
+                  "**Zeg het**: … van de … gelijke stukjes"
                 ]
               }
             ]
@@ -497,7 +518,15 @@
                   1,
                   2
                 ],
-                "straal": 190
+                "straal": 120
+              },
+              {
+                "type": "stappen",
+                "stappen": [
+                  "**Noemer**: in hoeveel gelijke stukjes?",
+                  "**Teller**: hoeveel stukjes neem je?",
+                  "**Zeg het**: … van de … gelijke stukjes"
+                ]
               }
             ],
             [

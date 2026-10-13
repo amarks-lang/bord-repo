@@ -645,7 +645,7 @@ function annuleerStreek(){
 verf.addEventListener('pointerdown', function(e){
   if(actief !== null) return;                 /* tweede vinger negeren */
   if(e.pointerType === 'mouse' && e.button !== 0) return;   /* rechtermuisklik schrijft niet */
-  if(lesInfo.stappen && Les.tik($('les'), e.clientX, e.clientY)){ e.preventDefault(); return; }   /* stappenplan open/dicht */
+  if(lesInfo.stappen && Les.tik($('les'), e.clientX, e.clientY)){ e.preventDefault(); return; }   /* stappenplan: volgende stap of weer dicht */
   actief = e.pointerId;
   pipetGedaan = false;
   try{ verf.setPointerCapture(e.pointerId); }catch(err){}
@@ -725,10 +725,10 @@ document.addEventListener('keydown', function(e){
   var mod = e.ctrlKey || e.metaKey;
   if(mod && e.key.toLowerCase() === 'z'){ e.preventDefault(); e.shiftKey ? weerTerug() : terugdraai(); }
   else if(mod && e.key.toLowerCase() === 'y'){ e.preventDefault(); weerTerug(); }
-  else if(e.key === 'ArrowRight' || e.key === 'PageDown'){ e.preventDefault(); naar(pag+1); }
+  else if(e.key === 'ArrowRight' || e.key === 'PageDown'){ e.preventDefault(); volgende(); }
   else if(e.key === 'ArrowLeft' || e.key === 'PageUp'){ e.preventDefault(); naar(pag-1); }
   else if(e.key === 'Escape'){ sluitPop(); $('inst').classList.remove('open'); }
-  else if(!mod && (e.key === ' ' || e.key === 'Enter') && e.target === document.body){ e.preventDefault(); naar(pag+1); }
+  else if(!mod && (e.key === ' ' || e.key === 'Enter') && e.target === document.body){ e.preventDefault(); volgende(); }
   else if(!mod && e.key.toLowerCase() === 'a'){ wisselAntwoord(); }
   else if(!mod && e.key.toLowerCase() === 'n'){ wisselNotitie(); }
   else if(!mod && e.key.toLowerCase() === 's'){ Les.wisselStappen($('les')); }
@@ -994,7 +994,12 @@ function naar(n){
   pag = n; toonPagina(); bewaar();
 }
 $('vorige').addEventListener('click', function(){ naar(pag-1); });
-$('volgende').addEventListener('click', function(){ naar(pag+1); });
+/* volgende: eerst de volgende stap van het stappenplan (als die er is), dan pas de volgende pagina */
+function volgende(){
+  if(lesInfo.stappen && Les.volgendeStap($('les'))) return;
+  naar(pag+1);
+}
+$('volgende').addEventListener('click', volgende);
 $('nieuw').addEventListener('click', function(){
   stopStreek();
   bord.paginas.splice(pag+1, 0, legePagina(huidig().bg));
@@ -1194,7 +1199,7 @@ function start(){
   werkBijPen();
   $('dikte').value = bord.pen.dikte;
   toonPagina();
-  if(ZOEK.get('antwoord') === '1'){ wisselAntwoord(); Les.wisselStappen($('les')); }   /* controlebeeld: alles open */
+  if(ZOEK.get('antwoord') === '1'){ wisselAntwoord(); Les.allesTonen($('les')); }   /* controlebeeld: alles open */
   document.body.setAttribute('data-klaar', '1');
 }
 

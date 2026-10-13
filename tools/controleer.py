@@ -34,7 +34,7 @@ BLOKKEN = {
     "tekst":      ({"tekst"}, {"grootte", "midden"}),
     "som":        ({"tekst"}, {"grootte"}),
     "label":      ({"tekst"}, {"soort"}),
-    "stappen":    ({"stappen"}, {"titel", "breedte", "hoogte", "verborgen"}),
+    "stappen":    ({"stappen"}, {"titel", "breedte", "hoogte", "tonen"}),
     "stippen":    ({}, {"rijen", "kolommen", "afwisselen"}),
     "familie":    ({"totaal", "delen"}, set()),
     "breukdelen": ({"teller", "noemer"}, {"tellerTekst", "noemerTekst"}),
@@ -56,6 +56,7 @@ KEUZES = {
     "som": {"klein", "groot"},
     "label": {"goed", "fout", "neutraal"},
     "schrijfvak": {"hokjes", "lijnen", "leeg"},
+    "stappen": {"alles", "stap", "dicht"},
 }
 
 
@@ -86,7 +87,7 @@ def controleer_blok(b, waar, v, map_):
         if k != "type" and k not in nodig and k not in mag:
             v.let_op(waar, f"{t}: onbekend veld '{k}' wordt genegeerd")
     if t in KEUZES:
-        veld = {"tekst": "grootte", "som": "grootte", "label": "soort", "schrijfvak": "lijnen"}[t]
+        veld = {"tekst": "grootte", "som": "grootte", "label": "soort", "schrijfvak": "lijnen", "stappen": "tonen"}[t]
         if veld in b and b[veld] not in KEUZES[t]:
             v.fout(waar, f"{t}: '{veld}' moet een van {sorted(KEUZES[t])} zijn")
     if t in ("strook", "cirkel", "rechthoek"):

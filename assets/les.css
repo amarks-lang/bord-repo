@@ -59,6 +59,12 @@
 /* stappenplan dat dicht begint: de ruimte blijft, de inhoud verschijnt pas na een tik */
 .lstappen.kan-dicht{position:relative}
 .lstappen.kan-dicht .lstapkop::after{content:"\25B4 verbergen";margin-left:14px;font-size:20px;font-weight:400;color:var(--ink-soft)}
+/* stap voor stap: nog niet onthulde stappen tonen alleen hun nummer */
+.lstap.nog{border-style:dashed;border-color:#cfdde5;background:#f6f9fb}
+.lstap.nog>span{visibility:hidden}
+.lstap.nog>b{background:#c9d6de}
+.lstappen.stapsgewijs:has(.lstap.nog) .lstapkop::after{content:"tik voor de volgende stap";margin-left:14px;font-size:20px;font-weight:400;color:var(--ink-soft)}
+.lstappen.stapsgewijs:not(:has(.lstap.nog)) .lstapkop::after{content:"\25B4 verbergen";margin-left:14px;font-size:20px;font-weight:400;color:var(--ink-soft)}
 .lstappen.dicht>*:not(.lstapknop){visibility:hidden}
 .lstapknop{display:none}
 .lstappen.dicht .lstapknop{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;

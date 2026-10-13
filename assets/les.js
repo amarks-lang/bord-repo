@@ -125,14 +125,19 @@ var BLOK = {
           (st.klein ? '<small>' + opmaak(st.klein) + '</small>' : '') + '</span>';
       return '<div class="lstap"><b>' + (i + 1) + '</b>' + inh + '</div>';
     }).join('');
-    /* bij samen oefenen en de check begint het stappenplan dicht (tik om te tonen),
-       zodat leerlingen eerst zelf nadenken; "verborgen" in les.json gaat voor */
-    var dicht = typeof b.verborgen === 'boolean' ? b.verborgen : (context.fase === 'samen' || context.fase === 'check');
-    if(!dicht) return '<div class="lstappen"' + maat(b) + '>' + (b.titel ? '<h3>' + opmaak(b.titel) + '</h3>' : '') + items + '</div>';
+    /* stap voor stap (voordoen, samen, check): eerst alleen de nummers, elke tik onthult de volgende stap.
+       "tonen" in les.json gaat voor: "alles", "stap" of "dicht" (hele plan achter een kaart) */
+    var tonen = {alles:1, stap:1, dicht:1}[b.tonen] ? b.tonen
+      : ({voordoen:1, samen:1, check:1}[context.fase] ? 'stap' : 'alles');
+    var kop = b.titel || 'Stappenplan';
+    if(tonen === 'alles') return '<div class="lstappen"' + maat(b) + '>' + (b.titel ? '<h3>' + opmaak(b.titel) + '</h3>' : '') + items + '</div>';
     context.stappen = true;
+    if(tonen === 'stap')
+      return '<div class="lstappen stapsgewijs"' + maat(b) + '><h3 class="lstapkop">' + opmaak(kop) + '</h3>' +
+             items.replace(/class="lstap"/g, 'class="lstap nog"') + '</div>';
     return '<div class="lstappen kan-dicht dicht"' + maat(b) + '>' +
-      '<h3 class="lstapkop">' + opmaak(b.titel || 'Stappenplan') + '</h3>' + items +
-      '<div class="lstapknop"><span>' + opmaak(b.titel || 'Stappenplan') + '</span><small>tik om te tonen</small></div></div>';
+      '<h3 class="lstapkop">' + opmaak(kop) + '</h3>' + items +
+      '<div class="lstapknop"><span>' + opmaak(kop) + '</span><small>tik om te tonen</small></div></div>';
   },
   stippen: function(b){
     var r = getal(b.rijen, 4), k = getal(b.kolommen, 5), uit = '', i, j;
@@ -271,24 +276,54 @@ function schaal(laag, vak, maten){
   return over;
 }
 
-/* tik op het bord: raakt die een dicht stappenplan (of de kop van een open)? dan open/dicht en true */
+/* ---------- stappenplan stap voor stap ---------- */
+function plannen(laag){ return laag.querySelectorAll('.lstappen.stapsgewijs, .lstappen.kan-dicht'); }
+function binnen(el, x, y){
+  var r = el.getBoundingClientRect();
+  return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom;
+}
+/* volgende stap van één plan; true als er iets bij kwam */
+function onthul(k){
+  if(k.classList.contains('kan-dicht')){
+    if(!k.classList.contains('dicht')) return false;
+    k.classList.remove('dicht'); return true;
+  }
+  var nog = k.querySelector('.lstap.nog');
+  if(!nog) return false;
+  nog.classList.remove('nog'); return true;
+}
+function sluit(k){
+  if(k.classList.contains('kan-dicht')) k.classList.add('dicht');
+  var s = k.querySelectorAll('.lstap'), i;
+  if(k.classList.contains('stapsgewijs')) for(i = 0; i < s.length; i++) s[i].classList.add('nog');
+}
+/* tik op het bord: op de kop = weer dicht, ergens anders op het plan = volgende stap. true als het een plan raakte */
 function tik(laag, x, y){
-  var kaarten = laag.querySelectorAll('.lstappen.kan-dicht'), i;
-  for(i = 0; i < kaarten.length; i++){
-    var k = kaarten[i];
-    var doel = k.classList.contains('dicht') ? k : k.querySelector('.lstapkop');
-    var r = doel.getBoundingClientRect();
-    if(x >= r.left && x <= r.right && y >= r.top && y <= r.bottom){ k.classList.toggle('dicht'); return true; }
+  var l = plannen(laag), i;
+  for(i = 0; i < l.length; i++){
+    var k = l[i], kop = k.querySelector('.lstapkop');
+    if(!binnen(k, x, y)) continue;
+    var dicht = k.classList.contains('dicht');
+    if(!dicht && kop && binnen(kop, x, y)) sluit(k);
+    else onthul(k);
+    return true;
   }
   return false;
 }
-/* alle stappenplannen op deze pagina open of dicht (toets S) */
-function wisselStappen(laag){
-  var kaarten = laag.querySelectorAll('.lstappen.kan-dicht');
-  if(!kaarten.length) return;
-  var open = laag.querySelector('.lstappen.kan-dicht.dicht') !== null;
-  for(var i = 0; i < kaarten.length; i++) kaarten[i].classList.toggle('dicht', !open);
+/* volgende stap op deze pagina (pijltje, spatie, presenter, toets S); false = alles staat er al */
+function volgendeStap(laag){
+  var l = plannen(laag), i;
+  for(i = 0; i < l.length; i++) if(onthul(l[i])) return true;
+  return false;
 }
+/* toets S: volgende stap, en als alles er staat weer van voren af aan */
+function wisselStappen(laag){
+  if(volgendeStap(laag)) return;
+  var l = plannen(laag), i;
+  for(i = 0; i < l.length; i++) sluit(l[i]);
+}
+function allesTonen(laag){ while(volgendeStap(laag)){} }
 
-return {pagina: pagina, schaal: schaal, tik: tik, wisselStappen: wisselStappen, FASES: FASES, opmaak: opmaak};
+return {pagina: pagina, schaal: schaal, tik: tik, volgendeStap: volgendeStap, wisselStappen: wisselStappen,
+        allesTonen: allesTonen, FASES: FASES, opmaak: opmaak};
 })();
