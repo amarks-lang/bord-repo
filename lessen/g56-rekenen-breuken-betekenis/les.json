@@ -1,0 +1,593 @@
+{
+  "id": "g56-rekenen-breuken-betekenis",
+  "titel": "Wat betekent een breuk?",
+  "groep": "5/6",
+  "vak": "Rekenen",
+  "onderwerp": "Breuken",
+  "duur": 35,
+  "edi": true,
+  "gemaakt": "2026-10-13",
+  "samenvatting": "Teller en noemer: bij een plaatje de breuk opschrijven en zeggen: … van de … gelijke stukjes.",
+  "trefwoorden": [
+    "breuken",
+    "teller",
+    "noemer",
+    "gelijke stukjes",
+    "strook",
+    "cirkel"
+  ],
+  "lesdoel": "ontdekken wat een breuk betekent: ==[[3/5]]== betekent 3 van de 5 gelijke stukjes",
+  "succescriterium": "bij een plaatje de breuk kan opschrijven **én** kan zeggen: … van de … gelijke stukjes.",
+  "paginas": [
+    {
+      "fase": "lesdoel",
+      "blokken": [
+        {
+          "type": "doel"
+        },
+        {
+          "type": "naast",
+          "blokken": [
+            {
+              "type": "strook",
+              "delen": 5,
+              "gekleurd": [
+                1,
+                2,
+                3
+              ],
+              "breedte": 520,
+              "hoogte": 110
+            },
+            {
+              "type": "cirkel",
+              "delen": 5,
+              "gekleurd": [
+                1,
+                2,
+                3
+              ],
+              "straal": 100
+            }
+          ]
+        },
+        {
+          "type": "succes"
+        }
+      ]
+    },
+    {
+      "fase": "instructie",
+      "titel": "Wat betekent een breuk?",
+      "blokken": [
+        {
+          "type": "naast",
+          "blokken": [
+            {
+              "type": "cirkel",
+              "delen": 5,
+              "gekleurd": [
+                1,
+                2,
+                3
+              ],
+              "straal": 170
+            },
+            {
+              "type": "breukdelen",
+              "teller": 3,
+              "noemer": 5
+            }
+          ]
+        },
+        {
+          "type": "naast",
+          "blokken": [
+            {
+              "type": "strook",
+              "delen": 5,
+              "gekleurd": [
+                1,
+                2,
+                3
+              ],
+              "breedte": 560,
+              "hoogte": 100
+            },
+            {
+              "type": "tekst",
+              "tekst": "3 van de 5 gelijke stukjes\nje zegt: **drie vijfde**"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "instructie",
+      "titel": "Een breuk gaat over ==gelijke== stukjes",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "label",
+                "tekst": "gelijke stukjes",
+                "soort": "goed"
+              },
+              {
+                "type": "strook",
+                "delen": 5,
+                "gekleurd": [
+                  1,
+                  2,
+                  3
+                ],
+                "breedte": 520,
+                "hoogte": 90,
+                "onderschrift": "dit is ==[[3/5]]=="
+              },
+              {
+                "type": "cirkel",
+                "delen": 4,
+                "gekleurd": [
+                  1
+                ],
+                "straal": 105,
+                "onderschrift": "dit is ==[[1/4]]=="
+              }
+            ],
+            [
+              {
+                "type": "label",
+                "tekst": "niet gelijk",
+                "soort": "fout"
+              },
+              {
+                "type": "strook",
+                "delen": 5,
+                "gekleurd": [
+                  1,
+                  2,
+                  3
+                ],
+                "breedte": 520,
+                "hoogte": 90,
+                "verhoudingen": [
+                  0.09,
+                  0.33,
+                  0.12,
+                  0.27,
+                  0.19
+                ],
+                "onderschrift": "dit is **géén** [[3/5]]"
+              },
+              {
+                "type": "cirkel",
+                "delen": 4,
+                "gekleurd": [
+                  1
+                ],
+                "straal": 105,
+                "verhoudingen": [
+                  48,
+                  132,
+                  95,
+                  85
+                ],
+                "onderschrift": "dit is **géén** [[1/4]]"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Welke breuk is gekleurd?",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "strook",
+                "delen": 4,
+                "gekleurd": [
+                  1,
+                  2,
+                  3
+                ],
+                "breedte": 720,
+                "hoogte": 140
+              },
+              {
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "breukvak",
+                    "namen": true
+                  },
+                  {
+                    "type": "schrijfvak",
+                    "label": "zo zeg je het",
+                    "breedte": 500,
+                    "hoogte": 170
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "titel": "Stappenplan",
+                "stappen": [
+                  {
+                    "kop": "Noemer",
+                    "tekst": "In hoeveel gelijke stukjes is het geheel verdeeld?",
+                    "klein": "dat getal komt onder de streep"
+                  },
+                  {
+                    "kop": "Teller",
+                    "tekst": "Hoeveel stukjes neem je? Dat zijn de gekleurde stukjes.",
+                    "klein": "dat getal komt boven de streep"
+                  },
+                  {
+                    "kop": "Zeg het",
+                    "tekst": "… van de … gelijke stukjes"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Welke breuk is gekleurd?",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "cirkel",
+                "delen": 8,
+                "gekleurd": [
+                  1,
+                  2,
+                  4,
+                  6,
+                  7
+                ],
+                "straal": 140
+              },
+              {
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "breukvak",
+                    "namen": true
+                  },
+                  {
+                    "type": "schrijfvak",
+                    "label": "zo zeg je het",
+                    "breedte": 500,
+                    "hoogte": 170
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "titel": "Stappenplan",
+                "stappen": [
+                  {
+                    "kop": "Noemer",
+                    "tekst": "In hoeveel gelijke stukjes is het geheel verdeeld?",
+                    "klein": "dat getal komt onder de streep"
+                  },
+                  {
+                    "kop": "Teller",
+                    "tekst": "Hoeveel stukjes neem je? Dat zijn de gekleurde stukjes.",
+                    "klein": "dat getal komt boven de streep"
+                  },
+                  {
+                    "kop": "Zeg het",
+                    "tekst": "… van de … gelijke stukjes"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Kleur ==[[2/6]]== van de rechthoek",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "rechthoek",
+                "rijen": 2,
+                "kolommen": 3,
+                "gekleurd": [],
+                "vak": 125
+              },
+              {
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "schrijfvak",
+                    "label": "zo zeg je het",
+                    "breedte": 500,
+                    "hoogte": 170
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "titel": "Stappenplan",
+                "stappen": [
+                  {
+                    "kop": "Noemer",
+                    "tekst": "In hoeveel gelijke stukjes is het geheel verdeeld?",
+                    "klein": "dat getal komt onder de streep"
+                  },
+                  {
+                    "kop": "Teller",
+                    "tekst": "Hoeveel stukjes neem je? Dat zijn de gekleurde stukjes.",
+                    "klein": "dat getal komt boven de streep"
+                  },
+                  {
+                    "kop": "Zeg het",
+                    "tekst": "… van de … gelijke stukjes"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Welke breuk is gekleurd?",
+      "opdracht": "Schrijf de breuk op je wisbordje.",
+      "blokken": [
+        {
+          "type": "rechthoek",
+          "rijen": 2,
+          "kolommen": 4,
+          "gekleurd": [
+            2,
+            5,
+            7
+          ],
+          "vak": 110
+        },
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "breukvak",
+                    "namen": false
+                  },
+                  {
+                    "type": "schrijfvak",
+                    "label": "zo zeg je het",
+                    "breedte": 500,
+                    "hoogte": 170
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "[[3/8]]"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "3 van de 8 gelijke stukjes"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Teken een strook met 5 gelijke stukjes. Kleur ==[[2/5]]== van de strook.",
+      "opdracht": "Op je wisbordje.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "schrijfvak",
+                "label": "teken hier"
+              },
+              {
+                "type": "schrijfvak",
+                "label": "zo zeg je het",
+                "hoogte": 150
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "strook",
+                    "delen": 5,
+                    "gekleurd": [
+                      1,
+                      2
+                    ],
+                    "breedte": 330,
+                    "hoogte": 70
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "2 van de 5 gelijke stukjes"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Welke breuk hoort bij het gekleurde deel?",
+      "opdracht": "Schrijf de letter op je wisbordje.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            1,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "cirkel",
+                "delen": 5,
+                "gekleurd": [
+                  1,
+                  2
+                ],
+                "straal": 190
+              }
+            ],
+            [
+              {
+                "type": "keuzes",
+                "kolommen": 2,
+                "opties": [
+                  {
+                    "tekst": "[[2/3]]",
+                    "uitleg": "Fout: gekleurd tegen níet-gekleurd geteld."
+                  },
+                  {
+                    "tekst": "[[5/2]]",
+                    "uitleg": "Fout: teller en noemer omgedraaid."
+                  },
+                  {
+                    "tekst": "[[2/5]]",
+                    "goed": true,
+                    "uitleg": "Goed! 2 van de 5 gelijke stukjes."
+                  },
+                  {
+                    "tekst": "[[3/5]]",
+                    "uitleg": "Fout: dat is het níet-gekleurde deel."
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "check",
+      "titel": "Welke breuk is gekleurd? Maak de zin af.",
+      "opdracht": "Iedereen alleen, op je wisbordje: … van de … gelijke stukjes",
+      "blokken": [
+        {
+          "type": "strook",
+          "delen": 7,
+          "gekleurd": [
+            1,
+            3,
+            4,
+            6
+          ],
+          "breedte": 840,
+          "hoogte": 120
+        },
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "breukvak",
+                    "namen": false
+                  },
+                  {
+                    "type": "schrijfvak",
+                    "label": "zo zeg je het",
+                    "breedte": 500,
+                    "hoogte": 170
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "[[4/7]]"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "4 van de 7 gelijke stukjes"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

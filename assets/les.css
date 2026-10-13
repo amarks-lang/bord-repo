@@ -1,0 +1,170 @@
+/* Lesbord — opmaak van de leslaag (1600 × 900, schaalt mee met het bord).
+   Hoort bij assets/les.js. Zie LESFORMAAT.md voor de bloktypes. */
+
+:root{ --oranje:#ec6a1c; --vul:#f08a3c; }
+
+#les{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.lb{position:absolute;left:0;top:0;width:1600px;height:900px;transform-origin:0 0;
+    padding:48px 72px 52px;display:flex;flex-direction:column;gap:24px;color:var(--ink)}
+.lb.overloop{outline:6px solid #d64545;outline-offset:-6px}
+.lb p{margin:0}
+.lb b{font-weight:600}
+.hl{color:#d86313}
+
+/* ---------- kop van de pagina ---------- */
+.lkop{display:flex;flex-direction:column;gap:14px;flex:0 0 auto}
+.fase{align-self:flex-start;font-size:21px;font-weight:600;padding:6px 20px;border-radius:999px;
+      background:#e8f1da;color:var(--accent-deep)}
+.fase.f-voorkennis{background:#e3eef7;color:#24577e}
+.fase.f-samen{background:#fbe9da;color:#9e3a16}
+.fase.f-check{background:#f3aa19;color:#173141}
+.fase.f-zelfstandig{background:#e3eef7;color:#24577e}
+.lb h2{margin:0;font-size:54px;font-weight:500;line-height:1.1}
+.lopdracht{font-size:28px;color:var(--ink-soft)}
+.lhoekdoel{position:absolute;right:40px;top:30px;max-width:640px;font-size:19px;line-height:1.3;
+           color:var(--ink-soft);text-align:right}
+
+/* ---------- tekstblokken ---------- */
+.ldoel .lgaan{font-size:40px;color:#62737e}
+.ldoel h1{margin:0;font-size:66px;font-weight:500;line-height:1.12;color:var(--accent-deep);max-width:1400px}
+.lt{font-size:34px;line-height:1.3}
+.lt.klein{font-size:28px;color:var(--ink-soft)}
+.lt.groot{font-size:46px;font-weight:500}
+.lt.kop{font-size:54px;font-weight:500;line-height:1.1}
+.lt.midden{text-align:center}
+.lsom{font-size:84px;font-weight:500;white-space:nowrap;line-height:1.1}
+.lsom.groot{font-size:112px}
+.lsom.klein{font-size:62px}
+.lsucces{display:flex;align-items:center;gap:18px;font-size:30px;line-height:1.3;background:#fff;
+         border:2px solid #e4e8df;border-radius:22px;padding:18px 28px;align-self:flex-start}
+.lsucces i{font-style:normal;flex:0 0 44px;height:44px;border-radius:50%;background:var(--accent-deep);
+           color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px}
+.lsucces small{display:block;font-size:22px;color:var(--ink-soft)}
+.lpil{align-self:stretch;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:600;
+      border-radius:99px;padding:8px 22px}
+.lpil.goed{background:#eef6e3;color:var(--accent-deep);border:2px solid var(--accent)}
+.lpil.fout{background:#fbece6;color:#a8462a;border:2px solid var(--waarsch)}
+.lpil.neutraal{background:#f2f6f8;color:var(--ink);border:2px solid var(--line)}
+
+/* breuk: [[3/5]] */
+.br{display:inline-flex;flex-direction:column;align-items:stretch;vertical-align:middle;line-height:1;
+    margin:0 .1em;font-weight:600;text-align:center}
+.br>span{padding:0 .1em}
+.br>span:first-child{padding-bottom:.05em}
+.br>span+span{border-top:.07em solid currentColor;padding-top:.05em}
+
+/* ---------- stappenplan ---------- */
+.lstappen{display:flex;flex-direction:column;gap:16px;flex:0 0 auto}
+.lstappen h3{margin:0;font-size:30px;font-weight:600}
+.lstap{display:flex;gap:18px;align-items:center;font-size:28px;line-height:1.25;background:#fff;
+       border:2px solid #e4e8df;border-radius:20px;padding:16px 22px}
+.lstap>b{flex:0 0 46px;height:46px;border-radius:50%;background:var(--accent-deep);color:#fff;
+         display:flex;align-items:center;justify-content:center;font-weight:600}
+.lstap strong{display:block;font-weight:600;font-size:29px}
+.lstap small{display:block;font-size:21px;color:var(--ink-soft);margin-top:3px}
+
+/* ---------- plaatjes ---------- */
+.lbeeld{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:10px}
+.lbeeld svg{display:block}
+.lbeeld .londer{font-size:30px;text-align:center}
+.lstippen{display:grid;gap:22px;align-self:center}
+.lstippen i{width:62px;height:62px;border-radius:50%;background:#6fa32e}
+.lstippen i.licht{background:#a9cc7a}
+.lfam{display:flex;flex-direction:column;align-items:center;gap:22px;align-self:center;flex:0 0 auto}
+.lfam div{display:flex;gap:60px}
+.lbol{width:150px;height:150px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+      font-size:68px;font-weight:600;background:#fff;border:4px solid #6fa32e;color:var(--accent-deep)}
+.lbol.top{width:176px;height:176px;background:#f3aa19;border:0;color:#173141}
+.lbreukdelen{display:grid;grid-template-columns:auto 1fr;grid-template-rows:1fr 24px 1fr;
+             column-gap:34px;align-items:center;flex:0 0 auto}
+.lbreukdelen .groot{grid-column:1;grid-row:1 / span 3;font-size:150px;justify-self:center}
+.lbreukdelen .r{grid-column:2;font-size:30px;line-height:1.25;text-align:left}
+.lbreukdelen .r1{grid-row:1} .lbreukdelen .r2{grid-row:2;color:var(--ink-soft)} .lbreukdelen .r3{grid-row:3}
+.lafb{flex:0 1 auto;min-height:0;display:flex;justify-content:center}
+.lafb img{max-width:100%;max-height:100%;object-fit:contain;border-radius:12px}
+
+/* ---------- schrijfvakken ----------
+   --lhokB/--lhokH/--lhokM/--lpx en --ll1..--llp worden in Les.schaal() gezet,
+   zodat hokjes en lijnen na het schalen precies de maat van de schriften hebben. */
+.lvak{flex:1 1 0;min-height:110px;border:3px dashed #b9cbd6;border-radius:22px;position:relative;overflow:hidden;
+      background-color:#fff}
+.lvak.vast{flex:0 0 auto}
+.lvak.hokjes{
+  background-image:
+    linear-gradient(to right,  #b3c2dd var(--lpx,1px), transparent var(--lpx,1px)),
+    linear-gradient(to bottom, #b3c2dd var(--lpx,1px), transparent var(--lpx,1px));
+  background-size: var(--lhokB,48px) 100%, 100% var(--lhokH,80px)}
+#les.hulp .lvak.hokjes{
+  background-image:
+    linear-gradient(to right,  #b3c2dd var(--lpx,1px), transparent var(--lpx,1px)),
+    linear-gradient(to bottom, #b3c2dd var(--lpx,1px), transparent var(--lpx,1px)),
+    linear-gradient(to bottom, #dbe2f0 var(--lpx,1px), transparent var(--lpx,1px));
+  background-size: var(--lhokB,48px) 100%, 100% var(--lhokH,80px), 100% var(--lhokH,80px);
+  background-position: 0 0, 0 0, 0 var(--lhokM,40px)}
+#les.zone .lvak.hokjes{
+  background-image:
+    linear-gradient(to right,  #b3c2dd var(--lpx,1px), transparent var(--lpx,1px)),
+    linear-gradient(to bottom, #b3c2dd var(--lpx,1px), transparent var(--lpx,1px)),
+    linear-gradient(to bottom, transparent var(--lhokM,40px), rgba(70,90,200,.055) var(--lhokM,40px));
+  background-size: var(--lhokB,48px) 100%, 100% var(--lhokH,80px), 100% var(--lhokH,80px)}
+.lvak.lijnen{
+  background-image:repeating-linear-gradient(to bottom,
+    #c6d8e3 0 var(--lpx,1px),
+    transparent var(--lpx,1px) var(--ll1,60px),
+    #aac6d6 var(--ll1,60px) calc(var(--ll1,60px) + var(--lpx,1px)),
+    rgba(47,111,208,.07) calc(var(--ll1,60px) + var(--lpx,1px)) var(--ll2,100px),
+    #5f8fae var(--ll2,100px) calc(var(--ll2,100px) + 2.5 * var(--lpx,1px)),
+    transparent calc(var(--ll2,100px) + 2.5 * var(--lpx,1px)) var(--ll3,160px),
+    #c6d8e3 var(--ll3,160px) calc(var(--ll3,160px) + var(--lpx,1px)),
+    transparent calc(var(--ll3,160px) + var(--lpx,1px)) var(--llp,220px));
+  background-position:0 18px}
+.lvak>span{position:absolute;top:8px;left:12px;font-size:22px;color:#7f97a6;background:#fff;
+           padding:2px 10px;border-radius:8px}
+.lbreukvak{flex:0 0 auto;display:flex;flex-direction:column;align-items:stretch;width:230px;gap:0}
+.lbreukvak .lvak{flex:0 0 132px;min-height:0}
+.lbreukvak .streep{height:6px;border-radius:3px;background:var(--ink);margin:14px -8px}
+
+/* ---------- indeling ---------- */
+.lrij{display:flex;gap:40px;flex:1 1 0;min-height:0}
+.lkol{display:flex;flex-direction:column;gap:22px;min-height:0;min-width:0}
+.lnaast{display:flex;gap:40px;align-items:center;justify-content:space-evenly;flex:0 0 auto}
+.lnaast.vul{flex:1 1 0;min-height:0;align-items:stretch}
+.lraster{flex:1 1 0;min-height:0;display:grid;gap:22px}
+
+/* ---------- keuzes en antwoord ---------- */
+.lkeuzes{display:grid;gap:26px;flex:0 0 auto}
+.lkeuze{background:#fff;border:3px solid #e4e8df;border-radius:22px;padding:18px 22px;min-width:0;
+        display:flex;align-items:center;gap:18px}
+.lkeuze>b{flex:0 0 52px;height:52px;border-radius:50%;background:var(--ink);color:#fff;
+          display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:600}
+.lkeuze .lktekst{font-size:62px;font-weight:500;white-space:nowrap;line-height:1.1}
+.lkeuze .lkuitleg{flex:1;font-size:22px;line-height:1.25;color:var(--waarsch);visibility:hidden}
+#les.toon .lkeuze .lkuitleg{visibility:visible}
+#les.toon .lkeuze.goed{border-color:var(--accent);background:#eef6e3}
+#les.toon .lkeuze.goed .lkuitleg{color:var(--accent-deep)}
+#les.toon .lkeuze:not(.goed){opacity:.7}
+
+.antwoord{visibility:hidden;background:var(--accent-deep);color:#fbfaf5;border-radius:22px;flex:0 0 auto;
+          padding:22px 32px;display:flex;flex-direction:column;gap:8px;box-shadow:0 8px 24px rgba(23,49,65,.18)}
+.antwoord>small{font-size:21px;font-weight:600;opacity:.85;text-transform:uppercase;letter-spacing:.06em}
+.antwoord .lsom{font-size:66px}
+.antwoord .lt{font-size:28px}
+.antwoord .lt.klein{color:#dfe9d3}
+.antwoord .lbeeld .londer{font-size:26px}
+.antwoord .lbeeld{background:#fff;border-radius:14px;padding:10px;align-self:flex-start;color:var(--ink)}
+#les.toon .antwoord{visibility:visible}
+
+/* ---------- foutmelding (onbekend blok, les niet gevonden) ---------- */
+.lfout{border:3px solid #d64545;background:#fdeeee;color:#8a1f1f;border-radius:16px;padding:14px 20px;
+       font-size:24px;flex:0 0 auto}
+.lmelding{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:auto}
+.lmelding div{background:#fff;border:2px solid var(--line);border-radius:20px;padding:28px 34px;max-width:620px;
+              font-size:18px;line-height:1.45;box-shadow:0 10px 30px rgba(23,49,65,.15)}
+.lmelding h2{margin:0 0 8px;font-size:24px;font-weight:600}
+.lmelding a{color:var(--accent-deep)}
+
+/* notitie voor de leerkracht */
+#notitie{position:absolute;left:14px;bottom:14px;max-width:min(560px,80vw);z-index:6;display:none;
+         background:#fffbe8;border:2px solid #efd98a;border-radius:16px;padding:14px 18px;font-size:17px;
+         line-height:1.4;box-shadow:0 6px 18px rgba(23,49,65,.18);pointer-events:auto;white-space:pre-line}
+#notitie.open{display:block}

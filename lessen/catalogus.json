@@ -1,0 +1,41 @@
+{
+  "lessen": [
+    {
+      "id": "g56-rekenen-keersom-deelsom",
+      "titel": "Keersommen en deelsommen horen bij elkaar",
+      "groep": "5/6",
+      "vak": "Rekenen",
+      "onderwerp": "Keersommen en deelsommen",
+      "duur": 30,
+      "edi": true,
+      "gemaakt": "2026-10-13",
+      "samenvatting": "Bij een keersom de deelsommen maken en andersom, met de getallenfamilie van drie getallen.",
+      "trefwoorden": [
+        "keersom",
+        "deelsom",
+        "tafels",
+        "getallenfamilie",
+        "omgekeerde bewerking"
+      ]
+    },
+    {
+      "id": "g56-rekenen-breuken-betekenis",
+      "titel": "Wat betekent een breuk?",
+      "groep": "5/6",
+      "vak": "Rekenen",
+      "onderwerp": "Breuken",
+      "duur": 35,
+      "edi": true,
+      "gemaakt": "2026-10-13",
+      "samenvatting": "Teller en noemer: bij een plaatje de breuk opschrijven en zeggen: … van de … gelijke stukjes.",
+      "trefwoorden": [
+        "breuken",
+        "teller",
+        "noemer",
+        "gelijke stukjes",
+        "strook",
+        "cirkel"
+      ]
+    }
+  ]
+}

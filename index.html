@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lessen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#173141; --ink-soft:#5b7383; --line:#cfdde5; --bg:#fbfcfd; --kaart:#fff;
+    --accent:#7ab52c; --accent-deep:#4c7a12; --accent-zacht:#eef6e3;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Fredoka",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg)}
+  .wrap{max-width:1100px;margin:0 auto;padding:28px 16px 60px}
+  header{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-bottom:22px}
+  h1{margin:0;font-size:34px;font-weight:600;flex:1 1 auto}
+  a.knop{display:inline-flex;align-items:center;gap:8px;font-size:17px;font-weight:500;text-decoration:none;
+         color:var(--accent-deep);background:var(--accent-zacht);border:2px solid var(--accent);border-radius:12px;padding:9px 16px}
+  a.knop:hover{background:#e3f0d2}
+  .filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+  input,select{font-family:inherit;font-size:17px;padding:9px 12px;border:2px solid var(--line);border-radius:12px;
+               color:var(--ink);background:#fff}
+  input{flex:1 1 260px;min-width:0}
+  input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+  h2{font-size:22px;font-weight:600;margin:26px 0 12px}
+  .rooster{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+  .les{display:flex;flex-direction:column;gap:8px;background:var(--kaart);border:2px solid #e4e8df;border-radius:18px;
+       padding:16px 18px;text-decoration:none;color:inherit;transition:border-color .15s}
+  .les:hover{border-color:var(--accent)}
+  .les b{font-size:20px;font-weight:600;line-height:1.25}
+  .les p{margin:0;font-size:15px;line-height:1.4;color:var(--ink-soft)}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{font-size:13px;font-weight:500;padding:3px 10px;border-radius:99px;background:#f2f6f8;color:var(--ink-soft)}
+  .chip.edi{background:var(--accent-zacht);color:var(--accent-deep)}
+  .leeg{color:var(--ink-soft);font-size:17px}
+  @media (max-width:500px){ h1{font-size:28px} .rooster{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Lessen</h1>
+    <a class="knop" href="bord.html">Leeg bord</a>
+  </header>
+  <div class="filters">
+    <input id="zoek" type="search" placeholder="Zoek op titel, onderwerp of trefwoord" aria-label="Zoeken">
+    <select id="groep" aria-label="Groep"><option value="">Alle groepen</option></select>
+    <select id="vak" aria-label="Vak"><option value="">Alle vakken</option></select>
+  </div>
+  <main id="lijst"><p class="leeg">Lessen laden…</p></main>
+</div>
+<script>
+(function(){
+'use strict';
+var lessen = [];
+function $(id){ return document.getElementById(id); }
+function esc(s){ return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+/* zelfde opmaak als op het bord, maar platgeslagen: [[3/5]] wordt 3/5 */
+function plat(s){ return esc(s).replace(/\[\[\s*([^\]\/]+?)\s*\/\s*([^\]]+?)\s*\]\]/g,'$1/$2').replace(/\*\*|==|__/g,''); }
+
+function bewaarFilter(){
+  try{ localStorage.setItem('lessen-filter', JSON.stringify({groep:$('groep').value, vak:$('vak').value})); }catch(e){}
+}
+function haalFilter(){
+  try{ return JSON.parse(localStorage.getItem('lessen-filter') || '{}'); }catch(e){ return {}; }
+}
+function vulKeuze(sel, waarden){
+  waarden.forEach(function(w){ var o = document.createElement('option'); o.value = w; o.textContent = w; sel.appendChild(o); });
+}
+function toon(){
+  var q = $('zoek').value.trim().toLowerCase(), g = $('groep').value, v = $('vak').value;
+  var gefilterd = lessen.filter(function(l){
+    if(g && l.groep !== g) return false;
+    if(v && l.vak !== v) return false;
+    if(!q) return true;
+    var t = [l.titel, l.onderwerp, l.samenvatting, l.methode].concat(l.trefwoorden || []).join(' ').toLowerCase();
+    return t.indexOf(q) >= 0;
+  });
+  if(!gefilterd.length){ $('lijst').innerHTML = '<p class="leeg">Geen lessen gevonden.</p>'; return; }
+  var perVak = {};
+  gefilterd.forEach(function(l){ (perVak[l.vak] = perVak[l.vak] || []).push(l); });
+  $('lijst').innerHTML = Object.keys(perVak).sort().map(function(vak){
+    return '<h2>' + esc(vak) + '</h2><div class="rooster">' + perVak[vak].map(function(l){
+      var chips = ['Groep ' + l.groep];
+      if(l.onderwerp) chips.push(l.onderwerp);
+      if(l.duur) chips.push(l.duur + ' min');
+      return '<a class="les" href="bord.html?les=' + encodeURIComponent(l.id) + '">' +
+        '<div class="chips">' + chips.map(function(c){ return '<span class="chip">' + esc(c) + '</span>'; }).join('') +
+        (l.edi ? '<span class="chip edi">EDI</span>' : '') + '</div>' +
+        '<b>' + plat(l.titel) + '</b>' + (l.samenvatting ? '<p>' + plat(l.samenvatting) + '</p>' : '') + '</a>';
+    }).join('') + '</div>';
+  }).join('');
+}
+
+fetch('lessen/catalogus.json', {cache:'no-cache'})
+  .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(function(c){
+    lessen = (c && c.lessen) || [];
+    function uniek(k){ return lessen.map(function(l){ return l[k]; }).filter(function(x, i, a){ return x && a.indexOf(x) === i; }).sort(); }
+    vulKeuze($('groep'), uniek('groep'));
+    vulKeuze($('vak'), uniek('vak'));
+    var f = haalFilter();
+    if(f.groep && uniek('groep').indexOf(f.groep) >= 0) $('groep').value = f.groep;
+    if(f.vak && uniek('vak').indexOf(f.vak) >= 0) $('vak').value = f.vak;
+    toon();
+  })
+  .catch(function(){
+    $('lijst').innerHTML = '<p class="leeg">Het overzicht kon niet geladen worden. Open je dit bestand direct vanaf je computer? ' +
+      'Gebruik dan de website, of start <code>python3 -m http.server</code> in deze map.</p>';
+  });
+$('zoek').addEventListener('input', toon);
+$('groep').addEventListener('change', function(){ bewaarFilter(); toon(); });
+$('vak').addEventListener('change', function(){ bewaarFilter(); toon(); });
+})();
+</script>
+</body>
+</html>

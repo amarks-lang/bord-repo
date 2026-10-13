@@ -1,0 +1,140 @@
+{
+  "id": "g56-rekenen-keersom-deelsom",
+  "titel": "Keersommen en deelsommen horen bij elkaar",
+  "groep": "5/6",
+  "vak": "Rekenen",
+  "onderwerp": "Keersommen en deelsommen",
+  "duur": 30,
+  "edi": true,
+  "gemaakt": "2026-10-13",
+  "samenvatting": "Bij een keersom de deelsommen maken en andersom, met de getallenfamilie van drie getallen.",
+  "trefwoorden": ["keersom", "deelsom", "tafels", "getallenfamilie", "omgekeerde bewerking"],
+  "lesdoel": "bepalen welke keersommen en deelsommen bij elkaar horen",
+  "succescriterium": "bij een keersom de deelsom kan maken, en andersom.",
+  "paginas": [
+    {
+      "fase": "lesdoel",
+      "blokken": [
+        {"type": "doel"},
+        {"type": "succes"},
+        {"type": "schrijfvak"}
+      ]
+    },
+    {
+      "fase": "instructie",
+      "titel": "Keersom en deelsom horen bij elkaar",
+      "notitie": "Laat de stippen zien: 4 rijen van 5. Schrijf samen de keersom (4 × 5 = 20) en de deelsom (20 : 5 = 4).",
+      "blokken": [
+        {"type": "kolommen", "breedtes": [1, 2], "kolommen": [
+          [{"type": "stippen", "rijen": 4, "kolommen": 5}],
+          [{"type": "schrijfvak", "label": "keersom"}, {"type": "schrijfvak", "label": "deelsom"}]
+        ]}
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Van keersom naar deelsom",
+      "blokken": [
+        {"type": "kolommen", "breedtes": [2, 3], "kolommen": [
+          [{"type": "stappen", "stappen": [
+            "Zoek het grootste getal",
+            "Zet het vooraan bij de deelsom",
+            "Deel door een ander getal. Wat overblijft is het antwoord"
+          ]}],
+          [{"type": "som", "tekst": "3 × 6 = 18", "grootte": "groot"}, {"type": "schrijfvak", "label": "deelsommen"}]
+        ]}
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Van deelsom naar keersom",
+      "blokken": [
+        {"type": "kolommen", "breedtes": [2, 3], "kolommen": [
+          [{"type": "stappen", "stappen": [
+            "Lees de deelsom",
+            "Bedenk de keersom: hoe vaak 4 is 24?",
+            "Dat getal is het antwoord van de deelsom"
+          ]}],
+          [{"type": "som", "tekst": "24 : 4 = ==?==", "grootte": "groot"}, {"type": "schrijfvak", "label": "keersom"}]
+        ]}
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Drie getallen, vier sommen",
+      "blokken": [
+        {"type": "kolommen", "breedtes": [1, 2], "kolommen": [
+          [{"type": "familie", "totaal": 56, "delen": [7, 8]}],
+          [{"type": "raster", "kolommen": 2, "blokken": [
+            {"type": "schrijfvak", "label": "keersom"}, {"type": "schrijfvak", "label": "keersom"},
+            {"type": "schrijfvak", "label": "deelsom"}, {"type": "schrijfvak", "label": "deelsom"}
+          ]}]
+        ]}
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Welke deelsom hoort erbij?",
+      "blokken": [
+        {"type": "kolommen", "breedtes": [2, 1], "kolommen": [
+          [{"type": "som", "tekst": "5 × 6 = 30", "grootte": "groot"},
+           {"type": "tekst", "tekst": "Schrijf de deelsom op je wisbordje.", "grootte": "klein"},
+           {"type": "schrijfvak"}],
+          [{"type": "antwoord", "blokken": [
+            {"type": "som", "tekst": "30 : 6 = 5"},
+            {"type": "tekst", "tekst": "of 30 : 5 = 6"}
+          ]}]
+        ]}
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Welke keersom helpt je?",
+      "blokken": [
+        {"type": "kolommen", "breedtes": [2, 1], "kolommen": [
+          [{"type": "som", "tekst": "36 : 4 = ==?==", "grootte": "groot"},
+           {"type": "tekst", "tekst": "Schrijf de keersom én het antwoord op je wisbordje.", "grootte": "klein"},
+           {"type": "schrijfvak"}],
+          [{"type": "antwoord", "blokken": [
+            {"type": "som", "tekst": "9 × 4 = 36"},
+            {"type": "tekst", "tekst": "dus 36 : 4 = 9"}
+          ]}]
+        ]}
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Welke deelsom hoort bij 7 × 3 = 21?",
+      "blokken": [
+        {"type": "keuzes", "opties": [
+          {"tekst": "21 : 3 = 7", "goed": true},
+          {"tekst": "3 : 21 = 7"},
+          {"tekst": "21 : 7 = 4"}
+        ]},
+        {"type": "kolommen", "breedtes": [1, 1], "kolommen": [
+          [{"type": "schrijfvak"}],
+          [{"type": "antwoord", "blokken": [
+            {"type": "tekst", "tekst": "**A klopt:** 21 : 3 = 7 (en 21 : 7 = 3)"},
+            {"type": "tekst", "tekst": "**B** kan niet: het grootste getal hoort vooraan."},
+            {"type": "tekst", "tekst": "**C** klopt niet: 4 × 7 = 28, niet 21."}
+          ]}]
+        ]}
+      ]
+    },
+    {
+      "fase": "check",
+      "titel": "Welke twee deelsommen horen hierbij?",
+      "blokken": [
+        {"type": "kolommen", "breedtes": [2, 1], "kolommen": [
+          [{"type": "som", "tekst": "6 × 9 = ==54==", "grootte": "groot"},
+           {"type": "tekst", "tekst": "Schrijf ze allebei op je wisbordje. Iedereen werkt alleen.", "grootte": "klein"},
+           {"type": "schrijfvak"}],
+          [{"type": "antwoord", "blokken": [
+            {"type": "som", "tekst": "54 : 9 = 6"},
+            {"type": "som", "tekst": "54 : 6 = 9"}
+          ]}]
+        ]}
+      ]
+    }
+  ]
+}
