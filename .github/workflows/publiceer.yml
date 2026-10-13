@@ -1,28 +1,20 @@
-# Lesbord — controleert alle lessen en zet de site online (GitHub Pages).
-# Klopt een les niet, dan stopt het hier en blijft de vorige versie van de site staan.
-# Eenmalig instellen: Settings → Pages → Source: "GitHub Actions".
-name: Controleren en publiceren
+# Lesbord — controleert bij elke push alle lessen.
+# De site zelf komt online via GitHub Pages (Settings → Pages → Deploy from a branch: main, / (root)).
+# Gaat deze controle mis, dan krijg je een mail: draai dan `python3 tools/controleer.py` en herstel de les.
+name: Lessen controleren
 
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
 
 jobs:
-  publiceer:
+  controleer:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -30,14 +22,12 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Lessen controleren en overzicht maken
+      - name: Lessen controleren
         run: python tools/controleer.py
 
-      - uses: actions/configure-pages@v5
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
-      - id: deploy
-        uses: actions/deploy-pages@v4
+      - name: Is het overzicht bijgewerkt?
+        run: |
+          if ! git diff --quiet -- lessen/catalogus.json; then
+            echo "::error::lessen/catalogus.json is niet bijgewerkt. Draai python3 tools/controleer.py en commit het resultaat."
+            exit 1
+          fi

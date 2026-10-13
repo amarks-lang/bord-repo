@@ -18,7 +18,7 @@ bord-repo (deze, openbaar)          lessen-bron (privé)
 └─ tools/         controleren, schermafdrukken
 ```
 
-Lessen worden gemaakt in **lessen-bron** (met Claude Code), volgens **LESFORMAAT.md**, en als `les.json` in deze repo gezet. Bij elke push controleert GitHub alle lessen (`tools/controleer.py`) en zet de site online. Klopt er iets niet, dan blijft de vorige versie staan.
+Lessen worden gemaakt in **lessen-bron** (met Claude Code), volgens **LESFORMAAT.md**, en als `les.json` in deze repo gezet. Bij elke push zet GitHub Pages de site online en controleert een Action alle lessen (`tools/controleer.py`); klopt er iets niet, dan krijg je een mail. Draai de controle daarom altijd vóór het pushen.
 
 ## Zelf testen op je computer
 
@@ -33,4 +33,4 @@ en open http://localhost:8000.
 
 ## Eenmalig instellen
 
-Settings → Pages → Build and deployment → Source: **GitHub Actions**.
+Settings → Pages → Deploy from a branch: **main**, map **/ (root)** (staat al goed).
