@@ -321,9 +321,7 @@
             [
               {
                 "type": "schrijfvak"
-              }
-            ],
-            [
+              },
               {
                 "type": "antwoord",
                 "blokken": [
@@ -339,6 +337,16 @@
                     "type": "tekst",
                     "tekst": "**C** klopt niet: 4 × 7 = 28, niet 21."
                   }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Zoek het grootste getal",
+                  "Zet het vooraan bij de deelsom",
+                  "Deel door een ander getal. Wat overblijft is het antwoord"
                 ]
               }
             ]
