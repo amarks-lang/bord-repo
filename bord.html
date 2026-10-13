@@ -644,6 +644,7 @@ function annuleerStreek(){
 
 verf.addEventListener('pointerdown', function(e){
   if(actief !== null) return;                 /* tweede vinger negeren */
+  if(e.pointerType === 'mouse' && e.button !== 0) return;   /* rechtermuisklik schrijft niet */
   actief = e.pointerId;
   pipetGedaan = false;
   try{ verf.setPointerCapture(e.pointerId); }catch(err){}
@@ -671,7 +672,11 @@ verf.addEventListener('pointermove', function(e){
   });
 });
 
-/* twee vingers tikken = ongedaan maken */
+/* twee vingers tikken = ongedaan maken.
+   Veel digiborden (en Windows) maken van een tik met twee vingers ook een rechtermuisklik;
+   het menu van de browser zetten we op het bord daarom uit. */
+$('bord').addEventListener('contextmenu', function(e){ e.preventDefault(); });
+document.querySelector('.balk').addEventListener('contextmenu', function(e){ e.preventDefault(); });
 var tweeVinger = null;
 verf.addEventListener('touchstart', function(e){
   if(e.touches.length === 2){
