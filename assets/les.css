@@ -170,10 +170,12 @@
 .lstem .lsbalk{position:absolute;left:0;right:0;bottom:0;height:10px;background:#eef1ea}
 .lstem .lsbalk i{display:block;height:100%;width:0;background:var(--ink);transition:width .25s}
 #les.toon .lstem.goed .lsbalk i{background:var(--accent)}
-.lstemuitslag{visibility:hidden;align-self:flex-start;font-size:30px;font-weight:600;border-radius:999px;
-              padding:8px 24px;background:#fbefe2;color:var(--waarsch)}
-.lstemuitslag.sterk{background:#eef6e3;color:var(--accent-deep)}
-#les.toon .lstemuitslag{visibility:visible}
+.lstemuitslag{display:flex;align-items:center;gap:18px;font-size:30px;font-weight:600;margin:0}
+.lsttotaal{color:var(--ink)}
+.lstgoed{visibility:hidden;border-radius:999px;padding:8px 24px;background:#fbefe2;color:var(--waarsch)}
+.lstgoed:empty{display:none}
+.lstgoed.sterk{background:#eef6e3;color:var(--accent-deep)}
+#les.toon .lstgoed{visibility:visible}
 
 .antwoord{visibility:hidden;background:var(--accent-deep);color:#fbfaf5;border-radius:22px;flex:0 0 auto;
           padding:22px 32px;display:flex;flex-direction:column;gap:8px;box-shadow:0 8px 24px rgba(23,49,65,.18)}

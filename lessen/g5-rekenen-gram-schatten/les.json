@@ -5,7 +5,7 @@
   "vak": "Rekenen",
   "methode": "Groep 5, blok 2",
   "onderwerp": "Gewicht",
-  "duur": 50,
+  "duur": 30,
   "edi": true,
   "gemaakt": "2026-10-27",
   "samenvatting": "Ijkpunten voor 1, 10, 100, 500 en 1000 gram, en dan schatten en stemmen: echte voorwerpen raden en op de weegschaal controleren.",
@@ -25,7 +25,7 @@
   "paginas": [
     {
       "fase": "lesdoel",
-      "notitie": "Zet de weegschaal en de voorwerpen klaar op tafel. Materialen: keukenweegschaal (op 1 gram nauwkeurig), pak suiker, zak appels, 6 flesjes water, paperclip, munt van 2 euro, reep chocola van 100 g, pak spaghetti van 500 g, theelepel, en om te schatten: gum, lolly, schrift, appel, mok koffie, iPad met hoes, Chromebook. Hang A, B en C in drie hoeken van het lokaal.",
+      "notitie": "Zet de weegschaal en de voorwerpen klaar op tafel. Materialen: keukenweegschaal (op 1 gram nauwkeurig), pak suiker, zak appels, 6 flesjes water, paperclip, munt van 2 euro, reep chocola van 100 g, pak spaghetti van 500 g, theelepel, en om te schatten: gum, lolly, schrift, potje hobbylijm, koffiemok, iPad met hoes, Chromebook. Hang A, B en C in drie hoeken van het lokaal.",
       "blokken": [
         {
           "type": "doel"
@@ -227,7 +227,7 @@
     {
       "fase": "voordoen",
       "titel": "Hoeveel weegt een gum?",
-      "notitie": "Hardop: 'Ik voel de gum. Hij is veel lichter dan de reep chocola, dus minder dan 100 gram. Maar hij is zwaarder dan een paperclip en ook zwaarder dan de munt. Ik kies 20 gram.' Weeg de gum en schrijf het gewicht in het vak.",
+      "notitie": "Hardop: 'Ik voel de gum. Hij is veel lichter dan de reep chocola, dus veel minder dan 100 gram. Hij is wel zwaarder dan een paperclip. Ongeveer zo zwaar als de munt van 2 euro. Ik kies 10 gram.' Weeg de gum (gewogen: 9 tot 11 gram) en schrijf het gewicht in het vak.",
       "blokken": [
         {
           "type": "kolommen",
@@ -262,17 +262,17 @@
                 "kolommen": 1,
                 "opties": [
                   {
-                    "tekst": "2 gram",
-                    "uitleg": "Te licht: dat is zo licht als 2 paperclips."
+                    "tekst": "1 gram",
+                    "uitleg": "Te licht: zo licht als een paperclip."
                   },
                   {
-                    "tekst": "20 gram",
+                    "tekst": "10 gram",
                     "goed": true,
-                    "uitleg": "Goed: zwaarder dan de munt, veel lichter dan de reep."
+                    "uitleg": "Goed: ongeveer zo zwaar als een munt van 2 euro."
                   },
                   {
-                    "tekst": "200 gram",
-                    "uitleg": "Te zwaar: dat is zo zwaar als 2 repen chocola."
+                    "tekst": "100 gram",
+                    "uitleg": "Te zwaar: zo zwaar als een reep chocola."
                   }
                 ]
               },
@@ -289,315 +289,160 @@
     {
       "fase": "samen",
       "titel": "Hoeveel weegt een lolly?",
-      "opdracht": "Kies A, B of C: loop naar die hoek, of steek 1, 2 of 3 vingers op.",
-      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Denktijd: 10 tellen. Stemmen: hoek A, B of C. Tik op A, B of C om elke stem te turven (tik op het minnetje om er een af te halen). Beurtstokje: één leerling per hoek vertelt waarom. Weeg het voorwerp en schrijf het gewicht erbij; druk daarna op Antwoord: je ziet welk antwoord goed is en hoeveel procent dat koos. 80% of meer: door. Minder: nog een voorwerp erbij. Een lolly (zoals een Chupa Chups) weegt ongeveer 12 gram. Dat ligt het dichtst bij 20 gram.",
+      "opdracht": "Kies A, B of C: loop naar die hoek.",
+      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Stemmen: hoek A, B of C. Tik op A, B of C om elke stem te turven (minnetje = eentje eraf). Weeg het voorwerp en schrijf het gewicht in het vak. Druk daarna op Antwoord: je ziet welk antwoord goed is en hoeveel procent dat koos. Bij de leerkracht gewogen: 13 à 14 gram.",
       "blokken": [
         {
-          "type": "kolommen",
-          "breedtes": [
-            2,
-            3
-          ],
-          "kolommen": [
-            [
-              {
-                "type": "stappen",
-                "stappen": [
-                  {
-                    "tekst": "**Voel** hoe zwaar het is."
-                  },
-                  {
-                    "tekst": "**Vergelijk** met een ijkpunt.",
-                    "klein": "Lichter of zwaarder dan de reep chocola?"
-                  },
-                  {
-                    "tekst": "**Kies** het getal dat het dichtst in de buurt komt."
-                  },
-                  {
-                    "tekst": "**Controleer** op de weegschaal."
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "stemmen",
-                "kolommen": 1,
-                "opties": [
-                  {
-                    "tekst": "2 gram",
-                    "uitleg": "Te licht: zo licht als 2 paperclips."
-                  },
-                  {
-                    "tekst": "20 gram",
-                    "uitleg": "Goed: een lolly weegt ongeveer 10 tot 20 gram.",
-                    "goed": true
-                  },
-                  {
-                    "tekst": "200 gram",
-                    "uitleg": "Te zwaar: zo zwaar als 2 repen chocola."
-                  }
-                ]
-              },
-              {
-                "type": "schrijfvak",
-                "label": "Op de weegschaal",
-                "lijnen": "leeg"
-              }
-            ]
+          "type": "stemmen",
+          "kolommen": 1,
+          "opties": [
+            {
+              "tekst": "3 gram",
+              "uitleg": "Te licht: zo licht als 3 paperclips."
+            },
+            {
+              "tekst": "15 gram",
+              "uitleg": "Goed: iets zwaarder dan een gum.",
+              "goed": true
+            },
+            {
+              "tekst": "150 gram",
+              "uitleg": "Te zwaar: zwaarder dan een reep chocola."
+            }
           ]
+        },
+        {
+          "type": "schrijfvak",
+          "label": "Op de weegschaal",
+          "lijnen": "leeg"
         }
       ]
     },
     {
       "fase": "samen",
       "titel": "Hoeveel weegt een schrift?",
-      "opdracht": "Kies A, B of C: loop naar die hoek, of steek 1, 2 of 3 vingers op.",
-      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Denktijd: 10 tellen. Stemmen: hoek A, B of C. Tik op A, B of C om elke stem te turven (tik op het minnetje om er een af te halen). Beurtstokje: één leerling per hoek vertelt waarom. Weeg het voorwerp en schrijf het gewicht erbij; druk daarna op Antwoord: je ziet welk antwoord goed is en hoeveel procent dat koos. 80% of meer: door. Minder: nog een voorwerp erbij. Een dun schrift weegt ongeveer 50 tot 70 gram.",
+      "opdracht": "Kies A, B of C: loop naar die hoek.",
+      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Stemmen: hoek A, B of C. Tik op A, B of C om elke stem te turven (minnetje = eentje eraf). Weeg het voorwerp en schrijf het gewicht in het vak. Druk daarna op Antwoord: je ziet welk antwoord goed is en hoeveel procent dat koos. Bij de leerkracht gewogen: 61 à 62 gram.",
       "blokken": [
         {
-          "type": "kolommen",
-          "breedtes": [
-            2,
-            3
-          ],
-          "kolommen": [
-            [
-              {
-                "type": "stappen",
-                "stappen": [
-                  {
-                    "tekst": "**Voel** hoe zwaar het is."
-                  },
-                  {
-                    "tekst": "**Vergelijk** met een ijkpunt.",
-                    "klein": "Lichter of zwaarder dan de reep chocola?"
-                  },
-                  {
-                    "tekst": "**Kies** het getal dat het dichtst in de buurt komt."
-                  },
-                  {
-                    "tekst": "**Controleer** op de weegschaal."
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "stemmen",
-                "kolommen": 1,
-                "opties": [
-                  {
-                    "tekst": "6 gram",
-                    "uitleg": "Te licht: zo licht als 6 paperclips."
-                  },
-                  {
-                    "tekst": "60 gram",
-                    "uitleg": "Goed: lichter dan de reep chocola.",
-                    "goed": true
-                  },
-                  {
-                    "tekst": "600 gram",
-                    "uitleg": "Te zwaar: dat is meer dan een pak spaghetti."
-                  }
-                ]
-              },
-              {
-                "type": "schrijfvak",
-                "label": "Op de weegschaal",
-                "lijnen": "leeg"
-              }
-            ]
+          "type": "stemmen",
+          "kolommen": 1,
+          "opties": [
+            {
+              "tekst": "6 gram",
+              "uitleg": "Te licht: zo licht als 6 paperclips."
+            },
+            {
+              "tekst": "60 gram",
+              "uitleg": "Goed: lichter dan een reep chocola.",
+              "goed": true
+            },
+            {
+              "tekst": "600 gram",
+              "uitleg": "Te zwaar: meer dan een pak spaghetti."
+            }
           ]
+        },
+        {
+          "type": "schrijfvak",
+          "label": "Op de weegschaal",
+          "lijnen": "leeg"
         }
       ]
     },
     {
       "fase": "samen",
-      "titel": "Hoeveel weegt een appel?",
-      "opdracht": "Kies A, B of C: loop naar die hoek, of steek 1, 2 of 3 vingers op.",
-      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Denktijd: 10 tellen. Stemmen: hoek A, B of C. Tik op A, B of C om elke stem te turven (tik op het minnetje om er een af te halen). Beurtstokje: één leerling per hoek vertelt waarom. Weeg het voorwerp en schrijf het gewicht erbij; druk daarna op Antwoord: je ziet welk antwoord goed is en hoeveel procent dat koos. 80% of meer: door. Minder: nog een voorwerp erbij. Een appel weegt ongeveer 150 tot 200 gram. Link naar de zak appels van 1 kilo: hoeveel appels zitten erin?",
+      "titel": "Hoeveel weegt een vol potje hobbylijm?",
+      "opdracht": "Kies A, B of C: loop naar die hoek.",
+      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Stemmen: hoek A, B of C. Tik op A, B of C om elke stem te turven (minnetje = eentje eraf). Weeg het voorwerp en schrijf het gewicht in het vak. Druk daarna op Antwoord: je ziet welk antwoord goed is en hoeveel procent dat koos. Bij de leerkracht gewogen: 224 gram.",
       "blokken": [
         {
-          "type": "kolommen",
-          "breedtes": [
-            2,
-            3
-          ],
-          "kolommen": [
-            [
-              {
-                "type": "stappen",
-                "stappen": [
-                  {
-                    "tekst": "**Voel** hoe zwaar het is."
-                  },
-                  {
-                    "tekst": "**Vergelijk** met een ijkpunt.",
-                    "klein": "Lichter of zwaarder dan de reep chocola?"
-                  },
-                  {
-                    "tekst": "**Kies** het getal dat het dichtst in de buurt komt."
-                  },
-                  {
-                    "tekst": "**Controleer** op de weegschaal."
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "stemmen",
-                "kolommen": 1,
-                "opties": [
-                  {
-                    "tekst": "2 gram",
-                    "uitleg": "Te licht: zo licht als 2 paperclips."
-                  },
-                  {
-                    "tekst": "20 gram",
-                    "uitleg": "Te licht: dat is zo licht als een gum."
-                  },
-                  {
-                    "tekst": "200 gram",
-                    "uitleg": "Goed: ongeveer 2 repen chocola. In een zak van 1 kilo zitten 5 of 6 appels.",
-                    "goed": true
-                  }
-                ]
-              },
-              {
-                "type": "schrijfvak",
-                "label": "Op de weegschaal",
-                "lijnen": "leeg"
-              }
-            ]
+          "type": "stemmen",
+          "kolommen": 1,
+          "opties": [
+            {
+              "tekst": "2 gram",
+              "uitleg": "Te licht: zo licht als 2 paperclips."
+            },
+            {
+              "tekst": "20 gram",
+              "uitleg": "Te licht: dat is maar 2 gummen."
+            },
+            {
+              "tekst": "200 gram",
+              "uitleg": "Goed: zo zwaar als 2 repen chocola.",
+              "goed": true
+            }
           ]
+        },
+        {
+          "type": "schrijfvak",
+          "label": "Op de weegschaal",
+          "lijnen": "leeg"
         }
       ]
     },
     {
       "fase": "samen",
-      "titel": "Hoeveel weegt mijn mok koffie?",
-      "opdracht": "Kies A, B of C: loop naar die hoek, of steek 1, 2 of 3 vingers op.",
-      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Denktijd: 10 tellen. Stemmen: hoek A, B of C. Tik op A, B of C om elke stem te turven (tik op het minnetje om er een af te halen). Beurtstokje: één leerling per hoek vertelt waarom. Weeg het voorwerp en schrijf het gewicht erbij; druk daarna op Antwoord: je ziet welk antwoord goed is en hoeveel procent dat koos. 80% of meer: door. Minder: nog een voorwerp erbij. Een volle mok weegt ongeveer 350 tot 450 gram. Weeg eerst de lege mok erbij als je tijd hebt: hoeveel weegt de koffie zelf?",
+      "titel": "Hoeveel weegt mijn koffiemok?",
+      "opdracht": "Kies A, B of C: loop naar die hoek.",
+      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Stemmen: hoek A, B of C. Tik op A, B of C om elke stem te turven (minnetje = eentje eraf). Weeg het voorwerp en schrijf het gewicht in het vak. Druk daarna op Antwoord: je ziet welk antwoord goed is en hoeveel procent dat koos. Bij de leerkracht gewogen: 307 gram (lege mok).",
       "blokken": [
         {
-          "type": "kolommen",
-          "breedtes": [
-            2,
-            3
-          ],
-          "kolommen": [
-            [
-              {
-                "type": "stappen",
-                "stappen": [
-                  {
-                    "tekst": "**Voel** hoe zwaar het is."
-                  },
-                  {
-                    "tekst": "**Vergelijk** met een ijkpunt.",
-                    "klein": "Lichter of zwaarder dan de reep chocola?"
-                  },
-                  {
-                    "tekst": "**Kies** het getal dat het dichtst in de buurt komt."
-                  },
-                  {
-                    "tekst": "**Controleer** op de weegschaal."
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "stemmen",
-                "kolommen": 1,
-                "opties": [
-                  {
-                    "tekst": "4 gram",
-                    "uitleg": "Te licht: zo licht als 4 paperclips."
-                  },
-                  {
-                    "tekst": "40 gram",
-                    "uitleg": "Te licht: dat is zo licht als een schrift."
-                  },
-                  {
-                    "tekst": "400 gram",
-                    "uitleg": "Goed: bijna zo zwaar als een pak spaghetti.",
-                    "goed": true
-                  }
-                ]
-              },
-              {
-                "type": "schrijfvak",
-                "label": "Op de weegschaal",
-                "lijnen": "leeg"
-              }
-            ]
+          "type": "stemmen",
+          "kolommen": 1,
+          "opties": [
+            {
+              "tekst": "3 gram",
+              "uitleg": "Te licht: zo licht als 3 paperclips."
+            },
+            {
+              "tekst": "30 gram",
+              "uitleg": "Te licht: dat is lichter dan een schrift."
+            },
+            {
+              "tekst": "300 gram",
+              "uitleg": "Goed: iets meer dan een half pak spaghetti.",
+              "goed": true
+            }
           ]
+        },
+        {
+          "type": "schrijfvak",
+          "label": "Op de weegschaal",
+          "lijnen": "leeg"
         }
       ]
     },
     {
       "fase": "samen",
       "titel": "Hoeveel weegt een iPad met hoes?",
-      "opdracht": "Kies A, B of C: loop naar die hoek, of steek 1, 2 of 3 vingers op.",
-      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Denktijd: 10 tellen. Stemmen: hoek A, B of C. Tik op A, B of C om elke stem te turven (tik op het minnetje om er een af te halen). Beurtstokje: één leerling per hoek vertelt waarom. Weeg het voorwerp en schrijf het gewicht erbij; druk daarna op Antwoord: je ziet welk antwoord goed is en hoeveel procent dat koos. 80% of meer: door. Minder: nog een voorwerp erbij. Een iPad met hoes weegt ongeveer 650 tot 750 gram.",
+      "opdracht": "Kies A, B of C: loop naar die hoek.",
+      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Stemmen: hoek A, B of C. Tik op A, B of C om elke stem te turven (minnetje = eentje eraf). Weeg het voorwerp en schrijf het gewicht in het vak. Druk daarna op Antwoord: je ziet welk antwoord goed is en hoeveel procent dat koos. Bij de leerkracht gewogen: 735 gram.",
       "blokken": [
         {
-          "type": "kolommen",
-          "breedtes": [
-            2,
-            3
-          ],
-          "kolommen": [
-            [
-              {
-                "type": "stappen",
-                "stappen": [
-                  {
-                    "tekst": "**Voel** hoe zwaar het is."
-                  },
-                  {
-                    "tekst": "**Vergelijk** met een ijkpunt.",
-                    "klein": "Lichter of zwaarder dan de reep chocola?"
-                  },
-                  {
-                    "tekst": "**Kies** het getal dat het dichtst in de buurt komt."
-                  },
-                  {
-                    "tekst": "**Controleer** op de weegschaal."
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "stemmen",
-                "kolommen": 1,
-                "opties": [
-                  {
-                    "tekst": "7 gram",
-                    "uitleg": "Te licht: zo licht als 7 paperclips."
-                  },
-                  {
-                    "tekst": "70 gram",
-                    "uitleg": "Te licht: dat is maar iets zwaarder dan een schrift."
-                  },
-                  {
-                    "tekst": "700 gram",
-                    "uitleg": "Goed: zwaarder dan een pak spaghetti, lichter dan een pak suiker.",
-                    "goed": true
-                  }
-                ]
-              },
-              {
-                "type": "schrijfvak",
-                "label": "Op de weegschaal",
-                "lijnen": "leeg"
-              }
-            ]
+          "type": "stemmen",
+          "kolommen": 1,
+          "opties": [
+            {
+              "tekst": "7 gram",
+              "uitleg": "Te licht: zo licht als 7 paperclips."
+            },
+            {
+              "tekst": "70 gram",
+              "uitleg": "Te licht: maar iets zwaarder dan een schrift."
+            },
+            {
+              "tekst": "700 gram",
+              "uitleg": "Goed: zwaarder dan een pak spaghetti, lichter dan een pak suiker.",
+              "goed": true
+            }
           ]
+        },
+        {
+          "type": "schrijfvak",
+          "label": "Op de weegschaal",
+          "lijnen": "leeg"
         }
       ]
     },
@@ -606,13 +451,13 @@
       "label": "Bonus",
       "titel": "De Chromebook: meer of minder dan 1 kilo?",
       "opdracht": "Voel eerst het pak suiker, dan de Chromebook. Kies A of B.",
-      "notitie": "Een Chromebook weegt meestal 1100 tot 1400 gram: meer dan een pak suiker. Dat is meer dan 1 kilo, dus bij zware dingen zeggen we kilo.",
+      "notitie": "Gewogen: 1268 gram. Dat is meer dan een pak suiker, dus meer dan 1 kilo. Bij zware dingen zeggen we kilo.",
       "blokken": [
         {
           "type": "kolommen",
           "breedtes": [
             1,
-            3
+            4
           ],
           "kolommen": [
             [
@@ -625,11 +470,11 @@
             [
               {
                 "type": "stemmen",
-                "kolommen": 2,
+                "kolommen": 1,
                 "opties": [
                   {
                     "tekst": "minder dan 1 kilo",
-                    "uitleg": "Fout: de Chromebook is zwaarder dan het pak suiker."
+                    "uitleg": "Fout: zwaarder dan het pak suiker."
                   },
                   {
                     "tekst": "meer dan 1 kilo",
@@ -642,160 +487,6 @@
                 "type": "schrijfvak",
                 "label": "Op de weegschaal",
                 "lijnen": "leeg"
-              }
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "fase": "check",
-      "titel": "Laat zien wat je kunt",
-      "opdracht": "Iedereen werkt alleen. Schrijf a, b en c op je wisbordje.",
-      "notitie": "3 of 2 goed: zelfstandig aan het werk. 1 of 0 goed: aan de instructietafel, met de ijkpunten in de hand.",
-      "blokken": [
-        {
-          "type": "kolommen",
-          "breedtes": [
-            3,
-            1
-          ],
-          "kolommen": [
-            [
-              {
-                "type": "tekst",
-                "tekst": "**a**  Een paperclip weegt ongeveer:   1 g  ·  100 g  ·  1000 g"
-              },
-              {
-                "type": "tekst",
-                "tekst": "**b**  Een reep chocola weegt ongeveer:   10 g  ·  100 g  ·  1000 g"
-              },
-              {
-                "type": "tekst",
-                "tekst": "**c**  Een pak spaghetti weegt ongeveer:   5 g  ·  50 g  ·  500 g"
-              },
-              {
-                "type": "schrijfvak"
-              }
-            ],
-            [
-              {
-                "type": "antwoord",
-                "blokken": [
-                  {
-                    "type": "tekst",
-                    "tekst": "**a**  1 g"
-                  },
-                  {
-                    "type": "tekst",
-                    "tekst": "**b**  100 g"
-                  },
-                  {
-                    "type": "tekst",
-                    "tekst": "**c**  500 g"
-                  }
-                ]
-              }
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "fase": "zelfstandig",
-      "titel": "Het weegcircuit",
-      "opdracht": "Werk met je maatje. Schrijf in je schrift: voorwerp, ik schat, gewogen.",
-      "notitie": "Zet 2 of 3 weegstations neer. Tweetallen wisselen na 4 minuten. Loop rond en vraag: welk ijkpunt heb je gebruikt? Daarna verder in Snappet.",
-      "blokken": [
-        {
-          "type": "tekst",
-          "grootte": "groot",
-          "tekst": "potlood · lijmstift · leesboek · etui · drinkbeker"
-        },
-        {
-          "type": "kolommen",
-          "kolommen": [
-            [
-              {
-                "type": "label",
-                "tekst": "Instructietafel"
-              },
-              {
-                "type": "tekst",
-                "tekst": "Met de juf of meester, met de ijkpunten in je hand. Zwaarder of lichter dan de paperclip? Dan de reep?"
-              }
-            ],
-            [
-              {
-                "type": "label",
-                "tekst": "Basis"
-              },
-              {
-                "type": "tekst",
-                "tekst": "Schat, weeg en schrijf op. Klaar? Leg de vijf voorwerpen op volgorde van licht naar zwaar."
-              }
-            ],
-            [
-              {
-                "type": "label",
-                "tekst": "Uitdaging"
-              },
-              {
-                "type": "tekst",
-                "tekst": "Hoeveel paperclips wegen samen 100 gram?\nZoek iets van precies 50 gram, zonder eerst te wegen."
-              }
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "fase": "afsluiting",
-      "titel": "Terug naar het lesdoel",
-      "opdracht": "Schrijf de antwoorden op je wisbordje. Daarna: duim omhoog, opzij of omlaag.",
-      "notitie": "Vraag: welk ijkpunt hielp jou het meest? Vooruitblik: de volgende les rekenen we met kilo en gram.",
-      "blokken": [
-        {
-          "type": "kolommen",
-          "breedtes": [
-            3,
-            1
-          ],
-          "kolommen": [
-            [
-              {
-                "type": "som",
-                "tekst": "1 kilo = ==?== gram"
-              },
-              {
-                "type": "tekst",
-                "tekst": "Noem iets dat ongeveer **1 gram** weegt."
-              },
-              {
-                "type": "tekst",
-                "tekst": "Noem iets dat ongeveer **100 gram** weegt."
-              },
-              {
-                "type": "schrijfvak"
-              }
-            ],
-            [
-              {
-                "type": "antwoord",
-                "blokken": [
-                  {
-                    "type": "som",
-                    "tekst": "1000"
-                  },
-                  {
-                    "type": "tekst",
-                    "tekst": "paperclip"
-                  },
-                  {
-                    "type": "tekst",
-                    "tekst": "reep chocola"
-                  }
-                ]
               }
             ]
           ]
