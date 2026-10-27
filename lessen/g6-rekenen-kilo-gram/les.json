@@ -1,0 +1,669 @@
+{
+  "id": "g6-rekenen-kilo-gram",
+  "titel": "Kilo en gram: bakken met een pak suiker",
+  "groep": "6",
+  "vak": "Rekenen",
+  "methode": "Groep 6, blok 2",
+  "onderwerp": "Gewicht",
+  "duur": 40,
+  "edi": true,
+  "gemaakt": "2026-10-27",
+  "samenvatting": "1 kilo = 1000 gram: aanvullen tot 1 kilo, uitrekenen hoeveel suiker overblijft na een recept, en half en anderhalf pak.",
+  "trefwoorden": [
+    "kilo",
+    "gram",
+    "gewicht",
+    "kilogram",
+    "1000 gram",
+    "aanvullen",
+    "recept",
+    "kruidnoten"
+  ],
+  "lesdoel": "rekenen met kilo en gram: 1 kilo is 1000 gram",
+  "succescriterium": "kan uitrekenen hoeveel gram er nog bij moet tot 1 kilo, of hoeveel er over is.",
+  "lesdoelInHoek": true,
+  "paginas": [
+    {
+      "fase": "lesdoel",
+      "notitie": "Zet het pak suiker op tafel. Laat een paar kinderen het vasthouden: zo zwaar is 1 kilo.",
+      "blokken": [
+        {
+          "type": "doel"
+        },
+        {
+          "type": "succes"
+        },
+        {
+          "type": "naast",
+          "blokken": [
+            {
+              "type": "afbeelding",
+              "bron": "suiker-1kg.svg",
+              "alt": "Een pak suiker van 1 kilo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voorkennis",
+      "titel": "Hoeveel erbij?",
+      "opdracht": "Schrijf de antwoorden op je wisbordje.",
+      "notitie": "Kort: dit helpt straks. 6 + 4 = 10, dus 60 + 40 = 100 en 600 + 400 = 1000.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "6 + ==?== = 10"
+              },
+              {
+                "type": "som",
+                "tekst": "60 + ==?== = 100"
+              },
+              {
+                "type": "som",
+                "tekst": "600 + ==?== = 1000"
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "4"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "40"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "400"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "instructie",
+      "titel": "1 kilo = 1000 gram",
+      "notitie": "Laat het pak suiker zien: 1 kilo. Op het pak staat 1 kg. Kg is kilogram, of kilo. Het 2 kilo-gewicht: zo zwaar als 2 pakken. Waar kom je kilo en gram tegen? Supermarkt, weegschaal, recept.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            1,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "afbeelding",
+                "bron": "suiker-1kg.svg",
+                "alt": "Een pak suiker van 1 kilo"
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "1 kilo = ==1000== gram",
+                "grootte": "groot"
+              },
+              {
+                "type": "strook",
+                "delen": 10,
+                "gekleurd": [],
+                "breedte": 860,
+                "hoogte": 90,
+                "onderschrift": "Een pak suiker in 10 stukjes. Elk stukje is **100 gram**."
+              },
+              {
+                "type": "tekst",
+                "tekst": "Kilo schrijf je kort als **kg**. Gram als **g**."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "instructie",
+      "titel": "Een half pak en anderhalf pak",
+      "notitie": "Een half pak: 1000 gram in 2 gelijke stukken, dus 500 gram. Anderhalf pak: één heel pak en een half pak. 1000 + 500 = 1500 gram. Dat is 1,5 kilo, anderhalve kilo.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "label",
+                "tekst": "een half pak"
+              },
+              {
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "afbeelding",
+                    "bron": "suiker-500g.svg",
+                    "alt": "Een pak suiker van 500 gram"
+                  }
+                ]
+              },
+              {
+                "type": "som",
+                "tekst": "½ kilo = 500 gram",
+                "grootte": "klein"
+              }
+            ],
+            [
+              {
+                "type": "label",
+                "tekst": "anderhalf pak"
+              },
+              {
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "afbeelding",
+                    "bron": "suiker-1kg.svg",
+                    "alt": "Een pak van 1 kilo"
+                  },
+                  {
+                    "type": "afbeelding",
+                    "bron": "suiker-500g.svg",
+                    "alt": "Een pak van 500 gram"
+                  }
+                ]
+              },
+              {
+                "type": "som",
+                "tekst": "1000 + 500 = 1500 gram",
+                "grootte": "klein"
+              },
+              {
+                "type": "tekst",
+                "tekst": "1500 gram = **1,5 kilo**",
+                "grootte": "groot",
+                "midden": true
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Hoeveel moet erbij?",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "1 kilo = **1000 gram**"
+                  },
+                  {
+                    "tekst": "Hoeveel gram weet je al?",
+                    "klein": "Schrijf het op."
+                  },
+                  {
+                    "tekst": "Reken uit wat erbij moet of wat overblijft.",
+                    "klein": "Tel door met honderdjes tot 1000."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "tekst": "In de schaal zit **600 gram** suiker.\nHoeveel moet erbij voor 1 kilo?"
+              },
+              {
+                "type": "strook",
+                "delen": 10,
+                "gekleurd": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "breedte": 820,
+                "hoogte": 90,
+                "onderschrift": "600 gram"
+              },
+              {
+                "type": "som",
+                "tekst": "600 + ==?== = 1000"
+              },
+              {
+                "type": "schrijfvak"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "600 + 400 = 1000"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Hardop: '1 kilo is 1000 gram. Ik heb al 600 gram: 6 stukjes van de strook. Ik tel door: 700, 800, 900, 1000. Dat zijn 4 stukjes, dus 400 gram.' Zet de sprongen in het schrijfvak."
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Ik bak kruidnoten!",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "1 kilo = **1000 gram**"
+                  },
+                  {
+                    "tekst": "Hoeveel gram weet je al?",
+                    "klein": "Schrijf het op."
+                  },
+                  {
+                    "tekst": "Reken uit wat erbij moet of wat overblijft.",
+                    "klein": "Tel door met honderdjes tot 1000."
+                  }
+                ]
+              },
+              {
+                "type": "tekst",
+                "tekst": "**Recept kruidnoten**\n300 g bakmeel, ==200 g suiker==,\n150 g boter, kruiden en melk"
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "tekst": "Ik heb een **vol pak** suiker: 1 kilo.\nIk gebruik 200 gram. Hoeveel is er **over**?"
+              },
+              {
+                "type": "som",
+                "tekst": "1000 − 200 = ==?=="
+              },
+              {
+                "type": "schrijfvak"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "1000 − 200 = 800"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Doe het echt: schep (ongeveer) 200 gram uit het pak. Hardop: 'Het pak is 1000 gram. Ik haal er 200 af. 1000 − 200 = 800. Er zit nog 800 gram in.' Laat zien: 8 van de 10 stukjes zijn nog over."
+    },
+    {
+      "fase": "samen",
+      "titel": "Hoeveel moet erbij?",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "1 kilo = **1000 gram**"
+                  },
+                  {
+                    "tekst": "Hoeveel gram weet je al?",
+                    "klein": "Schrijf het op."
+                  },
+                  {
+                    "tekst": "Reken uit wat erbij moet of wat overblijft.",
+                    "klein": "Tel door met honderdjes tot 1000."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "tekst": "Op de weegschaal ligt **300 gram**.\nHoeveel moet erbij voor 1 kilo?"
+              },
+              {
+                "type": "strook",
+                "delen": 10,
+                "gekleurd": [
+                  1,
+                  2,
+                  3
+                ],
+                "breedte": 820,
+                "hoogte": 90,
+                "onderschrift": "300 gram"
+              },
+              {
+                "type": "som",
+                "tekst": "300 + ==?== = 1000"
+              },
+              {
+                "type": "schrijfvak"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "300 + 700 = 1000"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Fout 600 of 800? Laat doortellen op de strook: 400, 500 … 1000. Dat zijn 7 stukjes.",
+      "opdracht": "Schrijf het antwoord op je wisbordje."
+    },
+    {
+      "fase": "samen",
+      "titel": "Twee keer kruidnoten bakken",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "1 kilo = **1000 gram**"
+                  },
+                  {
+                    "tekst": "Hoeveel gram weet je al?",
+                    "klein": "Schrijf het op."
+                  },
+                  {
+                    "tekst": "Reken uit wat erbij moet of wat overblijft.",
+                    "klein": "Tel door met honderdjes tot 1000."
+                  }
+                ]
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "200 + 200 = 400"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "1000 − 400 = 600"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "tekst": "Ik bak **twee keer** kruidnoten.\nElke keer 200 gram suiker."
+              },
+              {
+                "type": "som",
+                "tekst": "200 + 200 = ==?=="
+              },
+              {
+                "type": "som",
+                "tekst": "1000 − ==?== = ==?=="
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Twee stappen: eerst hoeveel ik gebruik (400 gram), dan hoeveel er over is (600 gram).",
+      "opdracht": "Hoeveel suiker is er over? Schrijf de sommen op je wisbordje."
+    },
+    {
+      "fase": "samen",
+      "titel": "Hoeveel moet erbij?",
+      "opdracht": "Schrijf de letter op je wisbordje.",
+      "notitie": "850 is lastig: eerst naar 900 (50 erbij), dan naar 1000 (100 erbij). Samen 150.",
+      "blokken": [
+        {
+          "type": "som",
+          "tekst": "850 gram + ==?== = 1 kilo",
+          "grootte": "groot"
+        },
+        {
+          "type": "strook",
+          "delen": 10,
+          "gekleurd": [],
+          "breedte": 860,
+          "hoogte": 90,
+          "onderschrift": "Tip: eerst naar 900, dan naar 1000."
+        },
+        {
+          "type": "keuzes",
+          "kolommen": 2,
+          "opties": [
+            {
+              "tekst": "250 gram",
+              "uitleg": "Fout: 850 + 250 = 1100. Je telde 100 te veel."
+            },
+            {
+              "tekst": "150 gram",
+              "goed": true,
+              "uitleg": "Goed: 850 + 50 = 900, en 900 + 100 = 1000."
+            },
+            {
+              "tekst": "50 gram",
+              "uitleg": "Fout: dan kom je op 900, nog niet op 1000."
+            },
+            {
+              "tekst": "1850 gram",
+              "uitleg": "Fout: je telde 850 en 1000 bij elkaar op."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Hoeveel gram is het?",
+      "opdracht": "Schrijf de antwoorden op je wisbordje.",
+      "notitie": "Pak het 2 kilo-gewicht erbij: 2 kilo = 2 pakken = 2000 gram.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "anderhalf pak = ==?== gram"
+              },
+              {
+                "type": "som",
+                "tekst": "2 kilo = ==?== gram"
+              },
+              {
+                "type": "som",
+                "tekst": "een half pak = ==?== gram"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "1500"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "2000"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "500"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "check",
+      "titel": "Laat zien wat je kunt",
+      "opdracht": "Iedereen werkt alleen. Schrijf a, b en c op je wisbordje.",
+      "notitie": "3 of 2 goed → zelfstandig. 1 of 0 goed → instructietafel.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "**a**  400 gram + ==?== = 1 kilo",
+                "grootte": "klein"
+              },
+              {
+                "type": "tekst",
+                "tekst": "**b**  Ik bak een taart met **300 gram** suiker.\n      Ik had een vol pak van 1 kilo. Hoeveel is er over?"
+              },
+              {
+                "type": "som",
+                "tekst": "**c**  1,5 kilo = ==?== gram",
+                "grootte": "klein"
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "tekst",
+                    "tekst": "**a**  600 gram"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "**b**  700 gram"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "**c**  1500 gram"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "afsluiting",
+      "titel": "Hoe vaak kan ik kruidnoten bakken?",
+      "opdracht": "Met één pak suiker van 1 kilo. Elke keer 200 gram.",
+      "notitie": "Terug naar het lesdoel: 1 kilo = 1000 gram. Kleur samen per keer 2 stukjes in: 200, 400, 600, 800, 1000. Vijf keer! Lukte het om uit te rekenen wat erbij moet of wat overblijft? Duim omhoog, opzij of omlaag.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "tekst",
+                "tekst": "**Recept kruidnoten**\n300 g bakmeel, ==200 g suiker==,\n150 g boter, kruiden en melk"
+              },
+              {
+                "type": "strook",
+                "delen": 10,
+                "gekleurd": [],
+                "breedte": 760,
+                "hoogte": 90,
+                "onderschrift": "1 pak = 1000 gram"
+              }
+            ],
+            [
+              {
+                "type": "schrijfvak"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "5 keer"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "5 × 200 = 1000"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

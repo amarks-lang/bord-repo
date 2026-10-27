@@ -38,6 +38,28 @@
       ]
     },
     {
+      "id": "g6-rekenen-kilo-gram",
+      "titel": "Kilo en gram: bakken met een pak suiker",
+      "groep": "6",
+      "vak": "Rekenen",
+      "methode": "Groep 6, blok 2",
+      "onderwerp": "Gewicht",
+      "duur": 40,
+      "edi": true,
+      "gemaakt": "2026-10-27",
+      "samenvatting": "1 kilo = 1000 gram: aanvullen tot 1 kilo, uitrekenen hoeveel suiker overblijft na een recept, en half en anderhalf pak.",
+      "trefwoorden": [
+        "kilo",
+        "gram",
+        "gewicht",
+        "kilogram",
+        "1000 gram",
+        "aanvullen",
+        "recept",
+        "kruidnoten"
+      ]
+    },
+    {
       "id": "g5-rekenen-aanzichten",
       "titel": "Voor-, boven- en zijaanzicht",
       "groep": "5",
