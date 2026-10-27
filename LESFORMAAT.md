@@ -136,6 +136,7 @@ Het antwoord is verborgen tot je op **Antwoord** drukt (of toets A).
 |---|---|---|
 | `antwoord` | `tekst` en/of `blokken` | groen antwoordvak. In `blokken` mag: `som`, `tekst`, `strook`, `cirkel`, `rechthoek`, `getallenlijn`, `bouwwerk`. |
 | `keuzes` | `opties`, `kolommen`? | 2 tot 6 keuzes A, B, C …; een optie is `{"tekst", "goed"?, "uitleg"?}`. Bij Antwoord licht de goede op en verschijnt de uitleg. Zet bij foute opties in de uitleg welke denkfout het is. |
+| `stemmen` | `opties`, `kolommen`? | als `keuzes`, maar de klas stemt (hoeken van het lokaal, vingers) en jij turft: **tik op een kaart = +1**, tik op het minnetje = −1. Bij Antwoord licht de goede op en staat eronder hoeveel procent goed koos (groen vanaf 80%). De stemmen blijven bewaard in de browser; **⚙ → Les opnieuw beginnen** wist ze. |
 
 ### Indeling
 

@@ -290,7 +290,7 @@
       "fase": "samen",
       "titel": "Hoeveel weegt een lolly?",
       "opdracht": "Kies A, B of C: loop naar die hoek, of steek 1, 2 of 3 vingers op.",
-      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Denktijd: 10 tellen. Stemmen: hoek A, B of C. Turf in het schrijfvak hoeveel leerlingen er in elke hoek staan. Beurtstokje: één leerling per hoek vertelt waarom. Weeg het voorwerp en schrijf het gewicht erbij; druk daarna op Antwoord. Een lolly (zoals een Chupa Chups) weegt ongeveer 12 gram. Dat ligt het dichtst bij 20 gram.",
+      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Denktijd: 10 tellen. Stemmen: hoek A, B of C. Tik op A, B of C om elke stem te turven (tik op het minnetje om er een af te halen). Beurtstokje: één leerling per hoek vertelt waarom. Weeg het voorwerp en schrijf het gewicht erbij; druk daarna op Antwoord: je ziet welk antwoord goed is en hoeveel procent dat koos. 80% of meer: door. Minder: nog een voorwerp erbij. Een lolly (zoals een Chupa Chups) weegt ongeveer 12 gram. Dat ligt het dichtst bij 20 gram.",
       "blokken": [
         {
           "type": "kolommen",
@@ -321,7 +321,7 @@
             ],
             [
               {
-                "type": "keuzes",
+                "type": "stemmen",
                 "kolommen": 1,
                 "opties": [
                   {
@@ -341,7 +341,7 @@
               },
               {
                 "type": "schrijfvak",
-                "label": "Turven en wegen",
+                "label": "Op de weegschaal",
                 "lijnen": "leeg"
               }
             ]
@@ -353,7 +353,7 @@
       "fase": "samen",
       "titel": "Hoeveel weegt een schrift?",
       "opdracht": "Kies A, B of C: loop naar die hoek, of steek 1, 2 of 3 vingers op.",
-      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Denktijd: 10 tellen. Stemmen: hoek A, B of C. Turf in het schrijfvak hoeveel leerlingen er in elke hoek staan. Beurtstokje: één leerling per hoek vertelt waarom. Weeg het voorwerp en schrijf het gewicht erbij; druk daarna op Antwoord. Een dun schrift weegt ongeveer 50 tot 70 gram.",
+      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Denktijd: 10 tellen. Stemmen: hoek A, B of C. Tik op A, B of C om elke stem te turven (tik op het minnetje om er een af te halen). Beurtstokje: één leerling per hoek vertelt waarom. Weeg het voorwerp en schrijf het gewicht erbij; druk daarna op Antwoord: je ziet welk antwoord goed is en hoeveel procent dat koos. 80% of meer: door. Minder: nog een voorwerp erbij. Een dun schrift weegt ongeveer 50 tot 70 gram.",
       "blokken": [
         {
           "type": "kolommen",
@@ -384,7 +384,7 @@
             ],
             [
               {
-                "type": "keuzes",
+                "type": "stemmen",
                 "kolommen": 1,
                 "opties": [
                   {
@@ -404,7 +404,7 @@
               },
               {
                 "type": "schrijfvak",
-                "label": "Turven en wegen",
+                "label": "Op de weegschaal",
                 "lijnen": "leeg"
               }
             ]
@@ -416,7 +416,7 @@
       "fase": "samen",
       "titel": "Hoeveel weegt een appel?",
       "opdracht": "Kies A, B of C: loop naar die hoek, of steek 1, 2 of 3 vingers op.",
-      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Denktijd: 10 tellen. Stemmen: hoek A, B of C. Turf in het schrijfvak hoeveel leerlingen er in elke hoek staan. Beurtstokje: één leerling per hoek vertelt waarom. Weeg het voorwerp en schrijf het gewicht erbij; druk daarna op Antwoord. Een appel weegt ongeveer 150 tot 200 gram. Link naar de zak appels van 1 kilo: hoeveel appels zitten erin?",
+      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Denktijd: 10 tellen. Stemmen: hoek A, B of C. Tik op A, B of C om elke stem te turven (tik op het minnetje om er een af te halen). Beurtstokje: één leerling per hoek vertelt waarom. Weeg het voorwerp en schrijf het gewicht erbij; druk daarna op Antwoord: je ziet welk antwoord goed is en hoeveel procent dat koos. 80% of meer: door. Minder: nog een voorwerp erbij. Een appel weegt ongeveer 150 tot 200 gram. Link naar de zak appels van 1 kilo: hoeveel appels zitten erin?",
       "blokken": [
         {
           "type": "kolommen",
@@ -447,7 +447,7 @@
             ],
             [
               {
-                "type": "keuzes",
+                "type": "stemmen",
                 "kolommen": 1,
                 "opties": [
                   {
@@ -467,7 +467,7 @@
               },
               {
                 "type": "schrijfvak",
-                "label": "Turven en wegen",
+                "label": "Op de weegschaal",
                 "lijnen": "leeg"
               }
             ]
@@ -479,7 +479,7 @@
       "fase": "samen",
       "titel": "Hoeveel weegt mijn mok koffie?",
       "opdracht": "Kies A, B of C: loop naar die hoek, of steek 1, 2 of 3 vingers op.",
-      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Denktijd: 10 tellen. Stemmen: hoek A, B of C. Turf in het schrijfvak hoeveel leerlingen er in elke hoek staan. Beurtstokje: één leerling per hoek vertelt waarom. Weeg het voorwerp en schrijf het gewicht erbij; druk daarna op Antwoord. Een volle mok weegt ongeveer 350 tot 450 gram. Weeg eerst de lege mok erbij als je tijd hebt: hoeveel weegt de koffie zelf?",
+      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Denktijd: 10 tellen. Stemmen: hoek A, B of C. Tik op A, B of C om elke stem te turven (tik op het minnetje om er een af te halen). Beurtstokje: één leerling per hoek vertelt waarom. Weeg het voorwerp en schrijf het gewicht erbij; druk daarna op Antwoord: je ziet welk antwoord goed is en hoeveel procent dat koos. 80% of meer: door. Minder: nog een voorwerp erbij. Een volle mok weegt ongeveer 350 tot 450 gram. Weeg eerst de lege mok erbij als je tijd hebt: hoeveel weegt de koffie zelf?",
       "blokken": [
         {
           "type": "kolommen",
@@ -510,7 +510,7 @@
             ],
             [
               {
-                "type": "keuzes",
+                "type": "stemmen",
                 "kolommen": 1,
                 "opties": [
                   {
@@ -530,7 +530,7 @@
               },
               {
                 "type": "schrijfvak",
-                "label": "Turven en wegen",
+                "label": "Op de weegschaal",
                 "lijnen": "leeg"
               }
             ]
@@ -542,7 +542,7 @@
       "fase": "samen",
       "titel": "Hoeveel weegt een iPad met hoes?",
       "opdracht": "Kies A, B of C: loop naar die hoek, of steek 1, 2 of 3 vingers op.",
-      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Denktijd: 10 tellen. Stemmen: hoek A, B of C. Turf in het schrijfvak hoeveel leerlingen er in elke hoek staan. Beurtstokje: één leerling per hoek vertelt waarom. Weeg het voorwerp en schrijf het gewicht erbij; druk daarna op Antwoord. Een iPad met hoes weegt ongeveer 650 tot 750 gram.",
+      "notitie": "Laat het voorwerp zien en door 2 of 3 leerlingen voelen. Denktijd: 10 tellen. Stemmen: hoek A, B of C. Tik op A, B of C om elke stem te turven (tik op het minnetje om er een af te halen). Beurtstokje: één leerling per hoek vertelt waarom. Weeg het voorwerp en schrijf het gewicht erbij; druk daarna op Antwoord: je ziet welk antwoord goed is en hoeveel procent dat koos. 80% of meer: door. Minder: nog een voorwerp erbij. Een iPad met hoes weegt ongeveer 650 tot 750 gram.",
       "blokken": [
         {
           "type": "kolommen",
@@ -573,7 +573,7 @@
             ],
             [
               {
-                "type": "keuzes",
+                "type": "stemmen",
                 "kolommen": 1,
                 "opties": [
                   {
@@ -593,7 +593,7 @@
               },
               {
                 "type": "schrijfvak",
-                "label": "Turven en wegen",
+                "label": "Op de weegschaal",
                 "lijnen": "leeg"
               }
             ]
@@ -624,7 +624,7 @@
             ],
             [
               {
-                "type": "keuzes",
+                "type": "stemmen",
                 "kolommen": 2,
                 "opties": [
                   {

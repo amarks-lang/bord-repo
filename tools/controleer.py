@@ -47,6 +47,7 @@ BLOKKEN = {
     "schrijfvak": ({}, {"label", "lijnen", "breedte", "hoogte"}),
     "breukvak":   ({}, {"namen"}),
     "keuzes":     ({"opties"}, {"kolommen"}),
+    "stemmen":    ({"opties"}, {"kolommen"}),
     "antwoord":   ({}, {"tekst", "blokken"}),
     "kolommen":   ({"kolommen"}, {"breedtes"}),
     "naast":      ({"blokken"}, {"vul"}),
@@ -145,15 +146,15 @@ def controleer_blok(b, waar, v, map_):
             v.fout(waar, "afbeelding: 'bron' is alleen een bestandsnaam in de lesmap")
         elif not (map_ / bron).exists():
             v.fout(waar, f"afbeelding: bestand '{bron}' staat niet in de lesmap")
-    if t == "keuzes":
+    if t in ("keuzes", "stemmen"):
         opties = b.get("opties", [])
         if not isinstance(opties, list) or not 2 <= len(opties) <= 6:
-            v.fout(waar, "keuzes: 2 tot 6 opties")
+            v.fout(waar, f"{t}: 2 tot 6 opties")
         else:
             for i, o in enumerate(opties):
                 if not isinstance(o, dict) or not o.get("tekst"):
-                    v.fout(waar, f"keuzes: optie {i + 1} heeft geen 'tekst'")
-            if sum(1 for o in opties if isinstance(o, dict) and o.get("goed")) == 0:
+                    v.fout(waar, f"{t}: optie {i + 1} heeft geen 'tekst'")
+            if t == "keuzes" and sum(1 for o in opties if isinstance(o, dict) and o.get("goed")) == 0:
                 v.let_op(waar, "keuzes: geen optie met \"goed\": true")
     if t == "familie" and (not isinstance(b.get("delen"), list) or len(b["delen"]) != 2):
         v.fout(waar, "familie: 'delen' moet twee getallen zijn")
@@ -171,7 +172,7 @@ def controleer_blok(b, waar, v, map_):
         if not b.get("tekst") and not b.get("blokken"):
             v.fout(waar, "antwoord: 'tekst' of 'blokken' nodig")
         for i, x in enumerate(b.get("blokken", [])):
-            if isinstance(x, dict) and x.get("type") in ("antwoord", "kolommen", "schrijfvak", "keuzes"):
+            if isinstance(x, dict) and x.get("type") in ("antwoord", "kolommen", "schrijfvak", "keuzes", "stemmen"):
                 v.fout(waar, f"antwoord: geen {x.get('type')} binnen een antwoord")
             controleer_blok(x, f"{waar} > antwoord[{i + 1}]", v, map_)
     if t == "kolommen":
