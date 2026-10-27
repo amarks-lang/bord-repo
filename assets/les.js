@@ -294,6 +294,24 @@ var BLOK = {
     if(opties.some(function(o){ return o.goed || o.uitleg; })) context.antwoord = true;
     return '<div class="lkeuzes" style="grid-template-columns:repeat(' + k + ',1fr)">' + uit + '</div>';
   },
+  stemmen: function(b){
+    var opties = lijst(b.opties), k = getal(b.kolommen, opties.length <= 3 ? opties.length : 2);
+    var id = context.pag + '-' + (context.stemNr++);
+    var tel = stemTellingen()[id] || [];
+    context.stemmen = true;
+    if(opties.some(function(o){ return o.goed || o.uitleg; })) context.antwoord = true;
+    var uit = opties.map(function(o, i){
+      return '<div class="lkeuze lstem' + (o.goed ? ' goed' : '') + '" data-i="' + i + '"><b>' + String.fromCharCode(65 + i) + '</b>' +
+             '<span class="lktekst">' + opmaak(o.tekst) + '</span>' +
+             (o.uitleg ? '<span class="lkuitleg">' + opmaak(o.uitleg) + '</span>' : '<span class="lkuitleg"></span>') +
+             '<span class="lsteltal">' + (getal(tel[i], 0) || 0) + '</span>' +
+             '<span class="lsmin" title="Stem eraf">\u2212</span>' +
+             '<span class="lsbalk"><i></i></span></div>';
+    }).join('');
+    return '<div class="lstemmen" data-stem="' + id + '">' +
+           '<div class="lkeuzes" style="grid-template-columns:repeat(' + k + ',1fr)">' + uit + '</div>' +
+           '<p class="lstemuitslag"></p></div>';
+  },
   antwoord: function(b){
     context.antwoord = true;
     var inh = b.tekst ? '<p class="lt">' + opmaak(b.tekst) + '</p>' : '';
@@ -341,7 +359,8 @@ function faseLabel(les, i){
 /* geeft {html, antwoord, notitie} voor pagina i */
 function pagina(les, i){
   var p = les.paginas[i];
-  context = {les: les, antwoord: false, stappen: false, fase: p.fase};
+  context = {les: les, antwoord: false, stappen: false, stemmen: false, stemNr: 0, pag: i, fase: p.fase};
+  stemLes = les.id || '';
   var kop = '';
   var label = faseLabel(les, i);
   if(label) kop += '<span class="fase f-' + esc(p.fase) + '">' + esc(label) + '</span>';
@@ -350,7 +369,7 @@ function pagina(les, i){
   var hoek = les.lesdoelInHoek && p.fase !== 'lesdoel' && les.lesdoel
     ? '<div class="lhoekdoel">' + opmaak(les.lesdoel) + '</div>' : '';
   var html = '<div class="lb">' + hoek + (kop ? '<div class="lkop">' + kop + '</div>' : '') + blokken(p.blokken) + '</div>';
-  var uit = {html: html, antwoord: context.antwoord, stappen: context.stappen, notitie: p.notitie ? String(p.notitie) : ''};
+  var uit = {html: html, antwoord: context.antwoord, stappen: context.stappen, stemmen: context.stemmen, notitie: p.notitie ? String(p.notitie) : ''};
   context = null;
   return uit;
 }
@@ -378,6 +397,56 @@ function schaal(laag, vak, maten){
   return over;
 }
 
+/* ---------- stemmen: turven per optie, bewaard per les in de browser ---------- */
+var stemLes = '';
+function stemSleutel(){ return 'bord-stemmen-' + stemLes; }
+function stemTellingen(){
+  try{ var o = JSON.parse(localStorage.getItem(stemSleutel())); return o && typeof o === 'object' ? o : {}; }catch(e){ return {}; }
+}
+function bewaarStemmen(o){ try{ localStorage.setItem(stemSleutel(), JSON.stringify(o)); }catch(e){} }
+/* aantallen, balkjes en de uitslag (zichtbaar bij Antwoord) bijwerken */
+function werkStemmenBij(groep){
+  var kaarten = groep.querySelectorAll('.lstem'), tal = [], tot = 0, goed = 0, heeftGoed = false, i;
+  for(i = 0; i < kaarten.length; i++){
+    tal[i] = Number(kaarten[i].querySelector('.lsteltal').textContent) || 0;
+    tot += tal[i];
+    if(kaarten[i].classList.contains('goed')){ goed += tal[i]; heeftGoed = true; }
+  }
+  for(i = 0; i < kaarten.length; i++){
+    kaarten[i].querySelector('.lsbalk i').style.width = (tot ? Math.round(100*tal[i]/tot) : 0) + '%';
+    kaarten[i].classList.toggle('leeg', !tal[i]);
+  }
+  var u = groep.querySelector('.lstemuitslag');
+  u.classList.toggle('sterk', tot > 0 && goed/tot >= 0.8);
+  u.textContent = !heeftGoed ? tot + (tot === 1 ? ' stem' : ' stemmen')
+    : (tot ? goed + ' van de ' + tot + ' kozen goed: ' + Math.round(100*goed/tot) + '%' : 'Nog geen stemmen geturfd');
+}
+function stemmenKlaar(laag){
+  var g = laag.querySelectorAll('.lstemmen'), i;
+  for(i = 0; i < g.length; i++) werkStemmenBij(g[i]);
+}
+function stemTik(laag, x, y){
+  var kaarten = laag.querySelectorAll('.lstem'), i;
+  for(i = 0; i < kaarten.length; i++){
+    var k = kaarten[i];
+    if(!binnen(k, x, y)) continue;
+    var t = k.querySelector('.lsteltal'), n = Number(t.textContent) || 0;
+    n = binnen(k.querySelector('.lsmin'), x, y) ? Math.max(0, n - 1) : n + 1;
+    t.textContent = n;
+    var groep = k.closest('.lstemmen'), o = stemTellingen(), id = groep.getAttribute('data-stem');
+    var rij = o[id] || [];
+    rij[Number(k.getAttribute('data-i'))] = n;
+    o[id] = rij; bewaarStemmen(o);
+    werkStemmenBij(groep);
+    return true;
+  }
+  return false;
+}
+function wisStemmen(les){
+  stemLes = (les && les.id) || stemLes;
+  try{ localStorage.removeItem(stemSleutel()); }catch(e){}
+}
+
 /* ---------- stappenplan stap voor stap ---------- */
 function plannen(laag){ return laag.querySelectorAll('.lstappen.stapsgewijs, .lstappen.kan-dicht'); }
 function binnen(el, x, y){
@@ -401,6 +470,7 @@ function sluit(k){
 }
 /* tik op het bord: op de kop = weer dicht, ergens anders op het plan = volgende stap. true als het een plan raakte */
 function tik(laag, x, y){
+  if(stemTik(laag, x, y)) return true;
   var l = plannen(laag), i;
   for(i = 0; i < l.length; i++){
     var k = l[i], kop = k.querySelector('.lstapkop');
@@ -427,5 +497,5 @@ function wisselStappen(laag){
 function allesTonen(laag){ while(volgendeStap(laag)){} }
 
 return {pagina: pagina, schaal: schaal, tik: tik, volgendeStap: volgendeStap, wisselStappen: wisselStappen,
-        allesTonen: allesTonen, FASES: FASES, opmaak: opmaak};
+        allesTonen: allesTonen, stemmenKlaar: stemmenKlaar, wisStemmen: wisStemmen, FASES: FASES, opmaak: opmaak};
 })();

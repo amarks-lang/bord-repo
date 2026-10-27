@@ -645,7 +645,7 @@ function annuleerStreek(){
 verf.addEventListener('pointerdown', function(e){
   if(actief !== null) return;                 /* tweede vinger negeren */
   if(e.pointerType === 'mouse' && e.button !== 0) return;   /* rechtermuisklik schrijft niet */
-  if(lesInfo.stappen && Les.tik($('les'), e.clientX, e.clientY)){ e.preventDefault(); return; }   /* stappenplan: volgende stap of weer dicht */
+  if((lesInfo.stappen || lesInfo.stemmen) && Les.tik($('les'), e.clientX, e.clientY)){ e.preventDefault(); return; }   /* stappenplan: volgende stap of weer dicht */
   actief = e.pointerId;
   pipetGedaan = false;
   try{ verf.setPointerCapture(e.pointerId); }catch(err){}
@@ -937,6 +937,7 @@ function toonLes(){
   if(LES && p.les >= 0){
     lesInfo = Les.pagina(LES, p.les);
     laag.innerHTML = lesInfo.html;
+    Les.stemmenKlaar(laag);
   } else laag.innerHTML = '';
   schaalLes();
   $('antwoordknop').hidden = !lesInfo.antwoord;
@@ -1139,7 +1140,7 @@ $('paginaWeg').addEventListener('click', function(){
   toonPagina(); vulBgKeuze(); bewaar();
 });
 $('alleslegen').addEventListener('click', function(){
-  if(LES) bord.paginas = lesPaginas();
+  if(LES){ bord.paginas = lesPaginas(); Les.wisStemmen(LES); }
   else bord.paginas = [legePagina(huidig().bg)];
   pag = 0; toonPagina(); vulBgKeuze(); bewaar();
 });
