@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="320" viewBox="0 0 220 320">
+<g stroke="#173141" stroke-width="4" stroke-linejoin="round">
+<rect x="30" y="30" width="160" height="260" rx="6" fill="#ffffff"/>
+<rect x="30" y="121" width="160" height="78" fill="#2b7bb9"/>
+<polygon points="30,30 190,30 175,12 45,12" fill="#e9f1f7"/>
+</g>
+<text x="110" y="170" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="700" fill="#fff">SUIKER</text>
+<text x="110" y="251" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="700" fill="#173141">1 kg</text>
+</svg>
