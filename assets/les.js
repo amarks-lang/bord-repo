@@ -295,7 +295,7 @@ var BLOK = {
     return '<div class="lkeuzes" style="grid-template-columns:repeat(' + k + ',1fr)">' + uit + '</div>';
   },
   stemmen: function(b){
-    var opties = lijst(b.opties), k = getal(b.kolommen, opties.length <= 3 ? opties.length : 2);
+    var opties = lijst(b.opties), k = getal(b.kolommen, 1);   /* onder elkaar: dan past het aantal stemmen altijd */
     var id = context.pag + '-' + (context.stemNr++);
     var tel = stemTellingen()[id] || [];
     context.stemmen = true;
@@ -310,7 +310,7 @@ var BLOK = {
     }).join('');
     return '<div class="lstemmen" data-stem="' + id + '">' +
            '<div class="lkeuzes" style="grid-template-columns:repeat(' + k + ',1fr)">' + uit + '</div>' +
-           '<p class="lstemuitslag"></p></div>';
+           '<p class="lstemuitslag"><span class="lsttotaal"></span><span class="lstgoed"></span></p></div>';
   },
   antwoord: function(b){
     context.antwoord = true;
@@ -417,9 +417,10 @@ function werkStemmenBij(groep){
     kaarten[i].classList.toggle('leeg', !tal[i]);
   }
   var u = groep.querySelector('.lstemuitslag');
-  u.classList.toggle('sterk', tot > 0 && goed/tot >= 0.8);
-  u.textContent = !heeftGoed ? tot + (tot === 1 ? ' stem' : ' stemmen')
-    : (tot ? goed + ' van de ' + tot + ' kozen goed: ' + Math.round(100*goed/tot) + '%' : 'Nog geen stemmen geturfd');
+  u.querySelector('.lsttotaal').textContent = tot ? tot + (tot === 1 ? ' stem' : ' stemmen') : 'Nog geen stemmen';
+  var g = u.querySelector('.lstgoed');
+  g.classList.toggle('sterk', tot > 0 && goed/tot >= 0.8);
+  g.textContent = heeftGoed && tot ? goed + ' van de ' + tot + ' kozen goed: ' + Math.round(100*goed/tot) + '%' : '';
 }
 function stemmenKlaar(laag){
   var g = laag.querySelectorAll('.lstemmen'), i;
