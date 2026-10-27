@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="320" viewBox="0 0 240 320">
+<g stroke="#173141" stroke-width="4" stroke-linejoin="round">
+<path d="M40 70 L200 70 L215 290 Q120 305 25 290 Z" fill="#e9f1f7"/>
+<circle cx="80" cy="140" r="30" fill="#d94b3d"/><circle cx="155" cy="135" r="30" fill="#7cb342"/>
+<circle cx="70" cy="215" r="30" fill="#7cb342"/><circle cx="120" cy="185" r="30" fill="#d94b3d"/><circle cx="170" cy="215" r="30" fill="#d94b3d"/>
+<path d="M40 70 Q120 40 200 70" fill="none"/>
+</g>
+<text x="120" y="280" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="700" fill="#173141">1 kg</text>
+</svg>

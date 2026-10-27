@@ -20,6 +20,28 @@
       ]
     },
     {
+      "id": "g5-rekenen-gram-schatten",
+      "titel": "Hoe zwaar is een gram?",
+      "groep": "5",
+      "vak": "Rekenen",
+      "methode": "Groep 5, blok 2",
+      "onderwerp": "Gewicht",
+      "duur": 50,
+      "edi": true,
+      "gemaakt": "2026-10-27",
+      "samenvatting": "Ijkpunten voor 1, 10, 100, 500 en 1000 gram, en dan schatten en stemmen: echte voorwerpen raden en op de weegschaal controleren.",
+      "trefwoorden": [
+        "gram",
+        "kilo",
+        "gewicht",
+        "schatten",
+        "wegen",
+        "weegschaal",
+        "ijkpunt",
+        "1000 gram"
+      ]
+    },
+    {
       "id": "g56-rekenen-keersom-deelsom",
       "titel": "Keersommen en deelsommen horen bij elkaar",
       "groep": "5/6",
