@@ -362,7 +362,7 @@
       "fase": "samen",
       "titel": "Welk getal hoort bij de pijl?",
       "opdracht": "Schrijf het getal op je wisbordje.",
-      "notitie": "Stappenplan dicht: eerst zelf proberen. Wie vastloopt: tik het plan open. Fout 3600 of 3800: één stap verkeerd geteld.",
+      "notitie": "Laat het stappenplan stap voor stap verschijnen terwijl jullie het samen doen. Fout 3600 of 3800: één stap verkeerd geteld.",
       "blokken": [
         {
           "type": "kolommen",
@@ -382,8 +382,7 @@
                   },
                   "Tussen welke honderdtallen ligt het?",
                   "In het midden, of dichter bij één kant?"
-                ],
-                "tonen": "dicht"
+                ]
               }
             ],
             [
@@ -673,27 +672,6 @@
               }
             ]
           ]
-        }
-      ]
-    },
-    {
-      "fase": "zelfstandig",
-      "titel": "Zelf aan het werk",
-      "blokken": [
-        {
-          "type": "tekst",
-          "tekst": "Maak de opgaven in je rekenboek: **groep 6, blok 2**.",
-          "grootte": "groot"
-        },
-        {
-          "type": "tekst",
-          "tekst": "Teken een getallenlijn als je twijfelt.",
-          "grootte": "groot"
-        },
-        {
-          "type": "label",
-          "tekst": "1 of 0 goed bij de check? Kom aan de instructietafel.",
-          "soort": "neutraal"
         }
       ]
     }
