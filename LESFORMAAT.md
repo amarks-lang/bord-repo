@@ -117,6 +117,7 @@ Gekleurde stukjes tel je **vanaf 1** (links naar rechts, of met de klok mee vana
 | `stippen` | `rijen`, `kolommen`, `afwisselen`? (true) | stippenrooster, rijen om en om licht/donker |
 | `familie` | `totaal`, `delen: [a, b]` | getallenfamilie: 56 boven, 7 en 8 eronder |
 | `breukdelen` | `teller`, `noemer`, `tellerTekst`?, `noemerTekst`? | grote breuk met pijltjes naar teller, streep, noemer |
+| `getallenlijn` | `van`, `tot`, `stap`?, `labels`?, `pijlen`?, `breedte`? (1200), `onderschrift`? | getallenlijn met een streepje per `stap` (standaard 10 stappen). Begin, midden en eind hebben een lang streepje. `labels`: lijst getallen die eronder staan (standaard `van` en `tot`) of `"alle"`. `pijlen`: lijst van `{"op", "tekst"?}`: een oranje wolkje dat naar dat getal wijst, met `tekst` erin (standaard het getal zelf; `"?"` voor een vraag). Zonder pijlen is de lijn lager. |
 | `afbeelding` | `bron`, `alt`?, `hoogte`? | plaatje uit de lesmap |
 
 ### Schrijven op het bord
@@ -132,7 +133,7 @@ Het antwoord is verborgen tot je op **Antwoord** drukt (of toets A).
 
 | type | velden | |
 |---|---|---|
-| `antwoord` | `tekst` en/of `blokken` | groen antwoordvak. In `blokken` mag: `som`, `tekst`, `strook`, `cirkel`, `rechthoek`. |
+| `antwoord` | `tekst` en/of `blokken` | groen antwoordvak. In `blokken` mag: `som`, `tekst`, `strook`, `cirkel`, `rechthoek`, `getallenlijn`. |
 | `keuzes` | `opties`, `kolommen`? | 2 tot 6 keuzes A, B, C …; een optie is `{"tekst", "goed"?, "uitleg"?}`. Bij Antwoord licht de goede op en verschijnt de uitleg. Zet bij foute opties in de uitleg welke denkfout het is. |
 
 ### Indeling
@@ -152,6 +153,13 @@ Het antwoord is verborgen tot je op **Antwoord** drukt (of toets A).
 - **Samen oefenen** met antwoord, **check** met antwoord en leerlingen alleen ("Iedereen werkt alleen").
 - **Stappenplan stap voor stap**: bij voordoen en samen oefenen hetzelfde stappenplan. Het komt stap voor stap in beeld terwijl je voordoet, zodat leerlingen niet overladen worden.
 - **Past het niet?** Het bord zet een rode rand om het vel en `schermafdruk.py` meldt het. Haal dan iets weg of splits de pagina.
+
+Getallenlijn met een vraag:
+
+```json
+{"type": "getallenlijn", "van": 4000, "tot": 5000, "stap": 100,
+ "labels": [4000, 4500, 5000], "pijlen": [{"op": 4700, "tekst": "?"}]}
+```
 
 ## Mini-voorbeeld
 

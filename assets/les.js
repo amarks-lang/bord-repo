@@ -94,6 +94,44 @@ function onder(b){ return b.onderschrift ? '<div class="londer">' + opmaak(b.ond
 /* gekleurde stukjes: in les.json tel je vanaf 1, hier vanaf 0 */
 function nul(v){ return lijst(v).map(function(n){ return Number(n) - 1; }); }
 
+/* getallen vanaf 10 000 met een smalle spatie per drie cijfers: 10 000, 25 300 */
+function getalTekst(v){
+  var s = String(Math.round(Number(v) * 1000) / 1000);
+  return Math.abs(Number(v)) >= 10000 ? s.replace(/\B(?=(\d{3})+(?!\d))/g, ' ') : s;
+}
+/* getallenlijn van "van" tot "tot" met een streepje per "stap"; begin, midden en eind zijn langer */
+function getallenlijn(b){
+  var van = Number(b.van), tot = Number(b.tot);
+  if(!isFinite(van) || !isFinite(tot) || tot <= van) throw new Error('"tot" moet groter zijn dan "van"');
+  var stap = getal(b.stap, (tot - van) / 10), n = Math.round((tot - van) / stap);
+  if(n > 100) throw new Error('te veel streepjes (' + n + ')');
+  var pijlen = lijst(b.pijlen), w = getal(b.breedte, 1200), m = 60, lw = w - 2*m;
+  var y = pijlen.length ? 150 : 40, h = y + 90, uit = '', i;
+  function x(v){ return m + lw * (v - van) / (tot - van); }
+  uit += '<line x1="' + m + '" y1="' + y + '" x2="' + (w - m) + '" y2="' + y + '" stroke="' + KL_LIJN + '" stroke-width="4" stroke-linecap="round"/>';
+  for(i = 0; i <= n; i++){
+    var lang = i === 0 || i === n || (n % 2 === 0 && i === n/2), d = lang ? 26 : 15, tx = x(van + i*stap).toFixed(1);
+    uit += '<line x1="' + tx + '" y1="' + (y - d) + '" x2="' + tx + '" y2="' + (y + d) + '" stroke="' + KL_LIJN + '" stroke-width="' + (lang ? 4 : 3) + '"/>';
+  }
+  var labels = b.labels === 'alle' ? null : (Object.prototype.toString.call(b.labels) === '[object Array]' ? b.labels : [van, tot]);
+  if(!labels){ labels = []; for(i = 0; i <= n; i++) labels.push(van + i*stap); }
+  labels.forEach(function(v){
+    v = Number(v);
+    if(!isFinite(v) || v < van || v > tot) return;
+    uit += '<text x="' + x(v).toFixed(1) + '" y="' + (y + 66) + '" text-anchor="middle" font-size="32" font-weight="600" fill="' + KL_LIJN + '">' + getalTekst(v) + '</text>';
+  });
+  pijlen.forEach(function(p){
+    var op = Number(p && typeof p === 'object' ? p.op : p);
+    if(!isFinite(op) || op < van || op > tot) return;
+    var t = p && typeof p === 'object' && p.tekst !== undefined ? String(p.tekst) : getalTekst(op);
+    var px = x(op), bw = Math.max(96, t.length * 32 + 48), bx = Math.min(Math.max(px - bw/2, 0), w - bw);
+    uit += '<rect x="' + bx.toFixed(1) + '" y="6" width="' + bw + '" height="88" rx="16" fill="' + KL_VUL + '"/>' +
+           '<path d="M' + (px - 16).toFixed(1) + ' 92 L' + (px + 16).toFixed(1) + ' 92 L' + px.toFixed(1) + ' ' + (y - 30) + ' Z" fill="' + KL_VUL + '"/>' +
+           '<text x="' + (bx + bw/2).toFixed(1) + '" y="70" text-anchor="middle" font-size="56" font-weight="700" fill="#fff">' + esc(t) + '</text>';
+  });
+  return svg(w, h, uit);
+}
+
 /* ---------- bloktypes ---------- */
 var context = null;   /* {les, antwoord:boolean} tijdens het tekenen */
 
@@ -165,6 +203,9 @@ var BLOK = {
   },
   rechthoek: function(b){
     return '<div class="lbeeld">' + rechthoek(getal(b.rijen, 2), getal(b.kolommen, 3), nul(b.gekleurd), getal(b.vak, 110)) + onder(b) + '</div>';
+  },
+  getallenlijn: function(b){
+    return '<div class="lbeeld">' + getallenlijn(b) + onder(b) + '</div>';
   },
   afbeelding: function(b){
     if(!b.bron || /^[a-z]+:|^\/|\.\./i.test(b.bron)) return fout('afbeelding: "bron" moet een bestandsnaam in de lesmap zijn');

@@ -1,0 +1,701 @@
+{
+  "id": "g56-rekenen-getallenlijn-10000",
+  "titel": "Getallen tot 10 000 op de getallenlijn",
+  "groep": "5/6",
+  "vak": "Rekenen",
+  "methode": "Groep 6, blok 2",
+  "onderwerp": "Getallen tot 10 000",
+  "duur": 35,
+  "edi": true,
+  "gemaakt": "2026-10-27",
+  "samenvatting": "Getallen tot 10 000 tussen duizendtallen en honderdtallen op de getallenlijn plaatsen, en bij een pijl het getal bepalen.",
+  "trefwoorden": [
+    "getallenlijn",
+    "getallen tot 10 000",
+    "honderdtallen",
+    "duizendtallen",
+    "plaatsen"
+  ],
+  "lesdoel": "getallen tot 10 000 tussen duizendtallen en honderdtallen op de getallenlijn plaatsen",
+  "succescriterium": "een getal als 4830 op de goede plek op de getallenlijn kan zetten.",
+  "lesdoelInHoek": true,
+  "paginas": [
+    {
+      "fase": "lesdoel",
+      "blokken": [
+        {
+          "type": "doel"
+        },
+        {
+          "type": "succes"
+        },
+        {
+          "type": "getallenlijn",
+          "van": 4000,
+          "tot": 5000,
+          "stap": 100,
+          "labels": [
+            4000,
+            4100,
+            4500,
+            5000
+          ],
+          "pijlen": [
+            {
+              "op": 4830
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voorkennis",
+      "titel": "Welk getal hoort bij de pijl?",
+      "opdracht": "Schrijf het getal op je wisbordje.",
+      "notitie": "Kort ophalen: elk streepje is 100. Laat daarna samen hardop tellen in stappen van 100: 4000, 4100, 4200 … 5000.",
+      "blokken": [
+        {
+          "type": "getallenlijn",
+          "van": 0,
+          "tot": 1000,
+          "stap": 100,
+          "labels": [
+            0,
+            500,
+            1000
+          ],
+          "pijlen": [
+            {
+              "op": 600,
+              "tekst": "?"
+            }
+          ]
+        },
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "600"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "Elk streepje is 100.\n6 stappen van 100 = 600"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "instructie",
+      "titel": "Van 4000 tot 5000",
+      "notitie": "Tel samen de stappen: 10 stappen. 1000 : 10 = 100, dus elk streepje is 100. Het lange streepje in het midden is 4500. Waar kom je zo'n lijn tegen? Liniaal, meetlint, thermometer.",
+      "blokken": [
+        {
+          "type": "getallenlijn",
+          "van": 4000,
+          "tot": 5000,
+          "stap": 100,
+          "labels": "alle",
+          "pijlen": [
+            {
+              "op": 4830
+            }
+          ],
+          "breedte": 1400
+        },
+        {
+          "type": "tekst",
+          "tekst": "Elk streepje is **100**. In het midden staat **4500**.",
+          "grootte": "groot"
+        },
+        {
+          "type": "tekst",
+          "tekst": "4830 ligt tussen ==4800== en ==4900==. Een beetje dichter bij 4800.",
+          "grootte": "groot"
+        }
+      ]
+    },
+    {
+      "fase": "instructie",
+      "titel": "Goed of fout?",
+      "notitie": "Laat de klas eerst zelf zeggen waarom rechts fout is. De fout: het kind kijkt naar de 3 (tientallen) in plaats van de 8 (honderdtallen).",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "label",
+                "tekst": "Goed",
+                "soort": "goed"
+              },
+              {
+                "type": "getallenlijn",
+                "van": 4000,
+                "tot": 5000,
+                "stap": 100,
+                "labels": [
+                  4000,
+                  4500,
+                  5000
+                ],
+                "pijlen": [
+                  {
+                    "op": 4830
+                  }
+                ],
+                "breedte": 660
+              },
+              {
+                "type": "tekst",
+                "tekst": "4830 heeft **8** honderdtallen.\nDus tussen 4800 en 4900."
+              }
+            ],
+            [
+              {
+                "type": "label",
+                "tekst": "Fout",
+                "soort": "fout"
+              },
+              {
+                "type": "getallenlijn",
+                "van": 4000,
+                "tot": 5000,
+                "stap": 100,
+                "labels": [
+                  4000,
+                  4500,
+                  5000
+                ],
+                "pijlen": [
+                  {
+                    "op": 4300,
+                    "tekst": "4830"
+                  }
+                ],
+                "breedte": 660
+              },
+              {
+                "type": "tekst",
+                "tekst": "Hier staat het bij 4300.\nDe 3 zijn tientallen, geen honderdtallen."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Zet 4830 op de getallenlijn",
+      "notitie": "Hardop: 'Het begin is 4000, het eind 5000. Ik tel 10 stappen, dus één stap is 100. 4830: ik kijk naar de honderdtallen, dat is 8. Dus tussen 4800 en 4900. 830 is minder dan 850, dus net iets dichter bij 4800.' Zet zelf het streepje en de pijl.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Lees het begin en het eind.",
+                  {
+                    "tekst": "Hoeveel is één stap?",
+                    "klein": "Tel de stappen van begin tot eind."
+                  },
+                  "Tussen welke honderdtallen ligt het?",
+                  "In het midden, of dichter bij één kant?"
+                ]
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "4830",
+                "grootte": "groot"
+              },
+              {
+                "type": "getallenlijn",
+                "van": 4000,
+                "tot": 5000,
+                "stap": 100,
+                "labels": [
+                  4000,
+                  4500,
+                  5000
+                ],
+                "breedte": 840
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Welk getal hoort bij de pijl?",
+      "notitie": "Hardop: 'Van 7000 tot 8000, 10 stappen, dus 100 per stap. Ik tel vanaf 7000: 7100, 7200 … 7600. Of: het midden is 7500, en dan nog één stap: 7600.' Stap 4 is hier niet nodig: de pijl staat precies op een streepje.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Lees het begin en het eind.",
+                  {
+                    "tekst": "Hoeveel is één stap?",
+                    "klein": "Tel de stappen van begin tot eind."
+                  },
+                  "Tussen welke honderdtallen ligt het?",
+                  "In het midden, of dichter bij één kant?"
+                ]
+              }
+            ],
+            [
+              {
+                "type": "getallenlijn",
+                "van": 7000,
+                "tot": 8000,
+                "stap": 100,
+                "labels": [
+                  7000,
+                  7500,
+                  8000
+                ],
+                "pijlen": [
+                  {
+                    "op": 7600,
+                    "tekst": "?"
+                  }
+                ],
+                "breedte": 840
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Zet 6090 en 6250 op de getallenlijn",
+      "notitie": "Let op de 0 bij 6090: er zijn 0 honderdtallen. Dus tussen 6000 en 6100, heel dicht bij 6100. Niet bij 6900! 6250: tussen 6200 en 6300, 50 is de helft van 100, dus precies in het midden.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Lees het begin en het eind.",
+                  {
+                    "tekst": "Hoeveel is één stap?",
+                    "klein": "Tel de stappen van begin tot eind."
+                  },
+                  "Tussen welke honderdtallen ligt het?",
+                  "In het midden, of dichter bij één kant?"
+                ]
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "6090  en  6250",
+                "grootte": "groot"
+              },
+              {
+                "type": "getallenlijn",
+                "van": 6000,
+                "tot": 7000,
+                "stap": 100,
+                "labels": [
+                  6000,
+                  6500,
+                  7000
+                ],
+                "breedte": 840
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Welk getal hoort bij de pijl?",
+      "opdracht": "Schrijf het getal op je wisbordje.",
+      "notitie": "Stappenplan dicht: eerst zelf proberen. Wie vastloopt: tik het plan open. Fout 3600 of 3800: één stap verkeerd geteld.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Lees het begin en het eind.",
+                  {
+                    "tekst": "Hoeveel is één stap?",
+                    "klein": "Tel de stappen van begin tot eind."
+                  },
+                  "Tussen welke honderdtallen ligt het?",
+                  "In het midden, of dichter bij één kant?"
+                ],
+                "tonen": "dicht"
+              }
+            ],
+            [
+              {
+                "type": "getallenlijn",
+                "van": 3000,
+                "tot": 4000,
+                "stap": 100,
+                "labels": [
+                  3000,
+                  3500,
+                  4000
+                ],
+                "pijlen": [
+                  {
+                    "op": 3700,
+                    "tekst": "?"
+                  }
+                ],
+                "breedte": 840
+              },
+              {
+                "type": "schrijfvak"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "3700",
+                    "grootte": "klein"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "7 stappen van 100 na 3000"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Waar ligt 8340?",
+      "opdracht": "Teken de lijn op je wisbordje en zet 8340 erop.",
+      "notitie": "Kijk naar de wisbordjes: staat het tussen 8300 en 8400? Fout bij 8400 of verder: het kind telt één stap te veel.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "8340",
+                "grootte": "groot"
+              },
+              {
+                "type": "getallenlijn",
+                "van": 8000,
+                "tot": 9000,
+                "stap": 100,
+                "labels": [
+                  8000,
+                  8500,
+                  9000
+                ],
+                "breedte": 860
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "getallenlijn",
+                    "van": 8000,
+                    "tot": 9000,
+                    "stap": 100,
+                    "labels": [
+                      8000,
+                      8500,
+                      9000
+                    ],
+                    "pijlen": [
+                      {
+                        "op": 8340
+                      }
+                    ],
+                    "breedte": 480
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "Tussen 8300 en 8400,\ndichter bij 8300."
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Welk getal hoort bij de pijl?",
+      "opdracht": "Schrijf de letter op je wisbordje.",
+      "blokken": [
+        {
+          "type": "getallenlijn",
+          "van": 5000,
+          "tot": 6000,
+          "stap": 100,
+          "labels": [
+            5000,
+            5500,
+            6000
+          ],
+          "pijlen": [
+            {
+              "op": 5650,
+              "tekst": "?"
+            }
+          ],
+          "breedte": 1200
+        },
+        {
+          "type": "keuzes",
+          "kolommen": 2,
+          "opties": [
+            {
+              "tekst": "5065",
+              "uitleg": "Fout: je las een stap als 10. Eén stap is 100."
+            },
+            {
+              "tekst": "5650",
+              "goed": true,
+              "uitleg": "Goed: 6 stappen is 5600, en dan nog een halve stap: 5650."
+            },
+            {
+              "tekst": "5550",
+              "uitleg": "Fout: je telde één stap te weinig. Tel vanaf 5000."
+            },
+            {
+              "tekst": "5600",
+              "uitleg": "Fout: de pijl staat niet op een streepje, maar er precies tussen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Tussen welke honderdtallen ligt 9420?",
+      "opdracht": "Schrijf de twee honderdtallen op je wisbordje.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "9420",
+                "grootte": "groot"
+              },
+              {
+                "type": "getallenlijn",
+                "van": 9000,
+                "tot": 10000,
+                "stap": 100,
+                "labels": [
+                  9000,
+                  9500,
+                  10000
+                ],
+                "breedte": 860
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "getallenlijn",
+                    "van": 9000,
+                    "tot": 10000,
+                    "stap": 100,
+                    "labels": [
+                      9000,
+                      9500,
+                      10000
+                    ],
+                    "pijlen": [
+                      {
+                        "op": 9420
+                      }
+                    ],
+                    "breedte": 480
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "Tussen 9400 en 9500,\ndichter bij 9400."
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "check",
+      "titel": "Laat zien wat je kunt",
+      "opdracht": "Iedereen werkt alleen. Schrijf a, b en c op je wisbordje.",
+      "notitie": "Tel per kind: 3 goed of 2 goed → zelfstandig. 1 of 0 goed → instructietafel.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "tekst",
+                "tekst": "**a**  Welk getal hoort bij de pijl?"
+              },
+              {
+                "type": "getallenlijn",
+                "van": 6000,
+                "tot": 7000,
+                "stap": 100,
+                "labels": [
+                  6000,
+                  6500,
+                  7000
+                ],
+                "pijlen": [
+                  {
+                    "op": 6300,
+                    "tekst": "?"
+                  }
+                ],
+                "breedte": 860
+              },
+              {
+                "type": "tekst",
+                "tekst": "**b**  Tussen welke honderdtallen ligt **6780**?\n      Dichter bij welke?"
+              },
+              {
+                "type": "tekst",
+                "tekst": "**c**  Tussen welke honderdtallen ligt **1250**?"
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "tekst",
+                    "tekst": "**a**  6300"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "**b**  tussen 6700 en 6800,\ndichter bij 6800"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "**c**  tussen 1200 en 1300,\nprecies in het midden"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "zelfstandig",
+      "titel": "Zelf aan het werk",
+      "blokken": [
+        {
+          "type": "tekst",
+          "tekst": "Maak de opgaven in je rekenboek: **groep 6, blok 2**.",
+          "grootte": "groot"
+        },
+        {
+          "type": "tekst",
+          "tekst": "Teken een getallenlijn als je twijfelt.",
+          "grootte": "groot"
+        },
+        {
+          "type": "label",
+          "tekst": "1 of 0 goed bij de check? Kom aan de instructietafel.",
+          "soort": "neutraal"
+        }
+      ]
+    }
+  ]
+}

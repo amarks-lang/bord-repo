@@ -41,6 +41,7 @@ BLOKKEN = {
     "strook":     ({"delen"}, {"gekleurd", "breedte", "hoogte", "verhoudingen", "onderschrift"}),
     "cirkel":     ({"delen"}, {"gekleurd", "straal", "verhoudingen", "onderschrift"}),
     "rechthoek":  ({"rijen", "kolommen"}, {"gekleurd", "vak", "onderschrift"}),
+    "getallenlijn": ({"van", "tot"}, {"stap", "labels", "pijlen", "breedte", "onderschrift"}),
     "afbeelding": ({"bron"}, {"alt", "hoogte"}),
     "schrijfvak": ({}, {"label", "lijnen", "breedte", "hoogte"}),
     "breukvak":   ({}, {"namen"}),
@@ -97,6 +98,34 @@ def controleer_blok(b, waar, v, map_):
                 v.fout(waar, f"{t}: gekleurd stukje {g!r} bestaat niet (tel vanaf 1 tot {n})")
         if "verhoudingen" in b and len(b["verhoudingen"]) != b.get("delen"):
             v.fout(waar, f"{t}: 'verhoudingen' moet {b.get('delen')} getallen hebben")
+    if t == "getallenlijn":
+        van, tot = b.get("van"), b.get("tot")
+        if not all(isinstance(x, (int, float)) for x in (van, tot)) or tot <= van:
+            v.fout(waar, "getallenlijn: 'van' en 'tot' zijn getallen, 'tot' groter dan 'van'")
+        else:
+            stap = b.get("stap", (tot - van) / 10)
+            if not isinstance(stap, (int, float)) or stap <= 0:
+                v.fout(waar, "getallenlijn: 'stap' moet een getal groter dan 0 zijn")
+            elif abs((tot - van) / stap - round((tot - van) / stap)) > 1e-9:
+                v.fout(waar, f"getallenlijn: van {van} tot {tot} gaat niet in hele stappen van {stap}")
+            elif (tot - van) / stap > 100:
+                v.fout(waar, "getallenlijn: meer dan 100 streepjes")
+            labels = b.get("labels", [])
+            if labels != "alle":
+                if not isinstance(labels, list):
+                    v.fout(waar, "getallenlijn: 'labels' is een lijst getallen of \"alle\"")
+                else:
+                    for x in labels:
+                        if not isinstance(x, (int, float)) or not van <= x <= tot:
+                            v.fout(waar, f"getallenlijn: label {x!r} ligt niet tussen {van} en {tot}")
+            pijlen = b.get("pijlen", [])
+            if not isinstance(pijlen, list):
+                v.fout(waar, "getallenlijn: 'pijlen' moet een lijst zijn")
+                pijlen = []
+            for x in pijlen:
+                op = x.get("op") if isinstance(x, dict) else x
+                if not isinstance(op, (int, float)) or not van <= op <= tot:
+                    v.fout(waar, f"getallenlijn: pijl op {op!r} ligt niet tussen {van} en {tot}")
     if t == "afbeelding":
         bron = str(b.get("bron", ""))
         if "/" in bron or ".." in bron or ":" in bron:
