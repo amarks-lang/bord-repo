@@ -90,6 +90,64 @@ function rechthoek(rijen, kol, gekleurd, cel){
   }
   return svg(kol*cel + s, rijen*cel + s, uit);
 }
+/* bouwwerk van blokjes. hoogtes: rijen van achter naar voor, kolommen van links naar rechts.
+   aanzicht "3d" tekent het schuin van rechtsvoor; "voor", "zij" (van rechts) en "boven" rekent het aanzicht uit */
+function bouwwerk(b){
+  var rijen = lijst(b.hoogtes).map(function(r){ return lijst(r).map(function(h){ return Math.max(0, Math.floor(Number(h) || 0)); }); });
+  var R = rijen.length, C = 0, r, c, z, uit = '';
+  for(r = 0; r < R; r++) C = Math.max(C, rijen[r].length);
+  if(!R || !C) throw new Error('"hoogtes" is leeg');
+  function h(r, c){ return rijen[r][c] || 0; }
+  var aanzicht = b.aanzicht || '3d', m = 8;
+  function vierkant(x, y, s){
+    return '<rect x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + s + '" height="' + s + '" fill="' + KL_VUL + '" stroke="' + KL_LIJN + '" stroke-width="3" stroke-linejoin="round"/>';
+  }
+  if(aanzicht === 'voor' || aanzicht === 'zij'){
+    var s = getal(b.vak, 70), kol = [], j;
+    if(aanzicht === 'voor') for(c = 0; c < C; c++){ var mx = 0; for(r = 0; r < R; r++) mx = Math.max(mx, h(r, c)); kol.push(mx); }
+    else for(r = R - 1; r >= 0; r--){ kol.push(Math.max.apply(null, rijen[r].concat([0]))); }
+    var hm = Math.max.apply(null, kol.concat([1])), w = kol.length*s + 2*m + 24, hh = hm*s + 2*m + 6, base = hh - m - 3;
+    for(j = 0; j < kol.length; j++) for(z = 0; z < kol[j]; z++) uit += vierkant(m + 12 + j*s, base - (z + 1)*s, s);
+    uit += '<line x1="' + m + '" y1="' + base + '" x2="' + (w - m) + '" y2="' + base + '" stroke="' + KL_LIJN + '" stroke-width="5" stroke-linecap="round"/>';
+    return svg(w, hh, uit);
+  }
+  if(aanzicht === 'boven'){
+    var sb = getal(b.vak, 70);
+    for(r = 0; r < R; r++) for(c = 0; c < C; c++) if(h(r, c) > 0){
+      uit += vierkant(m + c*sb, m + r*sb, sb);
+      if(b.getallen) uit += '<text x="' + (m + c*sb + sb/2) + '" y="' + (m + r*sb + sb*0.68) + '" text-anchor="middle" font-size="' + Math.round(sb*0.5) + '" font-weight="700" fill="' + KL_LIJN + '">' + h(r, c) + '</text>';
+    }
+    return svg(C*sb + 2*m, R*sb + 2*m, uit);
+  }
+  if(aanzicht !== '3d') throw new Error('"aanzicht" moet "3d", "voor", "zij" of "boven" zijn');
+  var k = getal(b.vak, 70), dx = k*0.55, dy = k*0.45, Hm = 1, t;
+  for(r = 0; r < R; r++) for(c = 0; c < C; c++) Hm = Math.max(Hm, h(r, c));
+  var pijl = {voor:1, zij:1, boven:1}[b.pijl] ? b.pijl : '';
+  var ml = m, mb = m + (pijl === 'voor' ? 110 : 0), mr = m + (pijl === 'zij' ? 130 : 0), mt = m + (pijl === 'boven' ? 110 : 0);
+  var W3 = C*k + R*dx + ml + mr, H3 = Hm*k + R*dy + mt + mb, Y0 = H3 - mb;
+  function pt(x, y){ return x.toFixed(1) + ',' + y.toFixed(1); }
+  function vlak(punten, kleur){ return '<polygon points="' + punten.join(' ') + '" fill="' + kleur + '" stroke="' + KL_LIJN + '" stroke-width="3" stroke-linejoin="round"/>'; }
+  /* van achter naar voor, links naar rechts, onder naar boven: wat dichterbij is, komt eroverheen */
+  for(t = R - 1; t >= 0; t--){
+    r = R - 1 - t;
+    for(c = 0; c < C; c++) for(z = 0; z < h(r, c); z++){
+      var x = ml + c*k + t*dx, y = Y0 - z*k - t*dy;
+      uit += vlak([pt(x, y), pt(x + k, y), pt(x + k, y - k), pt(x, y - k)], KL_VUL);
+      uit += vlak([pt(x, y - k), pt(x + k, y - k), pt(x + k + dx, y - k - dy), pt(x + dx, y - k - dy)], '#f8c193');
+      uit += vlak([pt(x + k, y), pt(x + k + dx, y - dy), pt(x + k + dx, y - k - dy), pt(x + k, y - k)], '#c4621f');
+    }
+  }
+  if(pijl){
+    var P = '#2b7bb9', a, e;
+    if(pijl === 'voor'){ a = [ml + C*k/2, H3 - 20]; e = [ml + C*k/2, Y0 + 14]; }
+    if(pijl === 'zij'){ a = [W3 - 18, Y0 - Hm*k/2 - R*dy/2]; e = [W3 - mr + 14, Y0 - Hm*k/2 - R*dy/2]; }
+    if(pijl === 'boven'){ a = [ml + C*k/2 + R*dx/2, 14]; e = [ml + C*k/2 + R*dx/2, mt - 10]; }
+    var hx = e[0] - a[0], hy = e[1] - a[1], l = Math.sqrt(hx*hx + hy*hy), ux = hx/l, uy = hy/l;
+    uit += '<line x1="' + pt(a[0], a[1]).replace(',', '" y1="') + '" x2="' + pt(e[0] - ux*20, e[1] - uy*20).replace(',', '" y2="') + '" stroke="' + P + '" stroke-width="10" stroke-linecap="round"/>' +
+           '<polygon points="' + [pt(e[0], e[1]), pt(e[0] - ux*34 - uy*22, e[1] - uy*34 + ux*22), pt(e[0] - ux*34 + uy*22, e[1] - uy*34 - ux*22)].join(' ') + '" fill="' + P + '"/>';
+  }
+  return svg(Math.ceil(W3), Math.ceil(H3), uit);
+}
 function onder(b){ return b.onderschrift ? '<div class="londer">' + opmaak(b.onderschrift) + '</div>' : ''; }
 /* gekleurde stukjes: in les.json tel je vanaf 1, hier vanaf 0 */
 function nul(v){ return lijst(v).map(function(n){ return Number(n) - 1; }); }
@@ -206,6 +264,9 @@ var BLOK = {
   },
   getallenlijn: function(b){
     return '<div class="lbeeld">' + getallenlijn(b) + onder(b) + '</div>';
+  },
+  bouwwerk: function(b){
+    return '<div class="lbeeld">' + bouwwerk(b) + onder(b) + '</div>';
   },
   afbeelding: function(b){
     if(!b.bron || /^[a-z]+:|^\/|\.\./i.test(b.bron)) return fout('afbeelding: "bron" moet een bestandsnaam in de lesmap zijn');

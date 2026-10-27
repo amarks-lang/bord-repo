@@ -118,6 +118,7 @@ Gekleurde stukjes tel je **vanaf 1** (links naar rechts, of met de klok mee vana
 | `familie` | `totaal`, `delen: [a, b]` | getallenfamilie: 56 boven, 7 en 8 eronder |
 | `breukdelen` | `teller`, `noemer`, `tellerTekst`?, `noemerTekst`? | grote breuk met pijltjes naar teller, streep, noemer |
 | `getallenlijn` | `van`, `tot`, `stap`?, `labels`?, `pijlen`?, `breedte`? (1200), `onderschrift`? | getallenlijn met een streepje per `stap` (standaard 10 stappen). Begin, midden en eind hebben een lang streepje. `labels`: lijst getallen die eronder staan (standaard `van` en `tot`) of `"alle"`. `pijlen`: lijst van `{"op", "tekst"?}`: een oranje wolkje dat naar dat getal wijst, met `tekst` erin (standaard het getal zelf; `"?"` voor een vraag). Zonder pijlen is de lijn lager. |
+| `bouwwerk` | `hoogtes`, `aanzicht`?, `vak`? (70), `pijl`?, `getallen`?, `onderschrift`? | bouwwerk van blokjes. `hoogtes` is de plattegrond: rijen van **achter naar voor**, kolommen van links naar rechts, elk getal = aantal blokjes op elkaar (0 = leeg). `aanzicht`: `"3d"` (standaard, schuin van rechtsvoor), `"voor"`, `"zij"` (van rechts: de voorkant staat links) of `"boven"`. De aanzichten rekent het bord zelf uit. `pijl` (alleen bij 3d): `"voor"`, `"zij"` of `"boven"`, een blauwe pijl die laat zien waar je vanaf kijkt. `getallen: true` zet bij het bovenaanzicht de hoogtes in de hokjes (bouwplattegrond). |
 | `afbeelding` | `bron`, `alt`?, `hoogte`? | plaatje uit de lesmap |
 
 ### Schrijven op het bord
@@ -133,7 +134,7 @@ Het antwoord is verborgen tot je op **Antwoord** drukt (of toets A).
 
 | type | velden | |
 |---|---|---|
-| `antwoord` | `tekst` en/of `blokken` | groen antwoordvak. In `blokken` mag: `som`, `tekst`, `strook`, `cirkel`, `rechthoek`, `getallenlijn`. |
+| `antwoord` | `tekst` en/of `blokken` | groen antwoordvak. In `blokken` mag: `som`, `tekst`, `strook`, `cirkel`, `rechthoek`, `getallenlijn`, `bouwwerk`. |
 | `keuzes` | `opties`, `kolommen`? | 2 tot 6 keuzes A, B, C …; een optie is `{"tekst", "goed"?, "uitleg"?}`. Bij Antwoord licht de goede op en verschijnt de uitleg. Zet bij foute opties in de uitleg welke denkfout het is. |
 
 ### Indeling
@@ -160,6 +161,16 @@ Getallenlijn met een vraag:
 {"type": "getallenlijn", "van": 4000, "tot": 5000, "stap": 100,
  "labels": [4000, 4500, 5000], "pijlen": [{"op": 4700, "tekst": "?"}]}
 ```
+
+Bouwwerk met zijn vooraanzicht:
+
+```json
+{"type": "naast", "blokken": [
+  {"type": "bouwwerk", "hoogtes": [[1, 0, 0], [2, 1, 1]], "pijl": "voor"},
+  {"type": "bouwwerk", "hoogtes": [[1, 0, 0], [2, 1, 1]], "aanzicht": "voor"}]}
+```
+
+Keuzes met plaatjes: zet de plaatjes in een `naast` of `raster` met `onderschrift` A, B, C … en geef de `keuzes` als tekst `"A"`, `"B"` … met uitleg.
 
 ## Mini-voorbeeld
 

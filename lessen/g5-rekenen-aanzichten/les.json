@@ -1,0 +1,949 @@
+{
+  "id": "g5-rekenen-aanzichten",
+  "titel": "Voor-, boven- en zijaanzicht",
+  "groep": "5",
+  "vak": "Rekenen",
+  "methode": "Groep 5, blok 2",
+  "onderwerp": "Aanzichten",
+  "duur": 35,
+  "edi": true,
+  "gemaakt": "2026-10-27",
+  "samenvatting": "Bij een huis en bij bouwwerken van blokjes het voor-, boven- en zijaanzicht herkennen en tekenen.",
+  "trefwoorden": [
+    "aanzicht",
+    "vooraanzicht",
+    "bovenaanzicht",
+    "zijaanzicht",
+    "bouwwerk",
+    "blokjes",
+    "meetkunde"
+  ],
+  "lesdoel": "het verschil tussen een voor-, een boven- en een zijaanzicht leren",
+  "succescriterium": "bij een bouwwerk kan zeggen welk plaatje het vooraanzicht, het bovenaanzicht of het zijaanzicht is.",
+  "lesdoelInHoek": true,
+  "paginas": [
+    {
+      "fase": "lesdoel",
+      "blokken": [
+        {
+          "type": "doel"
+        },
+        {
+          "type": "succes"
+        },
+        {
+          "type": "naast",
+          "blokken": [
+            {
+              "type": "afbeelding",
+              "bron": "huis-schuin.svg",
+              "alt": "Een huis, schuin van voren",
+              "hoogte": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "instructie",
+      "titel": "Eén huis, drie aanzichten",
+      "notitie": "Laat het huis van pagina 1 nog eens zien. Vooraanzicht: je staat voor het huis. Zijaanzicht: je staat ernaast (hier: rechts). Bovenaanzicht: je vliegt erboven, je ziet alleen het dak. Waar kom je dit tegen? Plattegrond, bouwtekening, kaart.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "label",
+                "tekst": "vooraanzicht",
+                "soort": "neutraal"
+              },
+              {
+                "type": "tekst",
+                "tekst": "van voren",
+                "grootte": "klein"
+              },
+              {
+                "type": "afbeelding",
+                "bron": "huis-voor.svg",
+                "alt": "Het huis van voren"
+              }
+            ],
+            [
+              {
+                "type": "label",
+                "tekst": "zijaanzicht",
+                "soort": "neutraal"
+              },
+              {
+                "type": "tekst",
+                "tekst": "van opzij",
+                "grootte": "klein"
+              },
+              {
+                "type": "afbeelding",
+                "bron": "huis-zij.svg",
+                "alt": "Het huis van opzij"
+              }
+            ],
+            [
+              {
+                "type": "label",
+                "tekst": "bovenaanzicht",
+                "soort": "neutraal"
+              },
+              {
+                "type": "tekst",
+                "tekst": "van boven",
+                "grootte": "klein"
+              },
+              {
+                "type": "afbeelding",
+                "bron": "huis-boven.svg",
+                "alt": "Het huis van boven"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "instructie",
+      "titel": "Goed of fout? Het bovenaanzicht van een glas",
+      "notitie": "Zet een glas op tafel en laat leerlingen er recht boven kijken: alleen een rondje. Van voren: een rechthoek. Kijk je schuin, dan zie je allebei. Dat is géén aanzicht.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "label",
+                "tekst": "Goed",
+                "soort": "goed"
+              },
+              {
+                "type": "afbeelding",
+                "bron": "glas-boven.svg",
+                "alt": "Een rondje: het glas van boven"
+              },
+              {
+                "type": "tekst",
+                "tekst": "Recht van boven zie je alleen een rondje."
+              }
+            ],
+            [
+              {
+                "type": "label",
+                "tekst": "Fout",
+                "soort": "fout"
+              },
+              {
+                "type": "afbeelding",
+                "bron": "glas-schuin.svg",
+                "alt": "Het glas schuin van boven"
+              },
+              {
+                "type": "tekst",
+                "tekst": "Hier kijk je schuin. Je ziet ook de zijkant.\nDat is geen bovenaanzicht."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Het vooraanzicht",
+      "notitie": "Hardop: 'Ik kijk van voren, waar de pijl is. Links zie ik 2 blokjes op elkaar. Dan 1. Rechts nog 1: dat blokje staat achteraan, maar van voren zie ik het ook.' Teken in de hokjes: 2, 1, 1. Druk daarna op Antwoord.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Waar kijk je vanaf?",
+                    "klein": "van voren, van opzij of van boven"
+                  },
+                  {
+                    "tekst": "Welke blokjes zie je dan?",
+                    "klein": "Kijk alleen naar die kant."
+                  },
+                  {
+                    "tekst": "Teken het plat.",
+                    "klein": "Alleen hokjes, geen schuine lijnen."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "bouwwerk",
+                    "hoogtes": [
+                      [
+                        0,
+                        1,
+                        1
+                      ],
+                      [
+                        2,
+                        1,
+                        0
+                      ]
+                    ],
+                    "pijl": "voor"
+                  },
+                  {
+                    "type": "antwoord",
+                    "blokken": [
+                      {
+                        "type": "bouwwerk",
+                        "hoogtes": [
+                          [
+                            0,
+                            1,
+                            1
+                          ],
+                          [
+                            2,
+                            1,
+                            0
+                          ]
+                        ],
+                        "aanzicht": "voor",
+                        "vak": 60
+                      },
+                      {
+                        "type": "tekst",
+                        "tekst": "vooraanzicht"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Het bovenaanzicht",
+      "notitie": "Hardop: 'Ik vlieg erboven. Ik zie alleen de bovenkant van elk stapeltje. Hoe hoog het is, zie ik niet. Voor: links en midden. Achter: midden en rechts.' Teken het trapje. Achter staat boven, voor staat onder.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Waar kijk je vanaf?",
+                    "klein": "van voren, van opzij of van boven"
+                  },
+                  {
+                    "tekst": "Welke blokjes zie je dan?",
+                    "klein": "Kijk alleen naar die kant."
+                  },
+                  {
+                    "tekst": "Teken het plat.",
+                    "klein": "Alleen hokjes, geen schuine lijnen."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "bouwwerk",
+                    "hoogtes": [
+                      [
+                        0,
+                        1,
+                        1
+                      ],
+                      [
+                        2,
+                        1,
+                        0
+                      ]
+                    ],
+                    "pijl": "boven"
+                  },
+                  {
+                    "type": "antwoord",
+                    "blokken": [
+                      {
+                        "type": "bouwwerk",
+                        "hoogtes": [
+                          [
+                            0,
+                            1,
+                            1
+                          ],
+                          [
+                            2,
+                            1,
+                            0
+                          ]
+                        ],
+                        "aanzicht": "boven",
+                        "vak": 60
+                      },
+                      {
+                        "type": "tekst",
+                        "tekst": "bovenaanzicht"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Het zijaanzicht",
+      "notitie": "Hardop: 'Ik sta rechts en kijk naar links. De voorkant is nu links van mij. Voor zie ik 2 hoog, achter 1 hoog.' Teken 2 en 1. Let op: de 2 staat links.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Waar kijk je vanaf?",
+                    "klein": "van voren, van opzij of van boven"
+                  },
+                  {
+                    "tekst": "Welke blokjes zie je dan?",
+                    "klein": "Kijk alleen naar die kant."
+                  },
+                  {
+                    "tekst": "Teken het plat.",
+                    "klein": "Alleen hokjes, geen schuine lijnen."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "bouwwerk",
+                    "hoogtes": [
+                      [
+                        0,
+                        1,
+                        1
+                      ],
+                      [
+                        2,
+                        1,
+                        0
+                      ]
+                    ],
+                    "pijl": "zij"
+                  },
+                  {
+                    "type": "antwoord",
+                    "blokken": [
+                      {
+                        "type": "bouwwerk",
+                        "hoogtes": [
+                          [
+                            0,
+                            1,
+                            1
+                          ],
+                          [
+                            2,
+                            1,
+                            0
+                          ]
+                        ],
+                        "aanzicht": "zij",
+                        "vak": 60
+                      },
+                      {
+                        "type": "tekst",
+                        "tekst": "zijaanzicht"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Welk aanzicht is dit?",
+      "opdracht": "Schrijf voor, zij of boven op je wisbordje.",
+      "notitie": "Laat aanwijzen: waar zie je de 2 hoog? Dat is de middelste kolom, van voren gezien.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Waar kijk je vanaf?",
+                    "klein": "van voren, van opzij of van boven"
+                  },
+                  {
+                    "tekst": "Welke blokjes zie je dan?",
+                    "klein": "Kijk alleen naar die kant."
+                  },
+                  {
+                    "tekst": "Teken het plat.",
+                    "klein": "Alleen hokjes, geen schuine lijnen."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "bouwwerk",
+                    "hoogtes": [
+                      [
+                        1,
+                        2,
+                        0
+                      ],
+                      [
+                        1,
+                        0,
+                        1
+                      ]
+                    ],
+                    "vak": 60
+                  },
+                  {
+                    "type": "bouwwerk",
+                    "hoogtes": [
+                      [
+                        1,
+                        2,
+                        0
+                      ],
+                      [
+                        1,
+                        0,
+                        1
+                      ]
+                    ],
+                    "aanzicht": "voor",
+                    "vak": 55,
+                    "onderschrift": "Welk aanzicht?"
+                  }
+                ]
+              },
+              {
+                "type": "keuzes",
+                "kolommen": 1,
+                "opties": [
+                  {
+                    "tekst": "voor",
+                    "goed": true,
+                    "uitleg": "Goed: van voren 1, 2 en 1 hoog."
+                  },
+                  {
+                    "tekst": "zij",
+                    "uitleg": "Fout: van opzij zie je maar 2 kolommen."
+                  },
+                  {
+                    "tekst": "boven",
+                    "uitleg": "Fout: van boven zie je geen hoogte, alleen de bovenkant van de blokjes."
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Teken het bovenaanzicht",
+      "notitie": "Kijk naar de wisbordjes. Fout: een 2 hoog getekend? Van boven zie je geen hoogte. Achter staat boven, voor staat onder.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Waar kijk je vanaf?",
+                    "klein": "van voren, van opzij of van boven"
+                  },
+                  {
+                    "tekst": "Welke blokjes zie je dan?",
+                    "klein": "Kijk alleen naar die kant."
+                  },
+                  {
+                    "tekst": "Teken het plat.",
+                    "klein": "Alleen hokjes, geen schuine lijnen."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "bouwwerk",
+                    "hoogtes": [
+                      [
+                        1,
+                        2,
+                        0
+                      ],
+                      [
+                        1,
+                        0,
+                        1
+                      ]
+                    ],
+                    "pijl": "boven"
+                  },
+                  {
+                    "type": "antwoord",
+                    "blokken": [
+                      {
+                        "type": "bouwwerk",
+                        "hoogtes": [
+                          [
+                            1,
+                            2,
+                            0
+                          ],
+                          [
+                            1,
+                            0,
+                            1
+                          ]
+                        ],
+                        "aanzicht": "boven",
+                        "vak": 60
+                      },
+                      {
+                        "type": "tekst",
+                        "tekst": "bovenaanzicht"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ],
+      "opdracht": "Teken het bovenaanzicht op je wisbordje."
+    },
+    {
+      "fase": "samen",
+      "titel": "Welk plaatje is het vooraanzicht?",
+      "opdracht": "Schrijf de letter op je wisbordje.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            1,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "bouwwerk",
+                "hoogtes": [
+                  [
+                    2,
+                    2
+                  ],
+                  [
+                    1,
+                    0
+                  ]
+                ],
+                "pijl": "voor"
+              }
+            ],
+            [
+              {
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "bouwwerk",
+                    "hoogtes": [
+                      [
+                        1,
+                        2
+                      ]
+                    ],
+                    "aanzicht": "voor",
+                    "vak": 60,
+                    "onderschrift": "**A**"
+                  },
+                  {
+                    "type": "bouwwerk",
+                    "hoogtes": [
+                      [
+                        2,
+                        2
+                      ]
+                    ],
+                    "aanzicht": "voor",
+                    "vak": 60,
+                    "onderschrift": "**B**"
+                  },
+                  {
+                    "type": "bouwwerk",
+                    "hoogtes": [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        1,
+                        0
+                      ]
+                    ],
+                    "aanzicht": "boven",
+                    "vak": 60,
+                    "onderschrift": "**C**"
+                  },
+                  {
+                    "type": "bouwwerk",
+                    "hoogtes": [
+                      [
+                        1,
+                        0
+                      ]
+                    ],
+                    "aanzicht": "voor",
+                    "vak": 60,
+                    "onderschrift": "**D**"
+                  }
+                ]
+              },
+              {
+                "type": "keuzes",
+                "kolommen": 2,
+                "opties": [
+                  {
+                    "tekst": "A",
+                    "uitleg": "Fout: dit is het zijaanzicht."
+                  },
+                  {
+                    "tekst": "B",
+                    "goed": true,
+                    "uitleg": "Goed: van voren zie je 2 en 2 hoog."
+                  },
+                  {
+                    "tekst": "C",
+                    "uitleg": "Fout: dit is het bovenaanzicht."
+                  },
+                  {
+                    "tekst": "D",
+                    "uitleg": "Fout: je keek alleen naar de voorste rij. De blokjes erachter zie je ook."
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Teken het zijaanzicht",
+      "notitie": "Fout 2, 1? Dan staat de voorkant rechts. Van rechts gezien staat de voorkant links: 1, dan 2.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Waar kijk je vanaf?",
+                    "klein": "van voren, van opzij of van boven"
+                  },
+                  {
+                    "tekst": "Welke blokjes zie je dan?",
+                    "klein": "Kijk alleen naar die kant."
+                  },
+                  {
+                    "tekst": "Teken het plat.",
+                    "klein": "Alleen hokjes, geen schuine lijnen."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "bouwwerk",
+                    "hoogtes": [
+                      [
+                        2,
+                        2
+                      ],
+                      [
+                        1,
+                        0
+                      ]
+                    ],
+                    "pijl": "zij"
+                  },
+                  {
+                    "type": "antwoord",
+                    "blokken": [
+                      {
+                        "type": "bouwwerk",
+                        "hoogtes": [
+                          [
+                            2,
+                            2
+                          ],
+                          [
+                            1,
+                            0
+                          ]
+                        ],
+                        "aanzicht": "zij",
+                        "vak": 60
+                      },
+                      {
+                        "type": "tekst",
+                        "tekst": "zijaanzicht"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ],
+      "opdracht": "Teken het zijaanzicht op je wisbordje."
+    },
+    {
+      "fase": "check",
+      "titel": "Laat zien wat je kunt",
+      "opdracht": "Iedereen werkt alleen. Schrijf a, b en c op je wisbordje.",
+      "notitie": "3 of 2 goed → zelfstandig. 1 of 0 goed → instructietafel.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            1,
+            3,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "bouwwerk",
+                "hoogtes": [
+                  [
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    2,
+                    1
+                  ]
+                ],
+                "vak": 60
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "tekst": "**a**  Welk plaatje is het **bovenaanzicht**?"
+              },
+              {
+                "type": "naast",
+                "blokken": [
+                  {
+                    "type": "bouwwerk",
+                    "hoogtes": [
+                      [
+                        1,
+                        2,
+                        1
+                      ]
+                    ],
+                    "aanzicht": "voor",
+                    "vak": 40,
+                    "onderschrift": "**A**"
+                  },
+                  {
+                    "type": "bouwwerk",
+                    "hoogtes": [
+                      [
+                        1,
+                        0,
+                        1
+                      ],
+                      [
+                        1,
+                        1,
+                        1
+                      ]
+                    ],
+                    "aanzicht": "boven",
+                    "vak": 40,
+                    "onderschrift": "**B**"
+                  },
+                  {
+                    "type": "bouwwerk",
+                    "hoogtes": [
+                      [
+                        1,
+                        1,
+                        1
+                      ],
+                      [
+                        1,
+                        1,
+                        1
+                      ]
+                    ],
+                    "aanzicht": "boven",
+                    "vak": 40,
+                    "onderschrift": "**C**"
+                  }
+                ]
+              },
+              {
+                "type": "tekst",
+                "tekst": "**b**  Teken het **vooraanzicht**."
+              },
+              {
+                "type": "tekst",
+                "tekst": "**c**  Welk aanzicht is dit?"
+              },
+              {
+                "type": "bouwwerk",
+                "hoogtes": [
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                "aanzicht": "voor",
+                "vak": 40
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "tekst",
+                    "tekst": "**a**  B"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "**b**"
+                  },
+                  {
+                    "type": "bouwwerk",
+                    "hoogtes": [
+                      [
+                        1,
+                        0,
+                        1
+                      ],
+                      [
+                        1,
+                        2,
+                        1
+                      ]
+                    ],
+                    "aanzicht": "voor",
+                    "vak": 40
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "**c**  zijaanzicht"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

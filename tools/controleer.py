@@ -42,6 +42,7 @@ BLOKKEN = {
     "cirkel":     ({"delen"}, {"gekleurd", "straal", "verhoudingen", "onderschrift"}),
     "rechthoek":  ({"rijen", "kolommen"}, {"gekleurd", "vak", "onderschrift"}),
     "getallenlijn": ({"van", "tot"}, {"stap", "labels", "pijlen", "breedte", "onderschrift"}),
+    "bouwwerk":   ({"hoogtes"}, {"aanzicht", "vak", "pijl", "getallen", "onderschrift"}),
     "afbeelding": ({"bron"}, {"alt", "hoogte"}),
     "schrijfvak": ({}, {"label", "lijnen", "breedte", "hoogte"}),
     "breukvak":   ({}, {"namen"}),
@@ -126,6 +127,18 @@ def controleer_blok(b, waar, v, map_):
                 op = x.get("op") if isinstance(x, dict) else x
                 if not isinstance(op, (int, float)) or not van <= op <= tot:
                     v.fout(waar, f"getallenlijn: pijl op {op!r} ligt niet tussen {van} en {tot}")
+    if t == "bouwwerk":
+        h = b.get("hoogtes")
+        if not isinstance(h, list) or not h or not all(isinstance(r, list) and r for r in h):
+            v.fout(waar, "bouwwerk: 'hoogtes' is een lijst rijen (van achter naar voor), elke rij een lijst getallen")
+        elif not all(isinstance(x, int) and 0 <= x <= 9 for r in h for x in r):
+            v.fout(waar, "bouwwerk: hoogtes zijn hele getallen van 0 tot 9")
+        elif not any(x for r in h for x in r):
+            v.fout(waar, "bouwwerk: er staat geen enkel blokje")
+        if b.get("aanzicht", "3d") not in ("3d", "voor", "zij", "boven"):
+            v.fout(waar, "bouwwerk: 'aanzicht' moet '3d', 'voor', 'zij' of 'boven' zijn")
+        if "pijl" in b and b["pijl"] not in ("voor", "zij", "boven"):
+            v.fout(waar, "bouwwerk: 'pijl' moet 'voor', 'zij' of 'boven' zijn")
     if t == "afbeelding":
         bron = str(b.get("bron", ""))
         if "/" in bron or ".." in bron or ":" in bron:
