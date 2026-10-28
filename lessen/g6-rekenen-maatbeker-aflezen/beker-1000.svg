@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400">
+<path d="M40,72.0 L200,72.0 L200,352 Q200,372 180,372 L60,372 Q40,372 40,352 Z" fill="#5aa9dc"/>
+<line x1="40" y1="72.0" x2="200" y2="72.0" stroke="#1f6fa8" stroke-width="3"/>
+<path d="M204,110 L250,110 Q272,110 272,132 L272,250 Q272,272 250,272 L204,272" fill="none" stroke="#173141" stroke-width="7" stroke-linejoin="round"/>
+<path d="M18,30 L40,52 L40,352 Q40,374 62,374 L178,374 Q200,374 200,352 L200,30" fill="none" stroke="#173141" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="150" y1="342.0" x2="198" y2="342.0" stroke="#173141" stroke-width="3"/>
+<text x="144" y="349.0" text-anchor="end" font-family="sans-serif" font-size="21" font-weight="700" fill="#173141" stroke="#ffffff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">100</text>
+<line x1="150" y1="312.0" x2="198" y2="312.0" stroke="#173141" stroke-width="3"/>
+<text x="144" y="319.0" text-anchor="end" font-family="sans-serif" font-size="21" font-weight="700" fill="#173141" stroke="#ffffff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">200</text>
+<line x1="150" y1="282.0" x2="198" y2="282.0" stroke="#173141" stroke-width="3"/>
+<text x="144" y="289.0" text-anchor="end" font-family="sans-serif" font-size="21" font-weight="700" fill="#173141" stroke="#ffffff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">300</text>
+<line x1="150" y1="252.0" x2="198" y2="252.0" stroke="#173141" stroke-width="3"/>
+<text x="144" y="259.0" text-anchor="end" font-family="sans-serif" font-size="21" font-weight="700" fill="#173141" stroke="#ffffff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">400</text>
+<line x1="150" y1="222.0" x2="198" y2="222.0" stroke="#173141" stroke-width="3"/>
+<text x="144" y="229.0" text-anchor="end" font-family="sans-serif" font-size="21" font-weight="700" fill="#173141" stroke="#ffffff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">500</text>
+<line x1="150" y1="192.0" x2="198" y2="192.0" stroke="#173141" stroke-width="3"/>
+<text x="144" y="199.0" text-anchor="end" font-family="sans-serif" font-size="21" font-weight="700" fill="#173141" stroke="#ffffff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">600</text>
+<line x1="150" y1="162.0" x2="198" y2="162.0" stroke="#173141" stroke-width="3"/>
+<text x="144" y="169.0" text-anchor="end" font-family="sans-serif" font-size="21" font-weight="700" fill="#173141" stroke="#ffffff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">700</text>
+<line x1="150" y1="132.0" x2="198" y2="132.0" stroke="#173141" stroke-width="3"/>
+<text x="144" y="139.0" text-anchor="end" font-family="sans-serif" font-size="21" font-weight="700" fill="#173141" stroke="#ffffff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">800</text>
+<line x1="150" y1="102.0" x2="198" y2="102.0" stroke="#173141" stroke-width="3"/>
+<text x="144" y="109.0" text-anchor="end" font-family="sans-serif" font-size="21" font-weight="700" fill="#173141" stroke="#ffffff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">900</text>
+<line x1="150" y1="72.0" x2="198" y2="72.0" stroke="#173141" stroke-width="3"/>
+<text x="144" y="79.0" text-anchor="end" font-family="sans-serif" font-size="21" font-weight="700" fill="#173141" stroke="#ffffff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">1000</text>
+<text x="174" y="58" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#173141">ml</text>
+</svg>

@@ -1,6 +1,27 @@
 {
   "lessen": [
     {
+      "id": "g6-rekenen-maatbeker-aflezen",
+      "titel": "Een maatbeker aflezen",
+      "groep": "6",
+      "vak": "Rekenen",
+      "methode": "Instruct! 2 groep 6, blok 2 week 3, les 11b",
+      "onderwerp": "Inhoud",
+      "duur": 35,
+      "edi": true,
+      "gemaakt": "2026-10-28",
+      "samenvatting": "Aflezen hoeveel ml er in een maatbeker zit, ook als het water precies tussen twee streepjes staat, en andersom het water tekenen.",
+      "trefwoorden": [
+        "maatbeker",
+        "ml",
+        "milliliter",
+        "liter",
+        "inhoud",
+        "aflezen",
+        "1000 ml"
+      ]
+    },
+    {
       "id": "g56-rekenen-getallenlijn-10000",
       "titel": "Getallen tot 10 000 op de getallenlijn",
       "groep": "5/6",

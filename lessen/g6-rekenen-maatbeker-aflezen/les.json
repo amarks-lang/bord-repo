@@ -1,0 +1,676 @@
+{
+  "id": "g6-rekenen-maatbeker-aflezen",
+  "titel": "Een maatbeker aflezen",
+  "groep": "6",
+  "vak": "Rekenen",
+  "methode": "Instruct! 2 groep 6, blok 2 week 3, les 11b",
+  "onderwerp": "Inhoud",
+  "duur": 35,
+  "edi": true,
+  "gemaakt": "2026-10-28",
+  "samenvatting": "Aflezen hoeveel ml er in een maatbeker zit, ook als het water precies tussen twee streepjes staat, en andersom het water tekenen.",
+  "trefwoorden": [
+    "maatbeker",
+    "ml",
+    "milliliter",
+    "liter",
+    "inhoud",
+    "aflezen",
+    "1000 ml"
+  ],
+  "lesdoel": "aflezen hoeveel ml er in een maatbeker zit",
+  "succescriterium": "kan zeggen hoeveel ml erin zit, ook als het water precies tussen twee streepjes staat.",
+  "lesdoelInHoek": true,
+  "paginas": [
+    {
+      "fase": "lesdoel",
+      "notitie": "Zet een echte maatbeker met water op tafel. Laat hem rondgaan: wat zie je op de zijkant?",
+      "blokken": [
+        {
+          "type": "doel"
+        },
+        {
+          "type": "succes"
+        },
+        {
+          "type": "naast",
+          "blokken": [
+            {
+              "type": "afbeelding",
+              "bron": "beker-1000.svg",
+              "alt": "Een volle maatbeker"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voorkennis",
+      "titel": "Wat is precies het midden?",
+      "opdracht": "Schrijf de antwoorden op je wisbordje.",
+      "notitie": "Dit hebben we straks nodig. Precies tussen twee honderdtallen ligt het getal met 50: 300 … 350 … 400.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "getallenlijn",
+                "van": 300,
+                "tot": 400,
+                "stap": 10,
+                "labels": [
+                  300,
+                  400
+                ],
+                "pijlen": [
+                  {
+                    "op": 350,
+                    "tekst": "?"
+                  }
+                ],
+                "breedte": 900
+              },
+              {
+                "type": "som",
+                "tekst": "700 … ==?== … 800"
+              },
+              {
+                "type": "som",
+                "tekst": "0 … ==?== … 100"
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "350"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "750"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "50"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "instructie",
+      "titel": "De maatbeker",
+      "notitie": "Ml is milliliter: heel weinig, een paar druppels. Een volle maatbeker is 1 liter = 1000 ml. Bij elk streepje komt er 100 ml bij. Waar kom je een maatbeker tegen? In de keuken bij een recept, bij een medicijn (maatlepel/maatbekertje), bij het pak melk (1 liter).",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            1,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "afbeelding",
+                "bron": "beker-1000.svg",
+                "alt": "Een volle maatbeker van 1 liter"
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "1 liter = ==1000== ml",
+                "grootte": "groot"
+              },
+              {
+                "type": "tekst",
+                "tekst": "**ml** = milliliter"
+              },
+              {
+                "type": "tekst",
+                "tekst": "Bij elk streepje komt er **100 ml** bij."
+              },
+              {
+                "type": "tekst",
+                "tekst": "Je ziet een maatbeker in de keuken,\nbij een recept of bij een medicijn.",
+                "grootte": "klein"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Het water staat op een streepje",
+      "opdracht": "Kijk en luister.",
+      "notitie": "Hardop: 'Ik kijk waar het water ophoudt: hier, bovenaan het blauw. Er staat een streepje precies op het water. Daar staat 800. Er zit 800 ml in.' Wijs het streepje aan en schrijf 800 ml in het vak.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            2,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Kijk waar het water **ophoudt**."
+                  },
+                  {
+                    "tekst": "Welk streepje is **eronder**?\nWelk streepje is **erboven**?"
+                  },
+                  {
+                    "tekst": "Op het streepje? Dat getal.",
+                    "klein": "Precies ertussen? Het midden: **+ 50**."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "afbeelding",
+                "bron": "beker-800.svg",
+                "alt": "Maatbeker met 800 ml water",
+                "hoogte": 520
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "Er zit ==?== ml in."
+              },
+              {
+                "type": "schrijfvak"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "800 ml"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Het water staat tussen twee streepjes",
+      "opdracht": "Kijk en luister.",
+      "notitie": "Hardop: 'Het water houdt hier op. Dat is niet op een streepje. Eronder staat 300, erboven 400. Het staat precies in het midden. Het midden van 300 en 400 is 350. Er zit 350 ml in.' Teken in het vak een stukje getallenlijn 300 – 350 – 400.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            2,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Kijk waar het water **ophoudt**."
+                  },
+                  {
+                    "tekst": "Welk streepje is **eronder**?\nWelk streepje is **erboven**?"
+                  },
+                  {
+                    "tekst": "Op het streepje? Dat getal.",
+                    "klein": "Precies ertussen? Het midden: **+ 50**."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "afbeelding",
+                "bron": "beker-350.svg",
+                "alt": "Maatbeker met 350 ml water",
+                "hoogte": 520
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "Er zit ==?== ml in."
+              },
+              {
+                "type": "schrijfvak"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "350 ml"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "tussen 300 en 400"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Andersom: teken het water bij 600 ml",
+      "opdracht": "Kijk en luister.",
+      "notitie": "Hardop: 'Nu andersom. Ik wil 600 ml. Ik zoek het streepje van 600. Daar trek ik een streep: tot hier komt het water. Alles eronder kleur ik blauw.' Teken met de pen op de beker. Controleer: lees je eigen beker weer af.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            2,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Kijk waar het water **ophoudt**."
+                  },
+                  {
+                    "tekst": "Welk streepje is **eronder**?\nWelk streepje is **erboven**?"
+                  },
+                  {
+                    "tekst": "Op het streepje? Dat getal.",
+                    "klein": "Precies ertussen? Het midden: **+ 50**."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "afbeelding",
+                "bron": "beker-leeg.svg",
+                "alt": "Lege maatbeker",
+                "hoogte": 520
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "600 ml"
+              },
+              {
+                "type": "schrijfvak"
+              },
+              {
+                "type": "antwoord",
+                "tekst": "De streep komt **op** het streepje van 600."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Hoeveel ml zit erin?",
+      "opdracht": "Schrijf het antwoord op je wisbordje.",
+      "notitie": "Water staat op een streepje. Fout 800? Dan is het streepje erboven gelezen: wijs aan waar het water ophoudt.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            2,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Kijk waar het water **ophoudt**."
+                  },
+                  {
+                    "tekst": "Welk streepje is **eronder**?\nWelk streepje is **erboven**?"
+                  },
+                  {
+                    "tekst": "Op het streepje? Dat getal.",
+                    "klein": "Precies ertussen? Het midden: **+ 50**."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "afbeelding",
+                "bron": "beker-700.svg",
+                "alt": "Maatbeker met 700 ml water",
+                "hoogte": 520
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "Er zit ==?== ml in."
+              },
+              {
+                "type": "schrijfvak"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "700 ml"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Hoeveel ml zit erin?",
+      "opdracht": "Schrijf het antwoord op je wisbordje.",
+      "notitie": "Water staat tussen twee streepjes. Fout 200 of 300? Vraag: staat het water óp een streepje? Nee, ertussen. Eronder 200, erboven 300, het midden is 250.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            2,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Kijk waar het water **ophoudt**."
+                  },
+                  {
+                    "tekst": "Welk streepje is **eronder**?\nWelk streepje is **erboven**?"
+                  },
+                  {
+                    "tekst": "Op het streepje? Dat getal.",
+                    "klein": "Precies ertussen? Het midden: **+ 50**."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "afbeelding",
+                "bron": "beker-250.svg",
+                "alt": "Maatbeker met 250 ml water",
+                "hoogte": 520
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "Er zit ==?== ml in."
+              },
+              {
+                "type": "schrijfvak"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "250 ml"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "tussen 200 en 300"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "In welke beker zit 550 ml?",
+      "opdracht": "Schrijf de letter op je wisbordje.",
+      "notitie": "550 ligt tussen 500 en 600. Zoek eerst die twee streepjes, dan kijk je of het water precies ertussen staat.",
+      "blokken": [
+        {
+          "type": "naast",
+          "blokken": [
+            {
+              "type": "afbeelding",
+              "bron": "beker-500.svg",
+              "alt": "Maatbeker met 500 ml water",
+              "hoogte": 330
+            },
+            {
+              "type": "afbeelding",
+              "bron": "beker-650.svg",
+              "alt": "Maatbeker met 650 ml water",
+              "hoogte": 330
+            },
+            {
+              "type": "afbeelding",
+              "bron": "beker-550.svg",
+              "alt": "Maatbeker met 550 ml water",
+              "hoogte": 330
+            },
+            {
+              "type": "afbeelding",
+              "bron": "beker-450.svg",
+              "alt": "Maatbeker met 450 ml water",
+              "hoogte": 330
+            }
+          ]
+        },
+        {
+          "type": "keuzes",
+          "kolommen": 4,
+          "opties": [
+            {
+              "tekst": "A",
+              "uitleg": "Fout: dit is 500 ml. Het water staat óp het streepje."
+            },
+            {
+              "tekst": "B",
+              "uitleg": "Fout: dit is 650 ml. Verkeerde streepjes."
+            },
+            {
+              "tekst": "C",
+              "goed": true,
+              "uitleg": "Goed: precies tussen 500 en 600."
+            },
+            {
+              "tekst": "D",
+              "uitleg": "Fout: dit is 450 ml. Het moet boven 500."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Teken het water bij 150 ml",
+      "opdracht": "Tussen welke streepjes komt het water? Schrijf het op je wisbordje.",
+      "notitie": "Eerst wisbordjes omhoog: tussen 100 en 200. Laat dan een leerling met de pen de waterlijn tekenen, precies in het midden tussen 100 en 200. Klas controleert: duim omhoog of omlaag.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            2,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Kijk waar het water **ophoudt**."
+                  },
+                  {
+                    "tekst": "Welk streepje is **eronder**?\nWelk streepje is **erboven**?"
+                  },
+                  {
+                    "tekst": "Op het streepje? Dat getal.",
+                    "klein": "Precies ertussen? Het midden: **+ 50**."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "afbeelding",
+                "bron": "beker-leeg.svg",
+                "alt": "Lege maatbeker",
+                "hoogte": 520
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "150 ml"
+              },
+              {
+                "type": "schrijfvak"
+              },
+              {
+                "type": "antwoord",
+                "tekst": "Tussen **100** en **200**, precies in het midden."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "check",
+      "titel": "Laat zien wat je kunt",
+      "opdracht": "Iedereen werkt alleen. Schrijf a, b en c op je wisbordje.",
+      "notitie": "3 of 2 goed → zelfstandig. 1 of 0 goed → instructietafel. Let op wie bij b of c het streepje eronder of erboven opschrijft.",
+      "blokken": [
+        {
+          "type": "naast",
+          "blokken": [
+            {
+              "type": "afbeelding",
+              "bron": "beker-900.svg",
+              "alt": "Maatbeker met 900 ml water",
+              "hoogte": 400
+            },
+            {
+              "type": "afbeelding",
+              "bron": "beker-450.svg",
+              "alt": "Maatbeker met 450 ml water",
+              "hoogte": 400
+            },
+            {
+              "type": "afbeelding",
+              "bron": "beker-650.svg",
+              "alt": "Maatbeker met 650 ml water",
+              "hoogte": 400
+            }
+          ]
+        },
+        {
+          "type": "naast",
+          "blokken": [
+            {
+              "type": "som",
+              "tekst": "**a**  ==?== ml"
+            },
+            {
+              "type": "som",
+              "tekst": "**b**  ==?== ml"
+            },
+            {
+              "type": "som",
+              "tekst": "**c**  ==?== ml"
+            }
+          ]
+        },
+        {
+          "type": "antwoord",
+          "tekst": "**a**  900 ml   ·   **b**  450 ml   ·   **c**  650 ml"
+        }
+      ]
+    },
+    {
+      "fase": "afsluiting",
+      "titel": "Een halve maatbeker",
+      "opdracht": "Hoeveel ml zit erin?",
+      "notitie": "Terug naar het lesdoel: kun je aflezen hoeveel ml erin zit, ook als het water tussen twee streepjes staat? Duim omhoog, opzij of omlaag. Een halve liter is 500 ml: de helft van 1000.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            1,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "afbeelding",
+                "bron": "beker-500.svg",
+                "alt": "Een halve maatbeker"
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "een halve liter = ==?== ml"
+              },
+              {
+                "type": "schrijfvak"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "500 ml"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "de helft van 1000"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
