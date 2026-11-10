@@ -1,0 +1,550 @@
+{
+  "id": "g56-rekenen-deelsom-splitsen",
+  "titel": "Deelsommen splitsen: 372 : 6",
+  "groep": "5/6",
+  "vak": "Rekenen",
+  "onderwerp": "Delen",
+  "duur": 35,
+  "edi": true,
+  "gemaakt": "2026-11-10",
+  "samenvatting": "Een deelsom als 372 : 6 uitrekenen door te splitsen in een keer-10-som uit de tafel en een rest: 360 : 6 + 12 : 6.",
+  "trefwoorden": [
+    "deelsom",
+    "delen",
+    "splitsen",
+    "tafels",
+    "keer 10"
+  ],
+  "lesdoel": "deelsommen als 372 : 6 uitrekenen door te splitsen",
+  "succescriterium": "het getal zo kan splitsen dat ik twee makkelijke deelsommen krijg.",
+  "lesdoelInHoek": true,
+  "paginas": [
+    {
+      "fase": "lesdoel",
+      "blokken": [
+        {
+          "type": "doel"
+        },
+        {
+          "type": "succes"
+        },
+        {
+          "type": "schrijfvak"
+        }
+      ]
+    },
+    {
+      "fase": "voorkennis",
+      "titel": "Wat weet je al?",
+      "opdracht": "Schrijf de antwoorden op je wisbordje.",
+      "notitie": "Ken je 36 : 6, dan ken je ook 360 : 6: het antwoord is 10 keer zo groot.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "raster",
+                "kolommen": 2,
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "36 : 6 = ==?=="
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "360 : 6 = ==?=="
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "42 : 7 = ==?=="
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "420 : 7 = ==?=="
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "36 : 6 = 6"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "360 : 6 = 60"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "42 : 7 = 6"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "420 : 7 = 60"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "instructie",
+      "titel": "Een grote deelsom wordt twee kleine",
+      "notitie": "372 : 6 is te groot om meteen te weten. Splits 372 zo dat je twee sommen krijgt die je wél weet. 360 zit in de tafel van 6 (keer 10). Wat over is, 12, ook. Niet-voorbeeld: 300 + 70 + 2. Dan krijg je 70 : 6 en 2 : 6, die gaan niet mooi.",
+      "blokken": [
+        {
+          "type": "som",
+          "tekst": "372 : 6 = ==?==",
+          "grootte": "groot"
+        },
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "label",
+                "soort": "goed",
+                "tekst": "372 = 360 + 12"
+              },
+              {
+                "type": "som",
+                "tekst": "360 : 6 = 60"
+              },
+              {
+                "type": "som",
+                "tekst": "12 : 6 = 2"
+              },
+              {
+                "type": "som",
+                "tekst": "60 + 2 = ==62=="
+              }
+            ],
+            [
+              {
+                "type": "label",
+                "soort": "fout",
+                "tekst": "372 = 300 + 70 + 2"
+              },
+              {
+                "type": "som",
+                "tekst": "70 : 6 = ?"
+              },
+              {
+                "type": "som",
+                "tekst": "2 : 6 = ?"
+              },
+              {
+                "type": "tekst",
+                "tekst": "Dat gaat niet mooi.",
+                "grootte": "klein"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Ik doe het voor",
+      "notitie": "Welke keer-10-som van 6 past in 372? 6 × 60 = 360. Dan blijft er 12 over. 360 : 6 = 60. 12 : 6 = 2. 60 + 2 = 62. Controle: 6 × 62 = 372.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Zoek een keer-10-som uit de tafel die erin past",
+                  "Splits het getal",
+                  "Deel allebei de stukken",
+                  "Tel de twee antwoorden op"
+                ]
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "372 : 6 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Ik doe het voor",
+      "notitie": "4 × 70 = 280 past. 288 = 280 + 8. 280 : 4 = 70, 8 : 4 = 2. Samen 72.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Zoek een keer-10-som uit de tafel die erin past",
+                  "Splits het getal",
+                  "Deel allebei de stukken",
+                  "Tel de twee antwoorden op"
+                ]
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "288 : 4 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Ik doe het voor",
+      "notitie": "7 × 60 = 420 past, 7 × 70 = 490 is te veel. 455 = 420 + 35. 420 : 7 = 60, 35 : 7 = 5. Samen 65.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Zoek een keer-10-som uit de tafel die erin past",
+                  "Splits het getal",
+                  "Deel allebei de stukken",
+                  "Tel de twee antwoorden op"
+                ]
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "455 : 7 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Samen: splits zo",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "234 : 3 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "tekst",
+                "tekst": "Splits: 234 = 210 + ==?==  Reken dan uit.",
+                "grootte": "klein"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Zoek een keer-10-som uit de tafel die erin past",
+                  "Splits het getal",
+                  "Deel allebei de stukken",
+                  "Tel de twee antwoorden op"
+                ]
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "210 + 24"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "70 + 8 = 78"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "210 : 3 = 70 is de keer-10-som. Wat over is, deel je ook door 3."
+    },
+    {
+      "fase": "samen",
+      "titel": "Samen",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "456 : 8 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "tekst",
+                "tekst": "Schrijf de splitsing en het antwoord op je wisbordje.",
+                "grootte": "klein"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Zoek een keer-10-som uit de tafel die erin past",
+                  "Splits het getal",
+                  "Deel allebei de stukken",
+                  "Tel de twee antwoorden op"
+                ]
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "400 + 56"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "50 + 7 = 57"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Welke splitsing helpt je?",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "432 : 6",
+                "grootte": "groot"
+              },
+              {
+                "type": "keuzes",
+                "kolommen": 1,
+                "opties": [
+                  {
+                    "tekst": "420 + 12",
+                    "goed": true,
+                    "uitleg": "420 : 6 = 70 en 12 : 6 = 2. Samen 72."
+                  },
+                  {
+                    "tekst": "400 + 32",
+                    "uitleg": "Gesplitst in honderdtallen, maar 400 en 32 zitten niet in de tafel van 6."
+                  },
+                  {
+                    "tekst": "430 + 2",
+                    "uitleg": "Alleen de eenheden eraf gehaald. 430 : 6 en 2 : 6 gaan niet mooi."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Zoek een keer-10-som uit de tafel die erin past",
+                  "Splits het getal",
+                  "Deel allebei de stukken",
+                  "Tel de twee antwoorden op"
+                ]
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Laat kiezen met vingers: 1, 2 of 3. 360 + 72 kan ook (60 + 12 = 72); laat dat zien als iemand het noemt."
+    },
+    {
+      "fase": "samen",
+      "titel": "Samen",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "552 : 8 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "tekst",
+                "tekst": "Schrijf de splitsing en het antwoord op je wisbordje.",
+                "grootte": "klein"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Zoek een keer-10-som uit de tafel die erin past",
+                  "Splits het getal",
+                  "Deel allebei de stukken",
+                  "Tel de twee antwoorden op"
+                ]
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "480 + 72"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "60 + 9 = 69"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "8 × 70 = 560 is te veel. Dus 8 × 60 = 480, en 72 blijft over."
+    },
+    {
+      "fase": "check",
+      "titel": "Reken uit door te splitsen",
+      "opdracht": "Iedereen werkt alleen. Schrijf de splitsing en het antwoord op je wisbordje.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "294 : 6 = ==?=="
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "378 : 7 = ==?=="
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "tekst",
+                    "tekst": "**294 : 6 = 49**",
+                    "grootte": "groot"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "240 + 54",
+                    "grootte": "klein"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "**378 : 7 = 54**",
+                    "grootte": "groot"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "350 + 28",
+                    "grootte": "klein"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

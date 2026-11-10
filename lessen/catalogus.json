@@ -1,6 +1,24 @@
 {
   "lessen": [
     {
+      "id": "g56-rekenen-deelsom-splitsen",
+      "titel": "Deelsommen splitsen: 372 : 6",
+      "groep": "5/6",
+      "vak": "Rekenen",
+      "onderwerp": "Delen",
+      "duur": 35,
+      "edi": true,
+      "gemaakt": "2026-11-10",
+      "samenvatting": "Een deelsom als 372 : 6 uitrekenen door te splitsen in een keer-10-som uit de tafel en een rest: 360 : 6 + 12 : 6.",
+      "trefwoorden": [
+        "deelsom",
+        "delen",
+        "splitsen",
+        "tafels",
+        "keer 10"
+      ]
+    },
+    {
       "id": "g6-rekenen-maatbeker-aflezen",
       "titel": "Een maatbeker aflezen",
       "groep": "6",
@@ -78,6 +96,25 @@
         "tafels",
         "getallenfamilie",
         "omgekeerde bewerking"
+      ]
+    },
+    {
+      "id": "g56-rekenen-keersom-splitsen",
+      "titel": "Keersommen splitsen: 6 × 17",
+      "groep": "5/6",
+      "vak": "Rekenen",
+      "onderwerp": "Vermenigvuldigen",
+      "duur": 35,
+      "edi": true,
+      "gemaakt": "2026-11-10",
+      "samenvatting": "Een keersom als 6 × 17 uitrekenen door 17 te splitsen in 10 en 7: 6 × 10 + 6 × 7.",
+      "trefwoorden": [
+        "keersom",
+        "vermenigvuldigen",
+        "splitsen",
+        "tientallen",
+        "eenheden",
+        "tafels"
       ]
     },
     {

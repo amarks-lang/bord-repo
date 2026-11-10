@@ -1,0 +1,584 @@
+{
+  "id": "g56-rekenen-keersom-splitsen",
+  "titel": "Keersommen splitsen: 6 × 17",
+  "groep": "5/6",
+  "vak": "Rekenen",
+  "onderwerp": "Vermenigvuldigen",
+  "duur": 35,
+  "edi": true,
+  "gemaakt": "2026-11-10",
+  "samenvatting": "Een keersom als 6 × 17 uitrekenen door 17 te splitsen in 10 en 7: 6 × 10 + 6 × 7.",
+  "trefwoorden": [
+    "keersom",
+    "vermenigvuldigen",
+    "splitsen",
+    "tientallen",
+    "eenheden",
+    "tafels"
+  ],
+  "lesdoel": "een som als 6 × 17 uitrekenen door te splitsen",
+  "succescriterium": "het getal kan splitsen in tientallen en eenheden, en allebei de stukken keer kan doen.",
+  "lesdoelInHoek": true,
+  "paginas": [
+    {
+      "fase": "lesdoel",
+      "blokken": [
+        {
+          "type": "doel"
+        },
+        {
+          "type": "succes"
+        },
+        {
+          "type": "schrijfvak"
+        }
+      ]
+    },
+    {
+      "fase": "voorkennis",
+      "titel": "Wat weet je al?",
+      "opdracht": "Schrijf de antwoorden op je wisbordje.",
+      "notitie": "Deze twee soorten sommen heb je zo nodig: keer een tiental, en een tafelsom.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "raster",
+                "kolommen": 2,
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "7 × 10 = ==?=="
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "3 × 20 = ==?=="
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "5 × 8 = ==?=="
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "9 × 6 = ==?=="
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "7 × 10 = 70"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "3 × 20 = 60"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "5 × 8 = 40"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "9 × 6 = 54"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "instructie",
+      "titel": "6 × 17: splits de 17",
+      "notitie": "6 rijen van 17 hokjes. De eerste 10 van elke rij zijn gekleurd: links 6 × 10, rechts 6 × 7. Samen is het weer 6 × 17. Daarna de fout: wie 6 × 10 + 7 doet, vergeet dat de 7 ook 6 keer voorkomt.",
+      "blokken": [
+        {
+          "type": "rechthoek",
+          "rijen": 6,
+          "kolommen": 17,
+          "vak": 60,
+          "gekleurd": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95
+          ]
+        },
+        {
+          "type": "naast",
+          "blokken": [
+            {
+              "type": "label",
+              "soort": "goed",
+              "tekst": "6 × 10 + 6 × 7 = 60 + 42 = 102"
+            },
+            {
+              "type": "label",
+              "soort": "fout",
+              "tekst": "6 × 10 + 7 = 67"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Ik doe het voor",
+      "notitie": "17 is 10 en 7. 6 keer 10 is 60. 6 keer 7 is 42. 60 en 42 is 102. Controle: 6 × 20 = 120, dus iets minder dan 120 klopt.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Splits het getal in tientallen en eenheden",
+                  "Doe het tiental keer",
+                  "Doe de eenheden keer",
+                  "Tel de twee antwoorden op"
+                ]
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "6 × 17 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Ik doe het voor",
+      "notitie": "23 is 20 en 3. 4 × 20: dat is 4 × 2 = 8, dus 80. 4 × 3 = 12. 80 + 12 = 92. Let op: het tiental is nu 20, niet 10.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Splits het getal in tientallen en eenheden",
+                  "Doe het tiental keer",
+                  "Doe de eenheden keer",
+                  "Tel de twee antwoorden op"
+                ]
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "4 × 23 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Ik doe het voor",
+      "notitie": "15 is 10 en 5. 7 × 10 = 70. 7 × 5 = 35. 70 + 35 = 105. Over de 100 heen.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Splits het getal in tientallen en eenheden",
+                  "Doe het tiental keer",
+                  "Doe de eenheden keer",
+                  "Tel de twee antwoorden op"
+                ]
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "7 × 15 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Samen: vul in",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "3 × 18 = 3 × 10 + 3 × ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "tekst",
+                "tekst": "Wat moet er op het vraagteken? Reken dan de som uit.",
+                "grootte": "klein"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Splits het getal in tientallen en eenheden",
+                  "Doe het tiental keer",
+                  "Doe de eenheden keer",
+                  "Tel de twee antwoorden op"
+                ]
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "3 × 8"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "30 + 24 = 54"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Samen",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "5 × 16 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "tekst",
+                "tekst": "Schrijf de splitsing en het antwoord op je wisbordje.",
+                "grootte": "klein"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Splits het getal in tientallen en eenheden",
+                  "Doe het tiental keer",
+                  "Doe de eenheden keer",
+                  "Tel de twee antwoorden op"
+                ]
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "50 + 30"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "5 × 16 = 80"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Welk antwoord klopt?",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "8 × 14 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "keuzes",
+                "kolommen": 1,
+                "opties": [
+                  {
+                    "tekst": "112",
+                    "goed": true,
+                    "uitleg": "8 × 10 = 80 en 8 × 4 = 32. 80 + 32 = 112."
+                  },
+                  {
+                    "tekst": "84",
+                    "uitleg": "Alleen het tiental keer 8 gedaan: 80 + 4. De 4 moet ook keer 8."
+                  },
+                  {
+                    "tekst": "40",
+                    "uitleg": "8 × 1 gedaan in plaats van 8 × 10: 8 + 32. De 1 van 14 is een tiental."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Splits het getal in tientallen en eenheden",
+                  "Doe het tiental keer",
+                  "Doe de eenheden keer",
+                  "Tel de twee antwoorden op"
+                ]
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Laat kiezen met vingers: 1, 2 of 3. Vraag bij een fout antwoord: wat is hier vergeten?"
+    },
+    {
+      "fase": "samen",
+      "titel": "Samen",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "7 × 26 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "tekst",
+                "tekst": "Schrijf de splitsing en het antwoord op je wisbordje.",
+                "grootte": "klein"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Splits het getal in tientallen en eenheden",
+                  "Doe het tiental keer",
+                  "Doe de eenheden keer",
+                  "Tel de twee antwoorden op"
+                ]
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "140 + 42 = 182"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "7 × 20 = 140 en 7 × 6 = 42"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Het tiental is 20: 7 × 2 = 14, dus 7 × 20 = 140."
+    },
+    {
+      "fase": "check",
+      "titel": "Reken uit door te splitsen",
+      "opdracht": "Iedereen werkt alleen. Schrijf de splitsing en het antwoord op je wisbordje.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "4 × 19 = ==?=="
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "6 × 24 = ==?=="
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "tekst",
+                    "tekst": "**4 × 19 = 76**",
+                    "grootte": "groot"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "40 + 36",
+                    "grootte": "klein"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "**6 × 24 = 144**",
+                    "grootte": "groot"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "120 + 24",
+                    "grootte": "klein"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
