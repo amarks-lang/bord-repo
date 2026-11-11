@@ -25,9 +25,13 @@ function esc(s){
     .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 function breuk(t, n){ return '<span class="br"><span>' + t + '</span><span>' + n + '</span></span>'; }
-/* eenvoudige opmaak: **vet**, ==oranje==, __onderstreept__, [[3/5]] breuk, nieuwe regel = \n */
+/* eenvoudige opmaak: **vet**, ==oranje==, __onderstreept__, [[3/5]] breuk, {{240}} verborgen antwoord, nieuwe regel = \n */
 function opmaak(s){
-  return esc(s)
+  var uit = esc(s);
+  /* {{240}}: een oranje vraagteken; een tik (of volgende) laat 240 zien. Elk vraagteken apart. */
+  if(context && /\{\{.+?\}\}/.test(uit)) context.stappen = true;
+  return uit
+    .replace(/\{\{(.+?)\}\}/g, '<span class="lverb nog"><span class="lverbv">?</span><span class="lverba">$1</span></span>')
     .replace(/\[\[\s*([^\]\/]+?)\s*\/\s*([^\]]+?)\s*\]\]/g, function(_, t, n){ return breuk(t, n); })
     .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
     .replace(/==(.+?)==/g, '<span class="hl">$1</span>')
@@ -473,14 +477,18 @@ function wisStemmen(les){
   try{ localStorage.removeItem(stemSleutel()); }catch(e){}
 }
 
-/* ---------- stappenplan stap voor stap (en sprongen: één sprong per tik) ---------- */
-function plannen(laag){ return laag.querySelectorAll('.lstappen.stapsgewijs, .lstappen.kan-dicht, .lsprongen'); }
-function binnen(el, x, y){
-  var r = el.getBoundingClientRect();
-  return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom;
+/* ---------- stappenplan stap voor stap (en sprongen: één sprong per tik; {{…}}: één antwoord per tik) ---------- */
+function plannen(laag){ return laag.querySelectorAll('.lstappen.stapsgewijs, .lstappen.kan-dicht, .lsprongen, .lverb'); }
+function binnen(el, x, y, marge){
+  var r = el.getBoundingClientRect(), m = marge || 0;
+  return x >= r.left - m && x <= r.right + m && y >= r.top - m && y <= r.bottom + m;
 }
 /* volgende stap van één plan; true als er iets bij kwam */
 function onthul(k){
+  if(k.classList.contains('lverb')){
+    if(!k.classList.contains('nog')) return false;
+    k.classList.remove('nog'); return true;
+  }
   if(k.classList.contains('kan-dicht')){
     if(!k.classList.contains('dicht')) return false;
     k.classList.remove('dicht'); return true;
@@ -490,6 +498,7 @@ function onthul(k){
   nog.classList.remove('nog'); return true;
 }
 function sluit(k){
+  if(k.classList.contains('lverb')){ k.classList.add('nog'); return; }
   if(k.classList.contains('kan-dicht')) k.classList.add('dicht');
   var s = k.querySelectorAll('.lstap, .lspr'), i;
   if(k.classList.contains('stapsgewijs') || k.classList.contains('lsprongen')) for(i = 0; i < s.length; i++) s[i].classList.add('nog');
@@ -498,9 +507,15 @@ function sluit(k){
 function tik(laag, x, y){
   if(stemTik(laag, x, y)) return true;
   var l = plannen(laag), i;
+  /* eerst de vraagtekens: tik = antwoord tonen, nog een tik = weer vraagteken. Wat ruimte eromheen voor de vinger. */
+  for(i = 0; i < l.length; i++){
+    if(!l[i].classList.contains('lverb') || !binnen(l[i], x, y, 14)) continue;
+    if(!onthul(l[i])) sluit(l[i]);
+    return true;
+  }
   for(i = 0; i < l.length; i++){
     var k = l[i], kop = k.querySelector('.lstapkop');
-    if(!binnen(k, x, y)) continue;
+    if(k.classList.contains('lverb') || !binnen(k, x, y)) continue;
     if(k.classList.contains('lsprongen')){ if(!onthul(k)) sluit(k); return true; }   /* alles gekleurd: tik = opnieuw */
     var dicht = k.classList.contains('dicht');
     if(!dicht && kop && binnen(kop, x, y)) sluit(k);

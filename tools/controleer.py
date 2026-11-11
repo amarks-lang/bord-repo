@@ -199,6 +199,17 @@ def controleer_blok(b, waar, v, map_):
                 controleer_blok(x, f"{waar} > kolom {i + 1}[{j + 1}]", v, map_)
 
 
+def teksten(x):
+    """alle tekst in een blok of lijst blokken (voor de controle van {{…}})"""
+    if isinstance(x, str):
+        return [x]
+    if isinstance(x, list):
+        return [t for y in x for t in teksten(y)]
+    if isinstance(x, dict):
+        return [t for k, y in x.items() if k != "type" for t in teksten(y)]
+    return []
+
+
 def controleer_les(f, v):
     map_ = f.parent
     try:
@@ -241,6 +252,9 @@ def controleer_les(f, v):
             v.let_op(waar, "lege pagina (geen titel, geen blokken)")
         for j, b in enumerate(p.get("blokken", [])):
             controleer_blok(b, f"{waar} blok {j + 1}", v, map_)
+        for t in teksten(p.get("blokken", [])) + [str(p.get(k, "")) for k in ("titel", "opdracht")]:
+            if t.count("{{") != t.count("}}") or re.search(r"\{\{\s*\}\}", t):
+                v.fout(waar, f"verborgen antwoord: '{{{{…}}}}' niet goed gesloten of leeg in {t!r}")
     if les.get("edi"):
         if "lesdoel" not in fases:
             v.let_op(w, "EDI-les zonder lesdoel-pagina")

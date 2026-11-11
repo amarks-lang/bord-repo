@@ -10,6 +10,12 @@
 .lb p{margin:0}
 .lb b{font-weight:600}
 .hl{color:#d86313}
+/* {{240}}: vraagteken en antwoord op dezelfde plek, zodat er niets verschuift als het antwoord verschijnt */
+.lverb{display:inline-grid;vertical-align:baseline}
+.lverb>span{grid-area:1/1;text-align:center}
+.lverbv{color:#d86313}
+.lverba{color:var(--accent-deep);font-weight:600}
+.lverb.nog .lverba,.lverb:not(.nog) .lverbv{visibility:hidden}
 
 /* ---------- kop van de pagina ---------- */
 .lkop{display:flex;flex-direction:column;gap:14px;flex:0 0 auto}

@@ -85,6 +85,7 @@ Overal waar tekst staat:
 | `==belangrijk==` | oranje (voor het getal of woord waar het om draait, of `==?==`) |
 | `__gelijke__` | onderstreept |
 | `[[3/5]]` | een echte breuk (teller boven, noemer onder) |
+| `{{240}}` | een oranje `?`. **Tik erop** en er staat 240 (groen), nog een tik en het is weer `?`. Elk vraagteken apart; volgende onthult ze één voor één. Voor rijtjes als `60 · 120 · {{180}} · {{240}}`. |
 | `==[[3/5]]==` | oranje breuk |
 | `\n` | nieuwe regel |
 
@@ -197,7 +198,7 @@ Keuzes met plaatjes: zet de plaatjes in een `naast` of `raster` met `onderschrif
 
 - `bord.html?les=<id>` opent de les, `&pagina=3` op pagina 3.
 - Pijltjes, PageUp/PageDown (presenter) of spatie: volgende pagina. **+** voegt een lege kladpagina in.
-- **A**: antwoord tonen/verbergen. **N**: notitie voor de leerkracht. **S** of tik op het stappenplan: volgende stap; tik op de kop "Stappenplan": weer dicht.
+- **A**: antwoord tonen/verbergen. **N**: notitie voor de leerkracht. **S** of tik op het stappenplan: volgende stap; tik op de kop "Stappenplan": weer dicht. Tik op een vraagteken uit `{{…}}`: dat antwoord verschijnt.
 - Volgende (→, spatie, presenter, ▶) onthult eerst de volgende stap van het stappenplan (of de volgende sprong van een `sprongen`-blok), en gaat pas daarna naar de volgende pagina.
 - Inkt wordt per les in de browser bewaard. Verandert de les zelf, dan begint het bord met een schone versie van de les.
 - **⚙ → Les opnieuw beginnen** wist alle inkt van de les.
