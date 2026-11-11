@@ -85,6 +85,16 @@
 .lstippen{display:grid;gap:22px;align-self:center}
 .lstippen i{width:62px;height:62px;border-radius:50%;background:#6fa32e}
 .lstippen i.licht{background:#a9cc7a}
+/* sprongen: bolletjes in rijen, elke tik kleurt een sprong (--k = kleur, --c = maat van een hokje) */
+.lsprongen{display:flex;align-items:flex-end;justify-content:center}
+.lspr{position:relative;padding-top:44px}
+.lsprtal{position:absolute;top:0;left:50%;transform:translateX(-50%);font-size:32px;font-weight:700;line-height:1;
+         color:var(--k);white-space:nowrap}
+.lspr.nog .lsprtal{visibility:hidden}
+.lsprbol{display:grid;grid-auto-flow:column}
+.lsprbol i{display:block;width:calc(var(--c)*.8);height:calc(var(--c)*.8);margin:calc(var(--c)*.1);border-radius:50%;
+           background:var(--k);transition:background .25s}
+.lspr.nog .lsprbol i{background:#d3dde4}
 .lfam{display:flex;flex-direction:column;align-items:center;gap:22px;align-self:center;flex:0 0 auto}
 .lfam div{display:flex;gap:60px}
 .lbol{width:150px;height:150px;border-radius:50%;display:flex;align-items:center;justify-content:center;

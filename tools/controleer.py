@@ -43,6 +43,7 @@ BLOKKEN = {
     "rechthoek":  ({"rijen", "kolommen"}, {"gekleurd", "vak", "onderschrift"}),
     "getallenlijn": ({"van", "tot"}, {"stap", "labels", "pijlen", "breedte", "onderschrift"}),
     "bouwwerk":   ({"hoogtes"}, {"aanzicht", "vak", "pijl", "getallen", "onderschrift"}),
+    "sprongen":   ({"totaal", "rijen"}, {"groep", "breedte", "onderschrift"}),
     "afbeelding": ({"bron"}, {"alt", "hoogte"}),
     "schrijfvak": ({}, {"label", "lijnen", "breedte", "hoogte"}),
     "breukvak":   ({}, {"namen"}),
@@ -140,6 +141,12 @@ def controleer_blok(b, waar, v, map_):
             v.fout(waar, "bouwwerk: 'aanzicht' moet '3d', 'voor', 'zij' of 'boven' zijn")
         if "pijl" in b and b["pijl"] not in ("voor", "zij", "boven"):
             v.fout(waar, "bouwwerk: 'pijl' moet 'voor', 'zij' of 'boven' zijn")
+    if t == "sprongen":
+        tot, r, g = b.get("totaal"), b.get("rijen"), b.get("groep", 10)
+        if not all(isinstance(x, int) and not isinstance(x, bool) and x > 0 for x in (tot, r, g)):
+            v.fout(waar, "sprongen: 'totaal', 'rijen' en 'groep' zijn hele getallen groter dan 0")
+        elif -(-tot // r) > 150:
+            v.fout(waar, f"sprongen: te veel bolletjes per rij ({-(-tot // r)}, hoogstens 150)")
     if t == "afbeelding":
         bron = str(b.get("bron", ""))
         if "/" in bron or ".." in bron or ":" in bron:

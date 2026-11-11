@@ -268,6 +268,31 @@ var BLOK = {
   bouwwerk: function(b){
     return '<div class="lbeeld">' + bouwwerk(b) + onder(b) + '</div>';
   },
+  /* "totaal" bolletjes in "rijen" rijen (het getal waardoor je deelt). Elke tik kleurt een sprong van
+     rijen × groep bolletjes en zet het totaal erboven (60, 120, 180 …); daarna licht de rest blauw op ("12 over"). */
+  sprongen: function(b){
+    var tot = Number(b.totaal), r = Number(b.rijen), g = b.groep === undefined ? 10 : Number(b.groep);
+    function heel(v){ return isFinite(v) && v > 0 && v % 1 === 0; }
+    if(!heel(tot)) throw new Error('"totaal" moet een heel getal groter dan 0 zijn');
+    if(!heel(r)) throw new Error('"rijen" moet een heel getal groter dan 0 zijn');
+    if(!heel(g)) throw new Error('"groep" moet een heel getal groter dan 0 zijn');
+    var sprong = r*g, n = Math.floor(tot / sprong), rest = tot - n*sprong;
+    var kol = Math.ceil(tot / r), groepen = n + (rest ? 1 : 0), tussen = 18;
+    if(kol > 150) throw new Error('te veel bolletjes per rij (' + kol + ')');
+    var cel = Math.max(8, Math.min(44, Math.floor((getal(b.breedte, 1440) - (groepen - 1)*tussen) / kol)));
+    function groep(aantal, label, kleur, extra){
+      var bol = '', i;
+      for(i = 0; i < aantal; i++) bol += '<i></i>';
+      return '<div class="lspr nog' + extra + '" style="--k:' + kleur + '"><span class="lsprtal">' + label + '</span>' +
+             '<div class="lsprbol" style="grid-template-rows:repeat(' + r + ',' + cel + 'px);grid-auto-columns:' + cel + 'px;--c:' + cel + 'px">' +
+             bol + '</div></div>';
+    }
+    var uit = '', i;
+    for(i = 0; i < n; i++) uit += groep(sprong, getalTekst((i + 1)*sprong), i % 2 ? '#c4621f' : KL_VUL, '');
+    if(rest) uit += groep(rest, getalTekst(rest) + ' over', '#2b7bb9', ' rest');
+    context.stappen = true;
+    return '<div class="lbeeld"><div class="lsprongen" style="gap:' + tussen + 'px">' + uit + '</div>' + onder(b) + '</div>';
+  },
   afbeelding: function(b){
     if(!b.bron || /^[a-z]+:|^\/|\.\./i.test(b.bron)) return fout('afbeelding: "bron" moet een bestandsnaam in de lesmap zijn');
     var h = b.hoogte ? ' style="height:' + getal(b.hoogte, 300) + 'px;flex:0 0 auto"' : '';
@@ -448,8 +473,8 @@ function wisStemmen(les){
   try{ localStorage.removeItem(stemSleutel()); }catch(e){}
 }
 
-/* ---------- stappenplan stap voor stap ---------- */
-function plannen(laag){ return laag.querySelectorAll('.lstappen.stapsgewijs, .lstappen.kan-dicht'); }
+/* ---------- stappenplan stap voor stap (en sprongen: één sprong per tik) ---------- */
+function plannen(laag){ return laag.querySelectorAll('.lstappen.stapsgewijs, .lstappen.kan-dicht, .lsprongen'); }
 function binnen(el, x, y){
   var r = el.getBoundingClientRect();
   return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom;
@@ -460,14 +485,14 @@ function onthul(k){
     if(!k.classList.contains('dicht')) return false;
     k.classList.remove('dicht'); return true;
   }
-  var nog = k.querySelector('.lstap.nog');
+  var nog = k.querySelector('.lstap.nog, .lspr.nog');
   if(!nog) return false;
   nog.classList.remove('nog'); return true;
 }
 function sluit(k){
   if(k.classList.contains('kan-dicht')) k.classList.add('dicht');
-  var s = k.querySelectorAll('.lstap'), i;
-  if(k.classList.contains('stapsgewijs')) for(i = 0; i < s.length; i++) s[i].classList.add('nog');
+  var s = k.querySelectorAll('.lstap, .lspr'), i;
+  if(k.classList.contains('stapsgewijs') || k.classList.contains('lsprongen')) for(i = 0; i < s.length; i++) s[i].classList.add('nog');
 }
 /* tik op het bord: op de kop = weer dicht, ergens anders op het plan = volgende stap. true als het een plan raakte */
 function tik(laag, x, y){
@@ -476,6 +501,7 @@ function tik(laag, x, y){
   for(i = 0; i < l.length; i++){
     var k = l[i], kop = k.querySelector('.lstapkop');
     if(!binnen(k, x, y)) continue;
+    if(k.classList.contains('lsprongen')){ if(!onthul(k)) sluit(k); return true; }   /* alles gekleurd: tik = opnieuw */
     var dicht = k.classList.contains('dicht');
     if(!dicht && kop && binnen(kop, x, y)) sluit(k);
     else onthul(k);

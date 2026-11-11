@@ -119,6 +119,7 @@ Gekleurde stukjes tel je **vanaf 1** (links naar rechts, of met de klok mee vana
 | `breukdelen` | `teller`, `noemer`, `tellerTekst`?, `noemerTekst`? | grote breuk met pijltjes naar teller, streep, noemer |
 | `getallenlijn` | `van`, `tot`, `stap`?, `labels`?, `pijlen`?, `breedte`? (1200), `onderschrift`? | getallenlijn met een streepje per `stap` (standaard 10 stappen). Begin, midden en eind hebben een lang streepje. `labels`: lijst getallen die eronder staan (standaard `van` en `tot`) of `"alle"`. `pijlen`: lijst van `{"op", "tekst"?}`: een oranje wolkje dat naar dat getal wijst, met `tekst` erin (standaard het getal zelf; `"?"` voor een vraag). Zonder pijlen is de lijn lager. |
 | `bouwwerk` | `hoogtes`, `aanzicht`?, `vak`? (70), `pijl`?, `getallen`?, `onderschrift`? | bouwwerk van blokjes. `hoogtes` is de plattegrond: rijen van **achter naar voor**, kolommen van links naar rechts, elk getal = aantal blokjes op elkaar (0 = leeg). `aanzicht`: `"3d"` (standaard, schuin van rechtsvoor), `"voor"`, `"zij"` (van rechts: de voorkant staat links) of `"boven"`. De aanzichten rekent het bord zelf uit. `pijl` (alleen bij 3d): `"voor"`, `"zij"` of `"boven"`, een blauwe pijl die laat zien waar je vanaf kijkt. `getallen: true` zet bij het bovenaanzicht de hoogtes in de hokjes (bouwplattegrond). |
+| `sprongen` | `totaal`, `rijen`, `groep`? (10), `breedte`? (1440), `onderschrift`? | `totaal` grijze bolletjes in `rijen` rijen (het getal waardoor je deelt). **Elke tik** (of volgende) kleurt één sprong van `rijen` × `groep` bolletjes oranje en zet het totaal erboven: 60, 120, 180 … Past er geen sprong meer bij, dan licht de rest blauw op ("12 over"). Tik als alles gekleurd is: opnieuw. Bij 432 : 6 → `{"totaal": 432, "rijen": 6}`: 7 sprongen van 60 en 12 over. |
 | `afbeelding` | `bron`, `alt`?, `hoogte`? | plaatje uit de lesmap |
 
 ### Schrijven op het bord
@@ -197,6 +198,6 @@ Keuzes met plaatjes: zet de plaatjes in een `naast` of `raster` met `onderschrif
 - `bord.html?les=<id>` opent de les, `&pagina=3` op pagina 3.
 - Pijltjes, PageUp/PageDown (presenter) of spatie: volgende pagina. **+** voegt een lege kladpagina in.
 - **A**: antwoord tonen/verbergen. **N**: notitie voor de leerkracht. **S** of tik op het stappenplan: volgende stap; tik op de kop "Stappenplan": weer dicht.
-- Volgende (→, spatie, presenter, ▶) onthult eerst de volgende stap van het stappenplan, en gaat pas daarna naar de volgende pagina.
+- Volgende (→, spatie, presenter, ▶) onthult eerst de volgende stap van het stappenplan (of de volgende sprong van een `sprongen`-blok), en gaat pas daarna naar de volgende pagina.
 - Inkt wordt per les in de browser bewaard. Verandert de les zelf, dan begint het bord met een schone versie van de les.
 - **⚙ → Les opnieuw beginnen** wist alle inkt van de les.
