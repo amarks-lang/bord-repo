@@ -1,6 +1,26 @@
 {
   "lessen": [
     {
+      "id": "g56-rekenen-deelsom-splitsen-herhaling",
+      "titel": "Deelsommen splitsen met sprongen (herhaling)",
+      "groep": "5/6",
+      "vak": "Rekenen",
+      "onderwerp": "Delen",
+      "duur": 35,
+      "edi": true,
+      "gemaakt": "2026-11-11",
+      "samenvatting": "Herhaling van 432 : 6: met sprongen van 6 × 10 = 60 vinden waar je splitst (420 + 12). Met bolletjes die per tik een sprong kleuren, en de getallenlijn.",
+      "trefwoorden": [
+        "deelsom",
+        "delen",
+        "splitsen",
+        "sprongen",
+        "tafels",
+        "keer 10",
+        "herhaling"
+      ]
+    },
+    {
       "id": "g56-rekenen-deelsom-splitsen",
       "titel": "Deelsommen splitsen: 372 : 6",
       "groep": "5/6",
@@ -96,6 +116,27 @@
         "tafels",
         "getallenfamilie",
         "omgekeerde bewerking"
+      ]
+    },
+    {
+      "id": "g56-rekenen-keersom-splitsen-herhaling",
+      "titel": "Keersommen splitsen (herhaling met uitdaging)",
+      "groep": "5/6",
+      "vak": "Rekenen",
+      "onderwerp": "Vermenigvuldigen",
+      "duur": 30,
+      "edi": true,
+      "gemaakt": "2026-11-11",
+      "samenvatting": "Korte herhaling van 6 × 17 = 60 + 42, met vroeg een uitdagingscheck: drie keersommen uitrekenen op papier en op volgorde zetten. Wie die goed heeft, gaat aan het werk; de rest oefent nog samen.",
+      "trefwoorden": [
+        "keersom",
+        "vermenigvuldigen",
+        "splitsen",
+        "tientallen",
+        "eenheden",
+        "herhaling",
+        "uitdaging",
+        "ordenen"
       ]
     },
     {

@@ -1,0 +1,473 @@
+{
+  "id": "g56-rekenen-deelsom-splitsen-herhaling",
+  "titel": "Deelsommen splitsen met sprongen (herhaling)",
+  "groep": "5/6",
+  "vak": "Rekenen",
+  "onderwerp": "Delen",
+  "duur": 35,
+  "edi": true,
+  "gemaakt": "2026-11-11",
+  "samenvatting": "Herhaling van 432 : 6: met sprongen van 6 × 10 = 60 vinden waar je splitst (420 + 12). Met bolletjes die per tik een sprong kleuren, en de getallenlijn.",
+  "trefwoorden": [
+    "deelsom",
+    "delen",
+    "splitsen",
+    "sprongen",
+    "tafels",
+    "keer 10",
+    "herhaling"
+  ],
+  "lesdoel": "deelsommen als 432 : 6 uitrekenen door te splitsen",
+  "succescriterium": "met sprongen kan vinden waar ik het getal splits.",
+  "lesdoelInHoek": true,
+  "paginas": [
+    {
+      "fase": "lesdoel",
+      "blokken": [
+        {
+          "type": "doel"
+        },
+        {
+          "type": "succes"
+        },
+        {
+          "type": "schrijfvak"
+        }
+      ]
+    },
+    {
+      "fase": "voorkennis",
+      "titel": "Sprongen maken",
+      "opdracht": "Maak de rijen af op je wisbordje.",
+      "notitie": "Dit is de tafel van 6 en van 7, maar dan keer 10: 6 × 10 = 60, 6 × 20 = 120 … Deze rij is vandaag je hulpmiddel. Wie de tafel nog lastig vindt, mag de tafelkaart erbij pakken: het gaat vandaag om het splitsen.",
+      "blokken": [
+        {
+          "type": "som",
+          "tekst": "60 · 120 · 180 · ==?== · ==?== · ==?== · ==?== · ==?=="
+        },
+        {
+          "type": "som",
+          "tekst": "70 · 140 · ==?== · ==?== · ==?=="
+        },
+        {
+          "type": "antwoord",
+          "blokken": [
+            {
+              "type": "tekst",
+              "tekst": "**60 · 120 · 180 · 240 · 300 · 360 · 420 · 480**",
+              "grootte": "groot"
+            },
+            {
+              "type": "tekst",
+              "tekst": "**70 · 140 · 210 · 280 · 350**",
+              "grootte": "groot"
+            },
+            {
+              "type": "tekst",
+              "tekst": "6 × 10, 6 × 20, 6 × 30 …  en  7 × 10, 7 × 20, 7 × 30 …",
+              "grootte": "klein"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "instructie",
+      "titel": "432 bolletjes: sprongen van 60",
+      "opdracht": "Hoeveel sprongen van 60 passen erin? Wat blijft er over?",
+      "notitie": "Hier liggen 432 bolletjes in 6 rijen: we delen door 6. Eén sprong is 6 × 10 = 60: elke rij krijgt er 10 bij. Tik op de bolletjes (of volgende) en tel met de klas mee: 60, 120, 180, 240, 300, 360, 420. Vraag dan: kan er nog een sprong van 60 bij? 420 + 60 = 480, meer dan 432. Nee! Hoeveel zijn er nog over? 432 − 420 = 12 (tik: de 12 worden blauw). Schrijf eronder: 432 = 420 + 12. Dát is de splitsing. 420 : 6 = 70 (7 sprongen, of: 42 : 6 = 7), 12 : 6 = 2, samen 72. Laat ook zien: elke rij heeft nu 72 bolletjes.",
+      "blokken": [
+        {
+          "type": "som",
+          "tekst": "432 : 6 = ==?=="
+        },
+        {
+          "type": "sprongen",
+          "totaal": 432,
+          "rijen": 6
+        },
+        {
+          "type": "schrijfvak"
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Ik doe het voor",
+      "notitie": "Nu zonder bolletjes, met de sprongen op papier. Spring: 6 × 10 = 60, ik schrijf 60, 120, 180, 240, 300, 360, 420, 480. Stop: 480 is meer dan 432, te ver. 420 past nog net. 432 − 420 = 12 blijft over. Deel: 420 : 6 = 70, want 42 : 6 = 7. 12 : 6 = 2. Tel op: 70 + 2 = 72. Controle: 6 × 72 = 432.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "**Spring:** schrijf de sprongen op\n10 ×, 20 ×, 30 × …",
+                  "**Stop:** welke sprong past nog?\nWat blijft er over?",
+                  "**Deel:** deel allebei de stukken",
+                  "**Tel op:** tel de antwoorden op"
+                ]
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "432 : 6 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Ik doe het voor",
+      "notitie": "Spring met 8 × 10 = 80: 80, 160, 240, 320, 400. Stop: kijk op de lijn, 368 ligt tussen 320 en 400. 400 is te ver, dus 320. 368 − 320 = 48 blijft over. Deel: 320 : 8 = 40, 48 : 8 = 6. Tel op: 40 + 6 = 46. Let op: nu passen er maar 4 sprongen. Je springt dus niet altijd tot 420.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "**Spring:** schrijf de sprongen op\n10 ×, 20 ×, 30 × …",
+                  "**Stop:** welke sprong past nog?\nWat blijft er over?",
+                  "**Deel:** deel allebei de stukken",
+                  "**Tel op:** tel de antwoorden op"
+                ]
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "368 : 8 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "getallenlijn",
+                "van": 0,
+                "tot": 400,
+                "stap": 80,
+                "labels": "alle",
+                "breedte": 860,
+                "pijlen": [
+                  {
+                    "op": 368
+                  }
+                ]
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "opdracht": "Schrijf de sprongen, de splitsing en het antwoord op.",
+      "notitie": "Sprongen van 4 × 10 = 40. Laat eerst iedereen de sprongen opschrijven: 40, 80, 120, 160, 200, 240, 280. Tik dan samen de bolletjes: 280 is te veel, 240 past. 16 over. 240 : 4 = 60, 16 : 4 = 4. Samen 64.",
+      "blokken": [
+        {
+          "type": "sprongen",
+          "totaal": 256,
+          "rijen": 4
+        },
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "256 : 4 = ==?=="
+              },
+              {
+                "type": "schrijfvak"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "60 + 4 = 64"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "**256 = 240 + 16**"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "**Spring:** schrijf de sprongen op\n10 ×, 20 ×, 30 × …",
+                  "**Stop:** welke sprong past nog?\nWat blijft er over?",
+                  "**Deel:** deel allebei de stukken",
+                  "**Tel op:** tel de antwoorden op"
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "opdracht": "Schrijf de sprongen, de splitsing en het antwoord op.",
+      "notitie": "Sprongen van 70: 70, 140, 210, 280, 350. 343 ligt net vóór 350! 350 is te ver, dus 280. 343 − 280 = 63. 280 : 7 = 40, 63 : 7 = 9. Samen 49. Let op de denkfout: 350 nemen omdat het dichtbij is.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "343 : 7 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "getallenlijn",
+                "van": 0,
+                "tot": 350,
+                "stap": 70,
+                "labels": "alle",
+                "breedte": 860,
+                "pijlen": [
+                  {
+                    "op": 343
+                  }
+                ]
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "**Spring:** schrijf de sprongen op\n10 ×, 20 ×, 30 × …",
+                  "**Stop:** welke sprong past nog?\nWat blijft er over?",
+                  "**Deel:** deel allebei de stukken",
+                  "**Tel op:** tel de antwoorden op"
+                ]
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "40 + 9 = 49"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "**343 = 280 + 63**"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Welke sprong past nog net?",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "534 : 6",
+                "grootte": "groot"
+              },
+              {
+                "type": "keuzes",
+                "kolommen": 1,
+                "opties": [
+                  {
+                    "tekst": "480",
+                    "goed": true,
+                    "uitleg": "6 × 80 = 480. Er blijft 54 over. 80 + 9 = 89."
+                  },
+                  {
+                    "tekst": "540",
+                    "uitleg": "6 × 90 = 540 is meer dan 534: te ver gesprongen."
+                  },
+                  {
+                    "tekst": "500",
+                    "uitleg": "500 is geen sprong van 60: 500 : 6 gaat niet mooi."
+                  },
+                  {
+                    "tekst": "420",
+                    "uitleg": "420 past wel, maar er kan nog een sprong bij: 114 over is meer dan 60."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "**Spring:** schrijf de sprongen op\n10 ×, 20 ×, 30 × …",
+                  "**Stop:** welke sprong past nog?\nWat blijft er over?",
+                  "**Deel:** deel allebei de stukken",
+                  "**Tel op:** tel de antwoorden op"
+                ]
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ],
+      "opdracht": "Kies A, B, C of D. Schrijf eerst je sprongen op.",
+      "notitie": "Vingers omhoog: 1 = A, 2 = B, 3 = C, 4 = D. Reken daarna de hele som samen uit: 534 : 6 = 89."
+    },
+    {
+      "fase": "samen",
+      "opdracht": "Schrijf de sprongen, de splitsing en het antwoord op.",
+      "notitie": "Nu zonder plaatje. Sprongen van 80: 80, 160, 240, 320, 400, 480, 560, 640. 560 past, 640 is te veel. 584 − 560 = 24. 560 : 8 = 70, 24 : 8 = 3. Samen 73.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "584 : 8 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "**Spring:** schrijf de sprongen op\n10 ×, 20 ×, 30 × …",
+                  "**Stop:** welke sprong past nog?\nWat blijft er over?",
+                  "**Deel:** deel allebei de stukken",
+                  "**Tel op:** tel de antwoorden op"
+                ]
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "70 + 3 = 73"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "**584 = 560 + 24**"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "check",
+      "titel": "Reken uit door te splitsen",
+      "opdracht": "Iedereen werkt alleen. Schrijf je sprongen, de splitsing en het antwoord op.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "378 : 6 = ==?=="
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "413 : 7 = ==?=="
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "tekst",
+                    "tekst": "**378 : 6 = 63**",
+                    "grootte": "groot"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "360 + 18",
+                    "grootte": "klein"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "**413 : 7 = 59**",
+                    "grootte": "groot"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "350 + 63",
+                    "grootte": "klein"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Kijk vooral naar de sprongen: waar splitst iedereen? Bij 413 : 7 is 420 de valkuil (te veel). Wie beide goed heeft, gaat zelf aan het werk. Wie niet: nog een som samen, met de sprongen erbij."
+    }
+  ]
+}

@@ -1,0 +1,387 @@
+{
+  "id": "g56-rekenen-keersom-splitsen-herhaling",
+  "titel": "Keersommen splitsen (herhaling met uitdaging)",
+  "groep": "5/6",
+  "vak": "Rekenen",
+  "onderwerp": "Vermenigvuldigen",
+  "duur": 30,
+  "edi": true,
+  "gemaakt": "2026-11-11",
+  "samenvatting": "Korte herhaling van 6 × 17 = 60 + 42, met vroeg een uitdagingscheck: drie keersommen uitrekenen op papier en op volgorde zetten. Wie die goed heeft, gaat aan het werk; de rest oefent nog samen.",
+  "trefwoorden": [
+    "keersom",
+    "vermenigvuldigen",
+    "splitsen",
+    "tientallen",
+    "eenheden",
+    "herhaling",
+    "uitdaging",
+    "ordenen"
+  ],
+  "lesdoel": "een som als 6 × 17 uitrekenen door te splitsen",
+  "succescriterium": "het getal kan splitsen in tientallen en eenheden, en allebei de stukken keer kan doen.",
+  "lesdoelInHoek": true,
+  "paginas": [
+    {
+      "fase": "lesdoel",
+      "blokken": [
+        {
+          "type": "doel"
+        },
+        {
+          "type": "succes"
+        },
+        {
+          "type": "schrijfvak"
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Weet je het nog?",
+      "notitie": "Kort voordoen, het ging gisteren goed. 18 is 10 en 8. 7 × 10 = 70. 7 × 8 = 56. 70 + 56 = 126. Tafelkaart mag erbij: het gaat om het splitsen.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            3
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Splits het getal in tientallen en eenheden",
+                  "Doe het tiental keer",
+                  "Doe de eenheden keer",
+                  "Tel de twee antwoorden op"
+                ]
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "7 × 18 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Samen",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "4 × 27 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "tekst",
+                "tekst": "Schrijf de splitsing en het antwoord op je wisbordje.",
+                "grootte": "klein"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Splits het getal in tientallen en eenheden",
+                  "Doe het tiental keer",
+                  "Doe de eenheden keer",
+                  "Tel de twee antwoorden op"
+                ]
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "tekst",
+                    "tekst": "**80 + 28 = 108**",
+                    "grootte": "groot"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "4 × 20 = 80 en 4 × 7 = 28",
+                    "grootte": "klein"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "check",
+      "label": "Check · uitdaging",
+      "titel": "Zet op volgorde: van klein naar groot",
+      "opdracht": "Reken alle drie uit op je wisbordje. Schrijf de splitsing op. Pas dan vergelijken!",
+      "notitie": "Laat eerst gokken, zonder rekenen: welke is het grootst? (Vaak kiezen ze A, door de 29, of C, door de 8.) Dan uitrekenen. De uitkomsten liggen dicht bij elkaar: uit je hoofd onthoud je ze niet alle drie, op papier wel. Zo houd je je hoofd vrij om te vergelijken. Alle drie goed én de volgorde klopt? Zelf aan het werk (volgende pagina). De rest blijft hier voor nog twee sommen samen.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "==A==  6 × 29"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "==B==  7 × 24"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "==C==  8 × 22"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "antwoord",
+          "blokken": [
+            {
+              "type": "tekst",
+              "tekst": "**A** = 120 + 54 = **174**   ·   **B** = 140 + 28 = **168**   ·   **C** = 160 + 16 = **176**"
+            },
+            {
+              "type": "tekst",
+              "tekst": "**Van klein naar groot: B · A · C**",
+              "grootte": "groot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "zelfstandig",
+      "label": "Alles goed? Zelf aan het werk",
+      "titel": "Alle drie goed? Ga zelf aan het werk.",
+      "notitie": "Voor wie de uitdaging goed had. De rest blijft: volgende pagina.",
+      "blokken": [
+        {
+          "type": "tekst",
+          "tekst": "**Klaar?** Maak zelf drie keersommen met een uitkomst tussen 150 en 200.",
+          "grootte": "groot"
+        },
+        {
+          "type": "tekst",
+          "tekst": "Ze moeten bijna even groot zijn. Laat een klasgenoot ze op volgorde zetten.",
+          "grootte": "groot"
+        },
+        {
+          "type": "tekst",
+          "tekst": "De rest blijft hier: nog twee sommen samen.",
+          "grootte": "klein"
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Samen",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "3 × 46 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "tekst",
+                "tekst": "Schrijf de splitsing en het antwoord op je wisbordje.",
+                "grootte": "klein"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Splits het getal in tientallen en eenheden",
+                  "Doe het tiental keer",
+                  "Doe de eenheden keer",
+                  "Tel de twee antwoorden op"
+                ]
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "tekst",
+                    "tekst": "**120 + 18 = 138**",
+                    "grootte": "groot"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "3 × 40 = 120 en 3 × 6 = 18",
+                    "grootte": "klein"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Het tiental is 40: 3 × 4 = 12, dus 3 × 40 = 120."
+    },
+    {
+      "fase": "samen",
+      "titel": "Welk antwoord klopt?",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "6 × 38 = ==?==",
+                "grootte": "groot"
+              },
+              {
+                "type": "keuzes",
+                "kolommen": 1,
+                "opties": [
+                  {
+                    "tekst": "228",
+                    "goed": true,
+                    "uitleg": "6 × 30 = 180 en 6 × 8 = 48. 180 + 48 = 228."
+                  },
+                  {
+                    "tekst": "188",
+                    "uitleg": "Alleen het tiental keer 6 gedaan: 180 + 8. De 8 moet ook keer 6."
+                  },
+                  {
+                    "tekst": "66",
+                    "uitleg": "6 × 3 gedaan in plaats van 6 × 30: 18 + 48. De 3 van 38 is 30."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  "Splits het getal in tientallen en eenheden",
+                  "Doe het tiental keer",
+                  "Doe de eenheden keer",
+                  "Tel de twee antwoorden op"
+                ]
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Vingers omhoog: 1, 2 of 3. Vraag bij een fout antwoord: wat is hier vergeten?"
+    },
+    {
+      "fase": "check",
+      "titel": "Reken uit door te splitsen",
+      "opdracht": "Iedereen werkt alleen. Schrijf de splitsing en het antwoord op je wisbordje.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "5 × 37 = ==?=="
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "9 × 24 = ==?=="
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "tekst",
+                    "tekst": "**5 × 37 = 185**",
+                    "grootte": "groot"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "150 + 35",
+                    "grootte": "klein"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "**9 × 24 = 216**",
+                    "grootte": "groot"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "180 + 36",
+                    "grootte": "klein"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Tafelkaart mag erbij. Beide goed? Zelf aan het werk."
+    }
+  ]
+}
