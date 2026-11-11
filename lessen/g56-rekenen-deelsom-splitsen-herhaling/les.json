@@ -39,35 +39,17 @@
       "fase": "voorkennis",
       "titel": "Sprongen maken",
       "opdracht": "Maak de rijen af op je wisbordje.",
-      "notitie": "Dit is de tafel van 6 en van 7, maar dan keer 10: 6 × 10 = 60, 6 × 20 = 120 … Deze rij is vandaag je hulpmiddel. Wie de tafel nog lastig vindt, mag de tafelkaart erbij pakken: het gaat vandaag om het splitsen.",
+      "notitie": "Tik op een vraagteken: dat antwoord verschijnt. Eén voor één, nadat de wisbordjes omhoog zijn. Dit is de tafel van 6 en van 7, maar dan keer 10: 6 × 10 = 60, 6 × 20 = 120 … en 7 × 10 = 70, 7 × 20 = 140 … Deze rij is vandaag je hulpmiddel. Wie de tafel nog lastig vindt, mag de tafelkaart erbij pakken: het gaat vandaag om het splitsen.",
       "blokken": [
         {
           "type": "som",
-          "tekst": "60 · 120 · 180 · ==?== · ==?== · ==?== · ==?== · ==?=="
+          "tekst": "60 · 120 · 180 · {{240}} · {{300}} · {{360}} · {{420}} · {{480}}",
+          "grootte": "klein"
         },
         {
           "type": "som",
-          "tekst": "70 · 140 · ==?== · ==?== · ==?=="
-        },
-        {
-          "type": "antwoord",
-          "blokken": [
-            {
-              "type": "tekst",
-              "tekst": "**60 · 120 · 180 · 240 · 300 · 360 · 420 · 480**",
-              "grootte": "groot"
-            },
-            {
-              "type": "tekst",
-              "tekst": "**70 · 140 · 210 · 280 · 350**",
-              "grootte": "groot"
-            },
-            {
-              "type": "tekst",
-              "tekst": "6 × 10, 6 × 20, 6 × 30 …  en  7 × 10, 7 × 20, 7 × 30 …",
-              "grootte": "klein"
-            }
-          ]
+          "tekst": "70 · 140 · {{210}} · {{280}} · {{350}}",
+          "grootte": "klein"
         }
       ]
     },
