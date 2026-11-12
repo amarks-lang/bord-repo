@@ -34,3 +34,7 @@ en open http://localhost:8000.
 ## Eenmalig instellen
 
 Settings → Pages → Deploy from a branch: **main**, map **/ (root)** (staat al goed).
+
+## Komt een wijziging niet online?
+
+Kijk in de repo bij **Actions → pages build and deployment**. Staat daar "startup failure" of blijft een run in de wachtrij hangen, dan is het een probleem bij GitHub Actions (storing, of iets in de instellingen van het account), niet in de les. Een nieuwe push start een nieuwe build. Tot die lukt, toont de site de vorige versie.
