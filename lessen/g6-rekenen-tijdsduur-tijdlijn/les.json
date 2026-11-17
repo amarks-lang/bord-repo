@@ -1,0 +1,595 @@
+{
+  "id": "g6-rekenen-tijdsduur-tijdlijn",
+  "titel": "Hoe lang duurt het? Rekenen met de tijdlijn",
+  "groep": "6",
+  "vak": "Rekenen",
+  "onderwerp": "Tijd",
+  "duur": 35,
+  "edi": true,
+  "gemaakt": "2026-11-17",
+  "samenvatting": "Met sprongen op de tijdlijn via het hele uur de tijdsduur of de eindtijd uitrekenen, bijvoorbeeld vertrek 9:45 en 2 uur en 15 min reizen.",
+  "trefwoorden": [
+    "tijd",
+    "tijdsduur",
+    "begintijd",
+    "eindtijd",
+    "tijdlijn",
+    "klok",
+    "uur",
+    "minuten"
+  ],
+  "lesdoel": "uitrekenen hoe lang iets duurt en hoe laat iets klaar is",
+  "succescriterium": "met sprongen op de tijdlijn de tijdsduur of de eindtijd kan vinden.",
+  "lesdoelInHoek": true,
+  "paginas": [
+    {
+      "fase": "lesdoel",
+      "notitie": "Lees het lesdoel samen hardop. Vraag: wanneer wil je weten hoe laat iets klaar is? (trein, film, sporttraining)",
+      "blokken": [
+        {
+          "type": "doel"
+        },
+        {
+          "type": "succes"
+        },
+        {
+          "type": "afbeelding",
+          "bron": "lesdoel.svg",
+          "alt": "Twee klokken: 9:45 en 12:00, met sprongen op een tijdlijn",
+          "hoogte": 360
+        }
+      ]
+    },
+    {
+      "fase": "voorkennis",
+      "titel": "Hoeveel minuten tot het hele uur?",
+      "opdracht": "Schrijf de antwoorden op je wisbordje.",
+      "notitie": "Dit is de eerste sprong die we straks maken. Denk aan de klok: tot de 12 bovenaan. 45 + 15 = 60.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "som",
+                "tekst": "9:45 → 10:00   ==?== min"
+              },
+              {
+                "type": "som",
+                "tekst": "3:35 → 4:00   ==?== min"
+              },
+              {
+                "type": "som",
+                "tekst": "7:10 → 8:00   ==?== min"
+              }
+            ],
+            [
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "15 min"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "25 min"
+                  },
+                  {
+                    "type": "som",
+                    "tekst": "50 min"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "instructie",
+      "titel": "Begintijd, eindtijd en tijdsduur",
+      "notitie": "Begintijd: wanneer begint het. Eindtijd: wanneer is het klaar. Tijdsduur: hoe lang duurt het. Je weet er altijd twee, de derde reken je uit. Waar kom je dit tegen? Treinkaartje, tv-gids, bioscoop, zwemles. Vraag: de film duurt 1 uur en 30 min. Is dat de begintijd, eindtijd of tijdsduur? (duim)",
+      "blokken": [
+        {
+          "type": "tekst",
+          "tekst": "Een film begint om **18:30** en is klaar om **20:00**."
+        },
+        {
+          "type": "afbeelding",
+          "bron": "instructie.svg",
+          "alt": "Tijdlijn van 18:30 tot 20:00 met begintijd, eindtijd en tijdsduur",
+          "hoogte": 300
+        },
+        {
+          "type": "tekst",
+          "tekst": "Je weet er altijd **twee**. De derde reken je uit.",
+          "midden": true
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Hoe laat komt de trein aan?",
+      "opdracht": "Kijk en luister.",
+      "notitie": "Hardop: 'Stap 1: ik weet de begintijd, 9:45, en de tijdsduur, 2 uur en 15 min. 9:45 zet ik op de tijdlijn. Stap 2: ik wil de eindtijd weten. Eerst de hele uren: 9:45 plus 2 uur is 11:45. Dan nog 15 min: 11:45 plus 15 min is precies 12:00, want tot het hele uur is 15 min. Stap 3: de trein komt om 12:00 aan.' Teken beide sprongen met boogjes en zet 11:45 en 12:00 eronder.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            1,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Wat weet je: **begintijd**, **eindtijd** of **tijdsduur**?",
+                    "klein": "Zet het op de tijdlijn."
+                  },
+                  {
+                    "tekst": "Wat wil je weten? Maak **sprongen**.",
+                    "klein": "Spring via het **hele uur**."
+                  },
+                  {
+                    "tekst": "Geef **antwoord** op de vraag."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "tekst": "**vertrek:** 9:45\n**reisduur:** 2 uur en 15 min"
+              },
+              {
+                "type": "afbeelding",
+                "bron": "t-945.svg",
+                "alt": "Tijdlijn",
+                "hoogte": 160
+              },
+              {
+                "type": "schrijfvak",
+                "lijnen": "leeg"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "9:45 → 11:45 → 12:00"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "De trein komt om **12:00** aan."
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Hoe lang duurt de zwemles?",
+      "opdracht": "Kijk en luister.",
+      "notitie": "Hardop: 'Nu weet ik de begintijd en de eindtijd. Ik wil de tijdsduur. Ik spring eerst naar het hele uur: van 14:35 naar 15:00 is 25 min. Dan een heel uur: 15:00 naar 16:00. Dan nog van 16:00 naar 16:10: 10 min. Bij elkaar: 1 uur en 25 + 10 = 35 min. De zwemles duurt 1 uur en 35 min.' Laat zien: drie boogjes, onder elk boogje de sprong.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            1,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Wat weet je: **begintijd**, **eindtijd** of **tijdsduur**?",
+                    "klein": "Zet het op de tijdlijn."
+                  },
+                  {
+                    "tekst": "Wat wil je weten? Maak **sprongen**.",
+                    "klein": "Spring via het **hele uur**."
+                  },
+                  {
+                    "tekst": "Geef **antwoord** op de vraag."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "tekst": "De zwemles begint om **14:35** en is klaar om **16:10**."
+              },
+              {
+                "type": "afbeelding",
+                "bron": "t-1435-1610.svg",
+                "alt": "Tijdlijn",
+                "hoogte": 160
+              },
+              {
+                "type": "schrijfvak",
+                "lijnen": "leeg"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "25 min + 1 uur + 10 min"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "De zwemles duurt **1 uur en 35 min**."
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Hoe laat is de bus er?",
+      "opdracht": "Schrijf het antwoord op je wisbordje.",
+      "notitie": "Eindtijd zoeken. Sprong 1: 8:50 → 9:00 is 10 min. Dan 1 uur → 10:00. Dan nog 25 − 10 = 15 min → 10:15. Fout 9:75? Dan zijn de minuten niet omgezet.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            1,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Wat weet je: **begintijd**, **eindtijd** of **tijdsduur**?",
+                    "klein": "Zet het op de tijdlijn."
+                  },
+                  {
+                    "tekst": "Wat wil je weten? Maak **sprongen**.",
+                    "klein": "Spring via het **hele uur**."
+                  },
+                  {
+                    "tekst": "Geef **antwoord** op de vraag."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "tekst": "**vertrek:** 8:50\n**reisduur:** 1 uur en 25 min"
+              },
+              {
+                "type": "afbeelding",
+                "bron": "t-850.svg",
+                "alt": "Tijdlijn",
+                "hoogte": 160
+              },
+              {
+                "type": "schrijfvak",
+                "lijnen": "leeg"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "8:50 → 9:00 → 10:00 → 10:15"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "De bus is er om **10:15**."
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Hoe lang duurt het toernooi?",
+      "opdracht": "Schrijf het antwoord op je wisbordje.",
+      "notitie": "Tijdsduur zoeken. 10:20 → 11:00 is 40 min, 11:00 → 13:00 is 2 uur, 13:00 → 13:05 is 5 min. Fout 3 uur? Dan is van 10 tot 13 geteld zonder op de minuten te letten.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            1,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Wat weet je: **begintijd**, **eindtijd** of **tijdsduur**?",
+                    "klein": "Zet het op de tijdlijn."
+                  },
+                  {
+                    "tekst": "Wat wil je weten? Maak **sprongen**.",
+                    "klein": "Spring via het **hele uur**."
+                  },
+                  {
+                    "tekst": "Geef **antwoord** op de vraag."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "tekst": "Het voetbaltoernooi begint om **10:20** en is klaar om **13:05**."
+              },
+              {
+                "type": "afbeelding",
+                "bron": "t-1020-1305.svg",
+                "alt": "Tijdlijn",
+                "hoogte": 160
+              },
+              {
+                "type": "schrijfvak",
+                "lijnen": "leeg"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "40 min + 2 uur + 5 min"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "Het toernooi duurt **2 uur en 45 min**."
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Hoe laat is de film afgelopen?",
+      "opdracht": "Schrijf de letter op je wisbordje.",
+      "notitie": "Laat eerst rekenen op het wisbordje met de tijdlijn, dan de letter. 19:40 + 1 uur = 20:40. + 20 min = 21:00. + 15 min = 21:15.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            1,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "tekst",
+                "tekst": "De film begint om **19:40**.\nHij duurt **1 uur en 35 min**."
+              },
+              {
+                "type": "afbeelding",
+                "bron": "t-1940.svg",
+                "alt": "Tijdlijn vanaf 19:40",
+                "hoogte": 160
+              },
+              {
+                "type": "schrijfvak",
+                "lijnen": "leeg"
+              }
+            ],
+            [
+              {
+                "type": "keuzes",
+                "kolommen": 1,
+                "opties": [
+                  {
+                    "tekst": "20:75",
+                    "uitleg": "Fout: 40 + 35 = 75 min. Maar 60 min is een uur. Spring via het hele uur."
+                  },
+                  {
+                    "tekst": "21:15",
+                    "goed": true,
+                    "uitleg": "Goed: 19:40 → 20:40 → 21:00 → 21:15."
+                  },
+                  {
+                    "tekst": "20:15",
+                    "uitleg": "Fout: alleen 35 min erbij. Het uur is vergeten."
+                  },
+                  {
+                    "tekst": "1:35",
+                    "uitleg": "Fout: 1 uur en 35 min is hoe lang het duurt. De vraag is: hoe laat?"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Hoe lang duurt de schooldag?",
+      "opdracht": "Schrijf het antwoord op je wisbordje.",
+      "notitie": "Grote sprong van hele uren: 9:00 → 14:00 is 5 uur. Tel de uren samen met de vingers als het moeilijk is. 30 + 15 = 45 min.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            1,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Wat weet je: **begintijd**, **eindtijd** of **tijdsduur**?",
+                    "klein": "Zet het op de tijdlijn."
+                  },
+                  {
+                    "tekst": "Wat wil je weten? Maak **sprongen**.",
+                    "klein": "Spring via het **hele uur**."
+                  },
+                  {
+                    "tekst": "Geef **antwoord** op de vraag."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "tekst": "School begint om **8:30** en is uit om **14:15**."
+              },
+              {
+                "type": "afbeelding",
+                "bron": "t-830-1415.svg",
+                "alt": "Tijdlijn",
+                "hoogte": 160
+              },
+              {
+                "type": "schrijfvak",
+                "lijnen": "leeg"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "30 min + 5 uur + 15 min"
+                  },
+                  {
+                    "type": "tekst",
+                    "tekst": "De schooldag duurt **5 uur en 45 min**."
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "check",
+      "titel": "Laat zien wat je kunt",
+      "opdracht": "Iedereen werkt alleen. Schrijf a, b en c op je wisbordje.",
+      "notitie": "3 of 2 goed → zelfstandig. 1 of 0 goed → instructietafel. Let op: c heeft geen heel uur in de tijdsduur, alleen minuten. a: 7:55 → 8:00 (5 min) → 11:00 (3 uur) → 11:15 (15 min). b: 13:25 → 14:00 (35 min) → 15:00 → 15:10. c: 16:45 → 17:00 (15 min) → 17:35 (35 min).",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "tekst",
+                "tekst": "**a**  **vertrek** 7:55\n**reisduur** 3 uur en 20 min\nHoe laat kom je aan?"
+              },
+              {
+                "type": "afbeelding",
+                "bron": "t-755.svg",
+                "alt": "Tijdlijn",
+                "hoogte": 150
+              },
+              {
+                "type": "schrijfvak",
+                "lijnen": "leeg"
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "tekst": "**b**  **begin** 13:25\n**einde** 15:10\nHoe lang duurt het?"
+              },
+              {
+                "type": "afbeelding",
+                "bron": "t-1325-1510.svg",
+                "alt": "Tijdlijn",
+                "hoogte": 150
+              },
+              {
+                "type": "schrijfvak",
+                "lijnen": "leeg"
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "tekst": "**c**  **begin** 16:45\n**duurt** 50 min\nHoe laat is het klaar?"
+              },
+              {
+                "type": "afbeelding",
+                "bron": "t-1645.svg",
+                "alt": "Tijdlijn",
+                "hoogte": 150
+              },
+              {
+                "type": "schrijfvak",
+                "lijnen": "leeg"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "antwoord",
+          "blokken": [
+            {
+              "type": "som",
+              "tekst": "**a**  11:15   ·   **b**  1 uur en 45 min   ·   **c**  17:35"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "afsluiting",
+      "titel": "Lukt het?",
+      "opdracht": "Duim omhoog, opzij of omlaag.",
+      "notitie": "Terug naar het lesdoel. Vraag een paar leerlingen (stokjes): wat doe je eerst? (zet wat je weet op de tijdlijn) Waarom spring je via het hele uur? (een uur is 60 min, niet 100)",
+      "blokken": [
+        {
+          "type": "doel"
+        },
+        {
+          "type": "succes"
+        },
+        {
+          "type": "stappen",
+          "stappen": [
+            {
+              "tekst": "Wat weet je: **begintijd**, **eindtijd** of **tijdsduur**?",
+              "klein": "Zet het op de tijdlijn."
+            },
+            {
+              "tekst": "Wat wil je weten? Maak **sprongen**.",
+              "klein": "Spring via het **hele uur**."
+            },
+            {
+              "tekst": "Geef **antwoord** op de vraag."
+            }
+          ],
+          "tonen": "alles"
+        }
+      ]
+    }
+  ]
+}

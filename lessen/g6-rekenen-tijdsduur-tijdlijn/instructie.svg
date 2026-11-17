@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="330" viewBox="0 0 1100 330">
+<line x1="20" y1="200" x2="1080" y2="200" stroke="#c8234f" stroke-width="7" stroke-linecap="round"/>
+<line x1="80" y1="172" x2="80" y2="228" stroke="#c8234f" stroke-width="7"/>
+<text x="80" y="275" text-anchor="middle" font-family="sans-serif" font-size="44" font-weight="700" fill="#c8234f">18:30</text>
+<text x="80" y="318" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#173141">begintijd</text>
+<line x1="1020" y1="172" x2="1020" y2="228" stroke="#c8234f" stroke-width="7"/>
+<text x="1020" y="275" text-anchor="middle" font-family="sans-serif" font-size="44" font-weight="700" fill="#1f8fd0">20:00</text>
+<text x="1020" y="318" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#173141">eindtijd</text>
+<path d="M80,200 Q550.0,60 1016,194" fill="none" stroke="#c8234f" stroke-width="5"/><path d="M1004,176 L1017,196 L1028,174" fill="none" stroke="#c8234f" stroke-width="5" stroke-linejoin="round"/><text x="550.0" y="116" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="700" fill="#173141">tijdsduur: 1 uur en 30 min</text>
+</svg>

@@ -79,6 +79,27 @@
       ]
     },
     {
+      "id": "g6-rekenen-tijdsduur-tijdlijn",
+      "titel": "Hoe lang duurt het? Rekenen met de tijdlijn",
+      "groep": "6",
+      "vak": "Rekenen",
+      "onderwerp": "Tijd",
+      "duur": 35,
+      "edi": true,
+      "gemaakt": "2026-11-17",
+      "samenvatting": "Met sprongen op de tijdlijn via het hele uur de tijdsduur of de eindtijd uitrekenen, bijvoorbeeld vertrek 9:45 en 2 uur en 15 min reizen.",
+      "trefwoorden": [
+        "tijd",
+        "tijdsduur",
+        "begintijd",
+        "eindtijd",
+        "tijdlijn",
+        "klok",
+        "uur",
+        "minuten"
+      ]
+    },
+    {
       "id": "g5-rekenen-gram-schatten",
       "titel": "Hoe zwaar is een gram?",
       "groep": "5",
