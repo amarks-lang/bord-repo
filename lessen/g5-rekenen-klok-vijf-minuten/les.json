@@ -1,0 +1,644 @@
+{
+  "id": "g5-rekenen-klok-vijf-minuten",
+  "titel": "Klokkijken per vijf minuten",
+  "groep": "5",
+  "vak": "Rekenen",
+  "onderwerp": "Tijd",
+  "duur": 35,
+  "edi": true,
+  "gemaakt": "2026-11-17",
+  "samenvatting": "Op een klok met wijzers de tijd lezen per vijf minuten: over, voor half, over half en voor, zoals 5 voor half 6.",
+  "trefwoorden": [
+    "klok",
+    "klokkijken",
+    "tijd",
+    "wijzers",
+    "vijf minuten",
+    "half",
+    "kwart",
+    "over",
+    "voor"
+  ],
+  "lesdoel": "op een klok met wijzers de tijd lezen per vijf minuten",
+  "succescriterium": "bij een klok kan zeggen hoe laat het is, zoals 5 voor half 6.",
+  "lesdoelInHoek": true,
+  "paginas": [
+    {
+      "fase": "lesdoel",
+      "notitie": "Lees samen hardop. Vraag: wie heeft een horloge of klok met wijzers thuis? Waar in de klas hangt er een?",
+      "blokken": [
+        {
+          "type": "doel"
+        },
+        {
+          "type": "succes"
+        },
+        {
+          "type": "naast",
+          "blokken": [
+            {
+              "type": "afbeelding",
+              "bron": "klok-5-25.svg",
+              "alt": "Klok: 5 voor half 6",
+              "hoogte": 330
+            },
+            {
+              "type": "som",
+              "tekst": "Het is ==5 voor half 6==."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voorkennis",
+      "titel": "Hoe laat is het?",
+      "opdracht": "Schrijf a, b, c en d op je wisbordje.",
+      "notitie": "Hele uren, half, kwart over en kwart voor: dit kennen ze al. Let bij b op: half 8, niet half 7. De kleine wijzer is al voorbij de 7, op weg naar de 8.",
+      "blokken": [
+        {
+          "type": "naast",
+          "blokken": [
+            {
+              "type": "afbeelding",
+              "bron": "voorkennis-a.svg",
+              "alt": "Klok",
+              "hoogte": 320
+            },
+            {
+              "type": "afbeelding",
+              "bron": "voorkennis-b.svg",
+              "alt": "Klok",
+              "hoogte": 320
+            },
+            {
+              "type": "afbeelding",
+              "bron": "voorkennis-c.svg",
+              "alt": "Klok",
+              "hoogte": 320
+            },
+            {
+              "type": "afbeelding",
+              "bron": "voorkennis-d.svg",
+              "alt": "Klok",
+              "hoogte": 320
+            }
+          ]
+        },
+        {
+          "type": "antwoord",
+          "blokken": [
+            {
+              "type": "som",
+              "tekst": "**a** 3 uur · **b** half 8 · **c** kwart over 2 · **d** kwart voor 9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "instructie",
+      "titel": "De klok in vier stukken",
+      "notitie": "Wijs de vakken aan met de grote wijzer. Rechts van de streep gaat het over het hele uur en naar half toe. Links gaat het over half en naar het hele uur toe. Tel samen de streepjes: van de ene grote streep naar de volgende is 5 minuten. Bij de 3 is het kwart over (15 min), bij de 9 kwart voor. Wijs aan: grote wijzer op de 5. In welk vak? Voor half: 5 voor half.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            3,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "afbeelding",
+                "bron": "instructie.svg",
+                "alt": "Klok in vier vakken: over, voor half, over half, voor",
+                "hoogte": 500
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "tekst": "Elke stap van de **grote wijzer** is **5 minuten**."
+              },
+              {
+                "type": "som",
+                "tekst": "5 · 10 · 15 · …"
+              },
+              {
+                "type": "tekst",
+                "tekst": "Rechts: **over** of **voor half**.\nLinks: **over half** of **voor**."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Hoe laat is het?",
+      "opdracht": "Kijk en luister.",
+      "notitie": "Hardop: 'De grote wijzer staat op de 2. Dat is rechts, dichter bij de 12 dan bij de 6. Dus over het hele uur. Ik tel: 5, 10. Tien over. De kleine wijzer is net voorbij de 4. Het is 10 over 4.'",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            2,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Waar wijst de **grote wijzer**?",
+                    "klein": "Dichter bij **heel** of bij **half**?"
+                  },
+                  {
+                    "tekst": "Tel in sprongen van **5**.",
+                    "klein": "Is het **over** of **voor**?"
+                  },
+                  {
+                    "tekst": "Kijk naar de **kleine wijzer**: welk uur?",
+                    "klein": "Bij **half**: het uur dat eraan komt."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "afbeelding",
+                "bron": "klok-4-10.svg",
+                "alt": "Klok met wijzers",
+                "hoogte": 460
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "Het is ==?=="
+              },
+              {
+                "type": "schrijfvak",
+                "lijnen": "leeg"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "10 over 4"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Hoe laat is het?",
+      "opdracht": "Kijk en luister.",
+      "notitie": "Hardop: 'De grote wijzer staat op de 5. Rechts, maar heel dicht bij de 6, bij half. Hij is er nog niet: dus voor half. Ik tel terug van de 6: 5. Vijf voor half. De kleine wijzer staat tussen de 5 en de 6. Half van welk uur? Het uur dat eraan komt: 6. Het is 5 voor half 6.' Benadruk: niet half 5!",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            2,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Waar wijst de **grote wijzer**?",
+                    "klein": "Dichter bij **heel** of bij **half**?"
+                  },
+                  {
+                    "tekst": "Tel in sprongen van **5**.",
+                    "klein": "Is het **over** of **voor**?"
+                  },
+                  {
+                    "tekst": "Kijk naar de **kleine wijzer**: welk uur?",
+                    "klein": "Bij **half**: het uur dat eraan komt."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "afbeelding",
+                "bron": "klok-5-25.svg",
+                "alt": "Klok met wijzers",
+                "hoogte": 460
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "Het is ==?=="
+              },
+              {
+                "type": "schrijfvak",
+                "lijnen": "leeg"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "5 voor half 6"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "voordoen",
+      "titel": "Hoe laat is het?",
+      "opdracht": "Kijk en luister.",
+      "notitie": "Hardop: 'De grote wijzer staat op de 10. Links, dichter bij de 12. Het hele uur komt eraan: voor. Ik tel terug van de 12: 5, 10. Tien voor. De kleine wijzer staat bijna op de 10. Het is 10 voor 10.'",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            2,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Waar wijst de **grote wijzer**?",
+                    "klein": "Dichter bij **heel** of bij **half**?"
+                  },
+                  {
+                    "tekst": "Tel in sprongen van **5**.",
+                    "klein": "Is het **over** of **voor**?"
+                  },
+                  {
+                    "tekst": "Kijk naar de **kleine wijzer**: welk uur?",
+                    "klein": "Bij **half**: het uur dat eraan komt."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "afbeelding",
+                "bron": "klok-9-50.svg",
+                "alt": "Klok met wijzers",
+                "hoogte": 460
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "Het is ==?=="
+              },
+              {
+                "type": "schrijfvak",
+                "lijnen": "leeg"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "10 voor 10"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Hoe laat is het?",
+      "opdracht": "Schrijf het op je wisbordje.",
+      "notitie": "Grote wijzer op de 1: 5 over. Kleine wijzer net voorbij de 7. Fout '1 over 7'? Dan is het getal gelezen in plaats van geteld: elke stap is 5.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            2,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Waar wijst de **grote wijzer**?",
+                    "klein": "Dichter bij **heel** of bij **half**?"
+                  },
+                  {
+                    "tekst": "Tel in sprongen van **5**.",
+                    "klein": "Is het **over** of **voor**?"
+                  },
+                  {
+                    "tekst": "Kijk naar de **kleine wijzer**: welk uur?",
+                    "klein": "Bij **half**: het uur dat eraan komt."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "afbeelding",
+                "bron": "klok-7-05.svg",
+                "alt": "Klok met wijzers",
+                "hoogte": 460
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "Het is ==?=="
+              },
+              {
+                "type": "schrijfvak",
+                "lijnen": "leeg"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "5 over 7"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Hoe laat is het?",
+      "opdracht": "Schrijf het op je wisbordje.",
+      "notitie": "Grote wijzer op de 7: links, net voorbij de 6. Dus over half. 5 over half. Kleine wijzer tussen 2 en 3: half 3. Fout '5 over half 2'? Bij half nemen we het uur dat eraan komt.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            2,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Waar wijst de **grote wijzer**?",
+                    "klein": "Dichter bij **heel** of bij **half**?"
+                  },
+                  {
+                    "tekst": "Tel in sprongen van **5**.",
+                    "klein": "Is het **over** of **voor**?"
+                  },
+                  {
+                    "tekst": "Kijk naar de **kleine wijzer**: welk uur?",
+                    "klein": "Bij **half**: het uur dat eraan komt."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "afbeelding",
+                "bron": "klok-2-35.svg",
+                "alt": "Klok met wijzers",
+                "hoogte": 460
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "Het is ==?=="
+              },
+              {
+                "type": "schrijfvak",
+                "lijnen": "leeg"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "som",
+                    "tekst": "5 over half 3"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Hoe laat is het?",
+      "opdracht": "Schrijf de letter op je wisbordje.",
+      "notitie": "Grote wijzer op de 8: links, dichter bij de 6. Over half: 5, 10. Kleine wijzer tussen 11 en 12: half 12.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            1,
+            1
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "afbeelding",
+                "bron": "klok-11-40.svg",
+                "alt": "Klok met wijzers",
+                "hoogte": 520
+              }
+            ],
+            [
+              {
+                "type": "keuzes",
+                "kolommen": 1,
+                "opties": [
+                  {
+                    "tekst": "10 over half 12",
+                    "goed": true,
+                    "uitleg": "Goed: links van de streep, 10 na de 6. Half 12."
+                  },
+                  {
+                    "tekst": "10 over half 11",
+                    "uitleg": "Fout: bij half neem je het uur dat eraan komt: 12."
+                  },
+                  {
+                    "tekst": "10 voor half 12",
+                    "uitleg": "Fout: de grote wijzer staat links. Dan is het over half."
+                  },
+                  {
+                    "tekst": "8 over 11",
+                    "uitleg": "Fout: de 8 is geen 8 minuten. Tel in sprongen van 5."
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "samen",
+      "titel": "Teken de wijzers: 10 voor half 4",
+      "opdracht": "Waar staat de grote wijzer? Schrijf het getal op je wisbordje.",
+      "notitie": "Andersom. Eerst wisbordjes: de grote wijzer staat op de 4 (10 voor de 6). Laat dan een leerling de wijzers tekenen. Kleine wijzer: tussen de 3 en de 4, nog niet in het midden. Klas controleert met duim.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "breedtes": [
+            2,
+            2,
+            2
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "stappen",
+                "stappen": [
+                  {
+                    "tekst": "Waar wijst de **grote wijzer**?",
+                    "klein": "Dichter bij **heel** of bij **half**?"
+                  },
+                  {
+                    "tekst": "Tel in sprongen van **5**.",
+                    "klein": "Is het **over** of **voor**?"
+                  },
+                  {
+                    "tekst": "Kijk naar de **kleine wijzer**: welk uur?",
+                    "klein": "Bij **half**: het uur dat eraan komt."
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "afbeelding",
+                "bron": "klok-leeg.svg",
+                "alt": "Klok met wijzers",
+                "hoogte": 460
+              }
+            ],
+            [
+              {
+                "type": "som",
+                "tekst": "10 voor half 4"
+              },
+              {
+                "type": "schrijfvak",
+                "lijnen": "leeg"
+              },
+              {
+                "type": "antwoord",
+                "blokken": [
+                  {
+                    "type": "tekst",
+                    "tekst": "Grote wijzer op de **4**.\nKleine wijzer tussen de **3** en de **4**."
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "check",
+      "titel": "Laat zien wat je kunt",
+      "opdracht": "Iedereen werkt alleen. Schrijf a, b en c op je wisbordje.",
+      "notitie": "3 of 2 goed → zelfstandig. 1 of 0 goed → instructietafel. Kijk bij b en c of het uur klopt (half 2, half 9).",
+      "blokken": [
+        {
+          "type": "naast",
+          "blokken": [
+            {
+              "type": "afbeelding",
+              "bron": "check-a.svg",
+              "alt": "Klok",
+              "hoogte": 380
+            },
+            {
+              "type": "afbeelding",
+              "bron": "check-b.svg",
+              "alt": "Klok",
+              "hoogte": 380
+            },
+            {
+              "type": "afbeelding",
+              "bron": "check-c.svg",
+              "alt": "Klok",
+              "hoogte": 380
+            }
+          ]
+        },
+        {
+          "type": "antwoord",
+          "blokken": [
+            {
+              "type": "som",
+              "tekst": "**a** 5 voor 7 · **b** 10 voor half 2 · **c** 10 over half 9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "afsluiting",
+      "titel": "Lukt het?",
+      "opdracht": "Duim omhoog, opzij of omlaag.",
+      "notitie": "Terug naar het lesdoel. Vraag (stokjes): wanneer zeg je 'over half'? (grote wijzer links, net na de 6) Welk uur zeg je bij half? (het uur dat eraan komt)",
+      "blokken": [
+        {
+          "type": "doel"
+        },
+        {
+          "type": "succes"
+        },
+        {
+          "type": "stappen",
+          "stappen": [
+            {
+              "tekst": "Waar wijst de **grote wijzer**?",
+              "klein": "Dichter bij **heel** of bij **half**?"
+            },
+            {
+              "tekst": "Tel in sprongen van **5**.",
+              "klein": "Is het **over** of **voor**?"
+            },
+            {
+              "tekst": "Kijk naar de **kleine wijzer**: welk uur?",
+              "klein": "Bij **half**: het uur dat eraan komt."
+            }
+          ],
+          "tonen": "alles"
+        }
+      ]
+    }
+  ]
+}

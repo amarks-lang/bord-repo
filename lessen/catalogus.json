@@ -202,6 +202,28 @@
       ]
     },
     {
+      "id": "g5-rekenen-klok-vijf-minuten",
+      "titel": "Klokkijken per vijf minuten",
+      "groep": "5",
+      "vak": "Rekenen",
+      "onderwerp": "Tijd",
+      "duur": 35,
+      "edi": true,
+      "gemaakt": "2026-11-17",
+      "samenvatting": "Op een klok met wijzers de tijd lezen per vijf minuten: over, voor half, over half en voor, zoals 5 voor half 6.",
+      "trefwoorden": [
+        "klok",
+        "klokkijken",
+        "tijd",
+        "wijzers",
+        "vijf minuten",
+        "half",
+        "kwart",
+        "over",
+        "voor"
+      ]
+    },
+    {
       "id": "g5-rekenen-aanzichten",
       "titel": "Voor-, boven- en zijaanzicht",
       "groep": "5",
