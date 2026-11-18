@@ -93,7 +93,7 @@
     {
       "fase": "instructie",
       "titel": "Begintijd, eindtijd en tijdsduur",
-      "notitie": "Begintijd: wanneer begint het. Eindtijd: wanneer is het klaar. Tijdsduur: hoe lang duurt het. Je weet er altijd twee, de derde reken je uit. Waar kom je dit tegen? Treinkaartje, tv-gids, bioscoop, zwemles. Vraag: de film duurt 1 uur en 30 min. Is dat de begintijd, eindtijd of tijdsduur? (duim)",
+      "notitie": "Model op de lege tijdlijn: zet 18:30 links (begintijd) en 20:00 rechts (eindtijd). Spring via het hele uur: 18:30 → 19:00 is 30 min, 19:00 → 20:00 is 1 uur. Schrijf de sprongen erboven. Samen is dat de tijdsduur: 1 uur en 30 min. Je weet er altijd twee, de derde reken je uit. Waar kom je dit tegen? Treinkaartje, tv-gids, bioscoop, zwemles. Vraag: 1 uur en 30 min, is dat de begintijd, eindtijd of tijdsduur? (duim)",
       "blokken": [
         {
           "type": "tekst",
@@ -101,9 +101,9 @@
         },
         {
           "type": "afbeelding",
-          "bron": "instructie.svg",
-          "alt": "Tijdlijn van 18:30 tot 20:00 met begintijd, eindtijd en tijdsduur",
-          "hoogte": 300
+          "bron": "tijdlijn-leeg.svg",
+          "alt": "Lege tijdlijn",
+          "hoogte": 360
         },
         {
           "type": "tekst",
